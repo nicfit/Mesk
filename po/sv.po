@@ -1,0 +1,1159 @@
+# Swedish translation for mesk.
+# Copyright (C) 2007 Free Software Foundation, Inc.
+# This file is distributed under the same license as the mesk package.
+# Daniel Nylander <po@danielnylander.se>, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mesk\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-07-12 19:34-0600\n"
+"PO-Revision-Date: 2007-04-21 20:49+0100\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
+"Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. XXX: Update when new features are supported
+#: ../etc/mesk.desktop.in.h:2
+msgid "A GTK+ audio player"
+msgstr "En ljudspelare som använder GTK+"
+
+#: ../etc/mesk.desktop.in.h:3
+msgid "Music Player"
+msgstr "Musikspelare"
+
+#: ../src/data/glade/about_dialog.glade.h:1
+msgid "Mesk"
+msgstr "Mesk"
+
+#: ../src/data/glade/about_dialog.glade.h:2
+msgid "Mesk Web Site"
+msgstr "Mesks webbplats"
+
+#: ../src/data/glade/audio_control.glade.h:1
+msgid "+"
+msgstr "+"
+
+#: ../src/data/glade/audio_control.glade.h:2
+msgid "-"
+msgstr "-"
+
+#: ../src/data/glade/audio_control.glade.h:4
+#, no-c-format
+msgid "100%"
+msgstr "100%"
+
+#: ../src/data/glade/audio_control.glade.h:6
+#, no-c-format
+msgid "25%"
+msgstr "25%"
+
+#: ../src/data/glade/audio_control.glade.h:8
+#, no-c-format
+msgid "50%"
+msgstr "50%"
+
+#: ../src/data/glade/audio_control.glade.h:10
+#, no-c-format
+msgid "75%"
+msgstr "75%"
+
+#: ../src/data/glade/audio_control.glade.h:11
+msgid "<big><b>HTTP Authentication Required</b></big>"
+msgstr "<big><b>HTTP-autentisering krävs</b></big>"
+
+#: ../src/data/glade/audio_control.glade.h:12
+msgid "Mute"
+msgstr "Tyst"
+
+#: ../src/data/glade/audio_control.glade.h:13
+msgid "Open Mixer"
+msgstr "Öppna mixer"
+
+#: ../src/data/glade/audio_control.glade.h:14
+#: ../src/plugins/plugins_gui.glade.h:11
+msgid "Password:"
+msgstr "Lösenord:"
+
+#: ../src/data/glade/audio_control.glade.h:15
+#: ../src/plugins/plugins_gui.glade.h:16
+msgid "Username:"
+msgstr "Användarnamn:"
+
+#: ../src/data/glade/audio_control.glade.h:16
+msgid "http://example.com/foo.mp3"
+msgstr "http://exempel.se/foo.mp3"
+
+#: ../src/data/glade/main_window.glade.h:1
+msgid "--:--"
+msgstr "--:--"
+
+#: ../src/data/glade/main_window.glade.h:2
+msgid "<big>Welcome To <b>Mesk</b></big>"
+msgstr "<big>Välkommen till <b>Mesk</b></big>"
+
+#: ../src/data/glade/main_window.glade.h:3
+msgid "Add, or open, a playlist using the File menu."
+msgstr "Lägg till eller öppna en spellista med Arkiv-menyn."
+
+#: ../src/data/glade/main_window.glade.h:4
+msgid "Current Level:"
+msgstr "Aktuell nivå:"
+
+#: ../src/data/glade/main_window.glade.h:5
+msgid "Find:"
+msgstr "Sök:"
+
+#: ../src/data/glade/main_window.glade.h:6
+msgid "First"
+msgstr "Första"
+
+#: ../src/data/glade/main_window.glade.h:7
+msgid "Mesk Log"
+msgstr "Mesk-logg"
+
+#: ../src/data/glade/main_window.glade.h:8
+msgid "Messages - Mesk"
+msgstr "Meddelanden - Mesk"
+
+#: ../src/data/glade/main_window.glade.h:9
+msgid "Online Help"
+msgstr "Hjälp på webben"
+
+#: ../src/data/glade/main_window.glade.h:10
+msgid "Open _Device"
+msgstr "Öppna _enhet"
+
+#: ../src/data/glade/main_window.glade.h:11
+msgid "Open _Playlist"
+msgstr "Öppna _spellista"
+
+#: ../src/data/glade/main_window.glade.h:12 ../src/mesk/config.py:47
+msgid "Playlist"
+msgstr "Spellista"
+
+#: ../src/data/glade/main_window.glade.h:13
+msgid "Playlist stats"
+msgstr "Statistik för spellista"
+
+#: ../src/data/glade/main_window.glade.h:14
+#: ../src/data/glade/preference_window.glade.h:9
+msgid "Plugins"
+msgstr "Insticksmoduler"
+
+#: ../src/data/glade/main_window.glade.h:15
+msgid "Show the crrently playing song in the playlist"
+msgstr "Visa den aktuellt spelade låten i spellistan"
+
+#: ../src/data/glade/main_window.glade.h:16
+msgid "Status #1"
+msgstr "Status #1"
+
+#: ../src/data/glade/main_window.glade.h:17
+msgid "The playlist is read-only"
+msgstr "Spellistan är skrivskyddad"
+
+#: ../src/data/glade/main_window.glade.h:18
+msgid "_About"
+msgstr "_Om"
+
+#: ../src/data/glade/main_window.glade.h:19
+msgid "_Compact"
+msgstr "_Kompakt"
+
+#: ../src/data/glade/main_window.glade.h:20
+msgid "_Contents"
+msgstr "_Innehåll"
+
+#: ../src/data/glade/main_window.glade.h:21
+msgid "_Edit"
+msgstr "R_edigera"
+
+#: ../src/data/glade/main_window.glade.h:22
+msgid "_File"
+msgstr "_Arkiv"
+
+#: ../src/data/glade/main_window.glade.h:23
+msgid "_Help"
+msgstr "_Hjälp"
+
+#: ../src/data/glade/main_window.glade.h:24
+msgid "_Jump To Current"
+msgstr "_Hoppa till aktuell"
+
+#: ../src/data/glade/main_window.glade.h:25
+msgid "_Logs"
+msgstr "_Loggar"
+
+#: ../src/data/glade/main_window.glade.h:26
+msgid "_New Playlist..."
+msgstr "_Ny spellista..."
+
+#: ../src/data/glade/main_window.glade.h:27
+msgid "_Next"
+msgstr "_Nästa"
+
+#: ../src/data/glade/main_window.glade.h:28
+msgid "_Preferences"
+msgstr "_Inställningar"
+
+#: ../src/data/glade/main_window.glade.h:29
+msgid "_Previous"
+msgstr "_Föregående"
+
+#: ../src/data/glade/main_window.glade.h:30
+msgid "_View"
+msgstr "_Visa"
+
+#: ../src/data/glade/main_window.glade.h:31
+msgid "example"
+msgstr "exempel"
+
+#: ../src/data/glade/playlist.glade.h:1
+msgid "<b>Comments:</b>"
+msgstr "<b>Kommentarer:</b>"
+
+#: ../src/data/glade/playlist.glade.h:2
+msgid "<b>Name:</b>"
+msgstr "<b>Namn:</b>"
+
+#: ../src/data/glade/playlist.glade.h:3
+msgid "Clear Queue"
+msgstr "Töm kö"
+
+#: ../src/data/glade/playlist.glade.h:4
+msgid "Cu_t"
+msgstr "Klipp _ut"
+
+#: ../src/data/glade/playlist.glade.h:5
+msgid "More Properties"
+msgstr "Fler egenskaper"
+
+#: ../src/data/glade/playlist.glade.h:6
+msgid "Properties..."
+msgstr "Egenskaper..."
+
+#: ../src/data/glade/playlist.glade.h:7
+msgid "Queue"
+msgstr "Kö"
+
+#: ../src/data/glade/playlist.glade.h:8
+msgid "Queue (front)"
+msgstr ""
+
+#: ../src/data/glade/playlist.glade.h:9
+#, fuzzy
+msgid "Queue / Unqueue"
+msgstr "Kölägg/Ta bort"
+
+#: ../src/data/glade/playlist.glade.h:10
+msgid "Read Only"
+msgstr "Skrivskyddad"
+
+#: ../src/data/glade/playlist.glade.h:11
+msgid "_Add..."
+msgstr "_Lägg till..."
+
+#: ../src/data/glade/playlist.glade.h:12
+msgid "_Copy"
+msgstr "_Kopiera"
+
+#: ../src/data/glade/playlist.glade.h:13
+msgid "_Export..."
+msgstr "_Exportera..."
+
+#: ../src/data/glade/playlist.glade.h:14
+msgid "_Paste"
+msgstr "_Klistra in"
+
+#: ../src/data/glade/playlist.glade.h:15
+msgid "_Properties"
+msgstr "_Egenskaper"
+
+#: ../src/data/glade/playlist.glade.h:16
+msgid "_Remove"
+msgstr "_Ta bort"
+
+#: ../src/data/glade/preference_window.glade.h:1
+msgid "<b>Author</b>"
+msgstr "<b>Upphovsman</b>"
+
+#: ../src/data/glade/preference_window.glade.h:2
+msgid "<b>Copyright</b>"
+msgstr "<b>Copyright</b>"
+
+#: ../src/data/glade/preference_window.glade.h:3
+msgid "<b>Description</b>"
+msgstr "<b>Beskrivning</b>"
+
+#: ../src/data/glade/preference_window.glade.h:4
+msgid "<b>Plugin Name</b>"
+msgstr "<b>Insticksmodulnamn</b>"
+
+#: ../src/data/glade/preference_window.glade.h:5
+msgid "<b>Web Site</b>"
+msgstr "<b>Webbplats</b>"
+
+#: ../src/data/glade/preference_window.glade.h:6
+msgid "<span size=\"xx-large\" weight=\"bold\">Mesk 1.0</span>"
+msgstr "<span size=\"xx-large\" weight=\"bold\">Mesk 1.0</span>"
+
+#: ../src/data/glade/preference_window.glade.h:7
+msgid "Configure..."
+msgstr "Konfigurera..."
+
+#: ../src/data/glade/preference_window.glade.h:8
+msgid "Music Library"
+msgstr "Musikbibliotek"
+
+#: ../src/data/glade/preference_window.glade.h:10
+msgid "Sync..."
+msgstr "Synkroniserar..."
+
+#: ../src/plugins/plugins_gui.glade.h:2
+#, no-c-format
+msgid ""
+"<b>%a = artist\t%b = album</b>\n"
+"<b>%t = title\t\t%y = year</b>"
+msgstr ""
+"<b>%a = artist\t%b = album</b>\n"
+"<b>%t = titel\t\t%y = år</b>"
+
+#: ../src/plugins/plugins_gui.glade.h:4
+msgid "<b>Gajim Accounts:</b>"
+msgstr "<b>Gajim-konton:</b>"
+
+#: ../src/plugins/plugins_gui.glade.h:5
+msgid "<b>Status:</b>"
+msgstr "<b>Status:</b>"
+
+#: ../src/plugins/plugins_gui.glade.h:6
+msgid "Enable last.fm profile:"
+msgstr "Aktivera last.fm-profil:"
+
+#: ../src/plugins/plugins_gui.glade.h:7
+msgid "Example Account"
+msgstr "Exempelkonto"
+
+#: ../src/plugins/plugins_gui.glade.h:8
+msgid "Info:"
+msgstr "Info:"
+
+#: ../src/plugins/plugins_gui.glade.h:9
+msgid "Last submit:"
+msgstr "Senaste insändning:"
+
+#: ../src/plugins/plugins_gui.glade.h:10
+msgid "Password (again):"
+msgstr "Lösenord (igen):"
+
+#: ../src/plugins/plugins_gui.glade.h:12
+msgid "Restore default status format"
+msgstr "Återställ standardstatusformat"
+
+#: ../src/plugins/plugins_gui.glade.h:13
+msgid "State:"
+msgstr "Tillstånd:"
+
+#: ../src/plugins/plugins_gui.glade.h:14
+msgid "Tracks queued:"
+msgstr "Spår köade:"
+
+#: ../src/plugins/plugins_gui.glade.h:15
+msgid "Tracks submitted:"
+msgstr "Spår insända:"
+
+#: ../src/about_dialog.py:47
+#, python-format
+msgid "Supported audio formats: %s\n"
+msgstr "Ljudformat som stöds: %s\n"
+
+#. remove trailing dot
+#: ../src/about_dialog.py:54
+#, python-format
+msgid "Gtk+ version: %s\n"
+msgstr "Gtk+ version: %s\n"
+
+#: ../src/about_dialog.py:55
+#, python-format
+msgid "PyGtk version: %s\n"
+msgstr "PyGtk version: %s\n"
+
+#: ../src/about_dialog.py:56
+#, python-format
+msgid "Gstreamer version: %s\n"
+msgstr "Gstreamer version: %s\n"
+
+#: ../src/about_dialog.py:58
+#, python-format
+msgid "Installed in %s\n"
+msgstr "Installerad i %s\n"
+
+#: ../src/about_dialog.py:60
+msgid ""
+"A Gtk+ audio player\n"
+"\n"
+msgstr ""
+"En ljudspelare som använder Gtk+\n"
+"\n"
+
+#. Tooltip strings
+#: ../src/audio_control.py:43
+msgid "Play"
+msgstr "Spela"
+
+#: ../src/audio_control.py:44
+msgid "Pause"
+msgstr "Gör paus"
+
+#: ../src/audio_control.py:137
+#, python-format
+msgid "Gstreamer version %d.%d.%d audio control initialized"
+msgstr "Gstreamer version %d.%d.%d ljudkontroll initerad"
+
+#: ../src/audio_control.py:307
+#, python-format
+msgid "Volume %d%%"
+msgstr "Volym %d%%"
+
+#: ../src/audio_control.py:712
+msgid "Mute Volume"
+msgstr "Tyst volym"
+
+#: ../src/audio_control.py:714
+msgid "Restore Volume"
+msgstr "Återställ volym"
+
+#: ../src/cdrom_control.py:46
+msgid "<b>Unsupported CDROM device.</b>"
+msgstr "<b>Cd-rom-enheten stöds inte.</b>"
+
+#: ../src/cdrom_control.py:47
+#, python-format
+msgid "CD device %s does not support open, close and/or media changed."
+msgstr "Cd-enheten %s saknar stöd för att öppna, stänga och/eller byta media."
+
+#: ../src/cdrom_control.py:62
+msgid "Eject"
+msgstr "Mata ut"
+
+#. The device may be busy
+#: ../src/cdrom_control.py:83
+msgid "<b>Unable to eject CD</b>"
+msgstr "<b>Kunde inte mata ut cd</b>"
+
+#: ../src/cdrom_control.py:84
+#, python-format
+msgid ""
+"Another application is using the CDROM device (%s).\n"
+"Try again when the device is not busy."
+msgstr ""
+"Ett annat program använder cdrom-enheten (%s).\n"
+"Försök igen när enheten inte är upptagen."
+
+#: ../src/cdrom_control.py:91
+#, python-format
+msgid "<b>Insert audio CD into %s</b>"
+msgstr "<b>Mata in ljud-cd i %s</b>"
+
+#: ../src/dialogs.py:57
+msgid "Do not ask me again."
+msgstr "Fråga mig inte igen."
+
+#: ../src/log_window.py:48
+msgid "Save Log File"
+msgstr "Spara loggfil"
+
+#: ../src/main.py:82
+msgid "Mesk is already running"
+msgstr "Mesk körs redan"
+
+#: ../src/main.py:83
+#, python-format
+msgid ""
+"Another instance of Mesk is using the profile '%s'. Try again with a "
+"different profile name (-p/--profile)"
+msgstr ""
+"En annan instans av Mesk använder profilen \"%s\". Försök igen med ett annat "
+"profilname (-p/--profile)"
+
+#: ../src/main.py:234
+#, python-format
+msgid "Playlist '%s' is now active\n"
+msgstr "Spellistan \"%s\" är nu aktiv\n"
+
+#: ../src/main.py:295
+msgid "Start with profile NAME."
+msgstr "Starta med profilen NAMN."
+
+#. Remote control options
+#: ../src/main.py:298
+msgid "Remote Control Options"
+msgstr "Flaggor för fjärrstyrning"
+
+#: ../src/main.py:300
+msgid ""
+"The remote control options operate on a running instance of Mesk, starting "
+"the app if necessary. If multiples instances of Mesk are running the profile "
+"option can be used to determine which instance to pass the command."
+msgstr ""
+"Flaggor för fjärrstyrning hanterar en annan körande instans av Mesk och "
+"startar programmet om det behövs. Om flera instanser av Mesk kör kan "
+"profilflaggan användas för att fastställa vilken instans som ska skickas "
+"till kommandot."
+
+#: ../src/main.py:306
+msgid "Stop playback"
+msgstr "Stoppa uppspelning"
+
+#: ../src/main.py:309
+msgid "Start playback"
+msgstr "Starta uppspelning"
+
+#: ../src/main.py:312
+msgid "Pause playback"
+msgstr "Pausa uppspelning"
+
+#: ../src/main.py:315
+msgid "If playing, playback is paused. Otherwise the player is started."
+msgstr ""
+"Om uppspelning sker kommer den att pausas. Annars kommer spelaren att starta."
+
+#: ../src/main.py:319
+msgid "Previous track"
+msgstr "Föregående spår"
+
+#: ../src/main.py:322
+msgid "Next track"
+msgstr "Nästa spår"
+
+#: ../src/main.py:325
+msgid "Mute/Unmute"
+msgstr "Tyst/normal volym"
+
+#: ../src/main.py:329
+msgid "Increase the volume by N% (0.0 <= n <= 1.0)"
+msgstr "Höj volymen med N% (0.0 <= n <= 1.0)"
+
+#: ../src/main.py:334
+msgid "Decrease the volume by N%(0.0 <= n <= 1.0)"
+msgstr "Sänk volymen med N% (0.0 <= n <= 1.0)"
+
+#: ../src/main.py:338
+msgid ""
+"Returns the current state of the audio player (stopped, playing, paused)."
+msgstr ""
+"Returnerar det aktuella tillståndet för ljudspelaren (stoppad, spelar, "
+"pausad)."
+
+#: ../src/main.py:342
+msgid "Returns the URI of the current audio source."
+msgstr "Returnerar uri:n för den aktuella ljudkällan."
+
+#: ../src/main.py:346
+msgid "Returns the title of the current audio source."
+msgstr "Returnerar titeln för den aktuella ljudkällan."
+
+#: ../src/main.py:350
+msgid "Returns the artist of the current audio source."
+msgstr "Returnerar artisten för den aktuella ljudkällan."
+
+#: ../src/main.py:354
+msgid "Returns the album name of the current audio source."
+msgstr "Returnerar albumnamnet för den aktuella ljudkällan."
+
+#: ../src/main.py:358
+msgid "Returns the year of the current audio source."
+msgstr "Returnerar året för den aktuella ljudkällan."
+
+#: ../src/main.py:362
+msgid "Returns the length (in seconds) of the current audio source."
+msgstr "Returnerar speltiden (i sekunder) för den aktuella ljudkällan."
+
+#: ../src/main.py:366
+msgid "List all playlists."
+msgstr "Lista alla spellistor."
+
+#: ../src/main.py:369
+msgid ""
+"List the name of the active PlaylistControl.  This value may be empty if no "
+"playlists are active (e.g. a CDROM is active)."
+msgstr ""
+"Lista namnet på den aktiva PlaylistControl.  Det här värdet kan vara tomt om "
+"inga spellistor är aktiva (t.ex. en cd-rom är aktiv)."
+
+#: ../src/main.py:376
+msgid "Set the active playlist."
+msgstr "Ställ in aktiv spellista."
+
+#: ../src/main.py:380
+msgid "Enqueue URI to the active playlist."
+msgstr "Kölägg uri till den aktiva spellistan."
+
+#: ../src/main.py:383
+msgid "Show/hide the main window (minimize to system tray)"
+msgstr "Visa/dölj huvudfönstret (minimera till meddelandefältet)"
+
+#: ../src/main.py:387
+msgid "Raise the main window (bring to front)."
+msgstr "Höj huvudfönstret (lägg överst)."
+
+#. Advanced (developer) options
+#: ../src/main.py:391
+msgid "Advanced Options"
+msgstr "Avancerade alternativ"
+
+#: ../src/main.py:393
+msgid ""
+"Select the amount of terminal logging. May be CRITICAL, ERROR, WARNING, "
+"INFO, VERBOSE, or DEBUG"
+msgstr ""
+"Välj mängden av loggning till terminal. Kan vara CRITICAL, ERROR, WARNING, "
+"INFO, VERBOSE eller DEBUG"
+
+#: ../src/main.py:399
+msgid "Break in python debugger on unhandled exceptions."
+msgstr "Avbrott i pythons felsökare på ohanterade undantag."
+
+#: ../src/main.py:403
+msgid "Run using python profiler."
+msgstr "Kör med pythons profilerare."
+
+#: ../src/main.py:406
+msgid "Display Gstreamer command line options."
+msgstr "Visa kommandoradsflaggor för Gstreamer."
+
+#: ../src/main_window.py:134
+#, python-format
+msgid "Loading playlist '%s'..."
+msgstr "Läser in spellistan \"%s\"..."
+
+#: ../src/main_window.py:151
+#, python-format
+msgid "Error loading '%s'"
+msgstr "Fel vid inläsning av \"%s\""
+
+#: ../src/main_window.py:169
+#, python-format
+msgid "'%s' loaded"
+msgstr "\"%s\" lästes in"
+
+#: ../src/main_window.py:313
+msgid "Are you sure you want to quit?"
+msgstr "Är du säker på att du vill avsluta?"
+
+#: ../src/mesk/audio/cdaudio.py:40
+#, python-format
+msgid "Track #%d"
+msgstr "Spår %d"
+
+#: ../src/mesk/audio/__init__.py:43
+#, python-format
+msgid "Unsupported audio format: %s"
+msgstr "Ljudformatet stöds inte: %s"
+
+#: ../src/mesk/config.py:53
+msgid "Application version"
+msgstr "Programversion"
+
+#: ../src/mesk/config.py:55
+msgid "The directory containing playlists."
+msgstr "Katalogen som innehåller spellistor."
+
+#: ../src/mesk/config.py:57
+msgid "The foreground playlist that has audio control."
+msgstr "Spellistan i förgrunden som har ljudstyrning."
+
+#: ../src/mesk/config.py:59
+msgid "A list of playlists to open on startup."
+msgstr "En lista över spellistor att öppna vid uppstart."
+
+#: ../src/mesk/config.py:61
+msgid "Logging level. May be CRITICAL, ERROR, WARNING, INFO, VERBOSE, or DEBUG"
+msgstr ""
+"Loggningsnivå. Kan vara CRITICAL, ERROR, WARNING, INFO, VERBOSE eller DEBUG"
+
+#: ../src/mesk/config.py:64
+msgid "Show confirmation dialog before quitting the application."
+msgstr "Visa bekräftelse innan programmet avslutas."
+
+#: ../src/mesk/config.py:67
+msgid "The directory containing user installed plugins"
+msgstr "Katalogen som innehåller användarinstallerade insticksmoduler"
+
+#: ../src/mesk/config.py:68
+msgid "A list of plugins (separated by ';') to activate on startup."
+msgstr ""
+"En lista över insticksmoduler (separerade med \";\") att aktivera vid "
+"uppstart."
+
+#: ../src/mesk/config.py:73
+msgid "Start in compact view mode"
+msgstr "Starta i kompakt vyläge"
+
+#: ../src/mesk/config.py:75
+msgid ""
+"If True, the main window is hidded instead of closed when the window close "
+"button is clicked."
+msgstr ""
+"Om sant kommer huvudfönstret att döljas istället för att stängas när "
+"fönstrets stängningsknapp klickas på."
+
+#: ../src/mesk/config.py:78
+msgid "Main window width."
+msgstr "Huvudfönstrets bredd."
+
+#: ../src/mesk/config.py:79
+msgid "Main window height."
+msgstr "Huvudfönstrets höjd."
+
+#: ../src/mesk/config.py:80
+msgid "Main window x origin."
+msgstr "Huvudfönstrets x-position."
+
+#: ../src/mesk/config.py:81
+msgid "Main window y origin."
+msgstr "Huvudfönstrets y-position."
+
+#: ../src/mesk/config.py:83
+msgid "Main window x origin in compact mode."
+msgstr "Huvudfönstrets x-position i kompakt läge."
+
+#: ../src/mesk/config.py:85
+msgid "Main window y origin in compact mode."
+msgstr "Huvudfönstrets y-position i kompakt läge."
+
+#: ../src/mesk/config.py:87
+msgid "Display a close button on each tab."
+msgstr "Visa en stängningsknapp för varje flik."
+
+#: ../src/mesk/config.py:89
+msgid "Show tips window each time Mesk is started."
+msgstr "Visa tipsfönster varje gång Mesk startas."
+
+#: ../src/mesk/config.py:92
+msgid "The last tip displayed in the tips window."
+msgstr "Senaste tipset som visades i tipsfönstret."
+
+#: ../src/mesk/config.py:94
+msgid "Automatically open devices (cdroms, etc.)"
+msgstr "Öppna enheter automatiskt (cd-rom, etc.)"
+
+#: ../src/mesk/config.py:100
+#, python-format
+msgid "GStreamer output sink. May be %s (default), %s, '%s','%s', or '%s'"
+msgstr ""
+"Utmatningssink för GStreamer. Kan vara %s (standard), %s, \"%s\",\"%s\" "
+"eller \"%s\""
+
+#: ../src/mesk/config.py:104
+msgid "Number of milliseconds to pause between tracks"
+msgstr "Antal millisekunder att pausa mellan spår"
+
+#: ../src/mesk/config.py:106
+msgid "Volume level is a value between 0.0 and 1.0"
+msgstr "Volymnivå är ett värde mellan 0.0 och 1.0"
+
+#: ../src/mesk/config.py:108
+msgid ""
+"The volume level mixing program. The PATH environment variable is used to "
+"locate commands that do not contain a path."
+msgstr ""
+"Mixerprogrammet för volymnivå. Miljövariabeln PATH används för att hitta "
+"kommandon som inte innehåller en sökväg."
+
+#: ../src/mesk/config.py:114
+msgid "Playlist (file) location"
+msgstr "Plats för spellista (fil)"
+
+#: ../src/mesk/config.py:118
+msgid "Database (sqlite) path URI"
+msgstr "URI för databas (sqlite)"
+
+#: ../src/mesk/config.py:120
+#, fuzzy
+msgid "Tab delimited list of directories included in the library."
+msgstr "Kataloger inkluderade i biblioteket"
+
+#: ../src/mesk/config.py:123
+#, fuzzy
+msgid "Tab delimited list of directories to exclude from the library."
+msgstr "Kataloger att exkludera från biblioteket."
+
+#: ../src/mesk/plugin/__init__.py:119
+#, python-format
+msgid "Plugin not found: %s"
+msgstr "Insticksmodulen hittades inte: %s"
+
+#: ../src/mesk/plugin/__init__.py:149
+#, python-format
+msgid "Activating %s plugin"
+msgstr "Aktiverar insticksmodulen %s"
+
+#: ../src/mesk/plugin/__init__.py:153
+#, python-format
+msgid "Invalid plugin name: %s"
+msgstr "Ogiltigt namn för insticksmodul: %s"
+
+#: ../src/mesk/plugin/__init__.py:156
+#, python-format
+msgid "Error activating %s plugin: %s"
+msgstr "Fel vid aktivering av insticksmodulen %s: %s"
+
+#: ../src/mesk/plugin/__init__.py:165
+#, python-format
+msgid "Deactivating %s plugin"
+msgstr "Inaktiverar insticksmodulen %s"
+
+#: ../src/mesk/plugin/__init__.py:171
+#, python-format
+msgid "Error deactivating %s plugin: %s"
+msgstr "Fel vid inaktivering av insticksmodulen %s: %s"
+
+#: ../src/mesk/plugin/__init__.py:188
+#, python-format
+msgid "Loading plugin %s"
+msgstr "Läser in insticksmodulen %s"
+
+#: ../src/mesk/plugin/__init__.py:195
+#, python-format
+msgid "Plugin '%s' failed to load: %s"
+msgstr "Misslyckades med att läsa in insticksmodulen \"%s\": %s"
+
+#: ../src/mesk/plugin/__init__.py:200
+#, python-format
+msgid "Invalid type for plugin '%s': %s"
+msgstr "Ogiltig typ för insticksmodulen \"%s\": %s"
+
+#: ../src/mesk/utils.py:60
+msgid "KB"
+msgstr "KB"
+
+#: ../src/mesk/utils.py:61
+msgid "MB"
+msgstr "MB"
+
+#: ../src/mesk/utils.py:62
+msgid "GB"
+msgstr "GB"
+
+#: ../src/mesk/utils.py:65
+msgid "Bytes"
+msgstr "Bytes"
+
+#. Text columns
+#: ../src/playlist_control.py:183
+msgid "Title"
+msgstr "Titel"
+
+#: ../src/playlist_control.py:184
+msgid "Artist"
+msgstr "Konstnär"
+
+#: ../src/playlist_control.py:185
+msgid "Album"
+msgstr "Albumet"
+
+#: ../src/playlist_control.py:187
+msgid "#"
+msgstr "#"
+
+#: ../src/playlist_control.py:189
+msgid "Year"
+msgstr "År"
+
+#: ../src/playlist_control.py:191
+msgid "Time"
+msgstr "Tid"
+
+#: ../src/playlist_control.py:561
+#, python-format
+msgid "Are you sure you want to delete playlist '%s'?"
+msgstr "Är du säker på att du vill ta bort spellistan \"%s\"?"
+
+#: ../src/playlist_control.py:563
+msgid "All playlist data will be lost."
+msgstr "All spellistdata kommer att gå förlorad."
+
+#: ../src/playlist_control.py:749
+msgid "tracks"
+msgstr "spår"
+
+#: ../src/playlist_control.py:1070
+#, python-format
+msgid "Adding items to '%s'..."
+msgstr "Lägger till objekt till \"%s\"..."
+
+#: ../src/playlist_control.py:1135
+msgid "Unsupported audio format"
+msgstr "Ljudformatet stöds inte"
+
+#: ../src/playlist_control.py:1153
+#, python-format
+msgid ""
+"Error dropping source: %s\n"
+"\n"
+"%s"
+msgstr ""
+"Fel vid släpp av källa: %s\n"
+"\n"
+"%s"
+
+#: ../src/playlist_control.py:1163
+#, python-format
+msgid ""
+"\n"
+"Details: %s\n"
+"%s"
+msgstr ""
+"\n"
+"Detaljer: %s\n"
+"%s"
+
+#: ../src/playlist_control.py:1185
+#, python-format
+msgid "%d items added to '%s'"
+msgstr "%d objekt lades till i \"%s\""
+
+#: ../src/playlist_control.py:1234
+msgid "Add Audio"
+msgstr "Lägg till ljud"
+
+#: ../src/playlist_control.py:1253
+msgid "All"
+msgstr "Alla"
+
+#: ../src/playlist_control.py:1254
+msgid "Audio"
+msgstr "Ljud"
+
+#: ../src/playlist_control.py:1255
+msgid "Playlists"
+msgstr "Spellistor"
+
+#. This madness allows the file dialog to select directories when
+#. the checkbox is toggles and files when not since this is not
+#. possible by default
+#: ../src/playlist_control.py:1260
+msgid "Enable to select directories instead of files."
+msgstr "Aktivera för att välja kataloger istället för filer."
+
+#: ../src/playlist_control.py:1409
+msgid "No match found"
+msgstr "Ingen träff hittades"
+
+#: ../src/playlist_control.py:1410
+#, python-format
+msgid "The string '%s' does not match any playlist entries."
+msgstr "Strängen \"%s\" matchar inte några objekt i spellistan."
+
+#: ../src/playlist_control.py:1452
+msgid "items"
+msgstr "objekt"
+
+#: ../src/playlist_control.py:1454
+msgid "item"
+msgstr "objekt"
+
+#: ../src/playlist_control.py:1471
+msgid "cut"
+msgstr "utklippta"
+
+#: ../src/playlist_control.py:1486
+msgid "copied"
+msgstr "kopierade"
+
+#: ../src/playlist_control.py:1505
+msgid "pasted"
+msgstr "inklistrade"
+
+#: ../src/playlist_control.py:1531
+#, python-format
+msgid "Playlist '%s' exported"
+msgstr "Spellistan \"%s\" exporterad"
+
+#: ../src/playlist_control.py:1684
+msgid "Export Playlist"
+msgstr "Exportera spellista"
+
+#: ../src/playlist_control.py:1705
+msgid "Export as type:"
+msgstr "Exportera som typ:"
+
+#: ../src/plugins/albumart.py:536
+msgid "Download missing album art from amazon.com."
+msgstr "Hämta saknade albumomslag från amazon.com."
+
+#. Save pending queue
+#: ../src/plugins/audioscrobbler.py:110
+#, python-format
+msgid "Saving %d queued items"
+msgstr "Sparar %d köade objekt"
+
+#: ../src/plugins/audioscrobbler.py:197
+msgid "Username and password required"
+msgstr "Användarnamn och lösenord krävs"
+
+#: ../src/plugins/audioscrobbler.py:206
+msgid "Passwords do not match"
+msgstr "Lösenorden stämde inte överens"
+
+#: ../src/plugins/audioscrobbler.py:251
+msgid "No username and/or password"
+msgstr "Inget användarnamn och/eller lösenord"
+
+#. minutes
+#: ../src/plugins/audioscrobbler.py:262 ../src/plugins/audioscrobbler.py:334
+msgid "Cannot connect to Last.FM"
+msgstr "Kan inte ansluta till Last.FM"
+
+#: ../src/plugins/audioscrobbler.py:283 ../src/plugins/audioscrobbler.py:317
+#: ../src/plugins/audioscrobbler.py:349 ../src/plugins/audioscrobbler.py:355
+#: ../src/plugins/audioscrobbler.py:360
+msgid "Last.FM error"
+msgstr "Last.FM-fel"
+
+#: ../src/plugins/audioscrobbler.py:294
+#, python-format
+msgid "Handshake failure '%s', retrying in %d seconds: %s"
+msgstr "Handskakningsfel \"%s\", försöker igen om %d sekunder: %s"
+
+#: ../src/plugins/audioscrobbler.py:300
+msgid "Invalid username"
+msgstr "Ogiltigt användarnamn"
+
+#: ../src/plugins/audioscrobbler.py:302
+msgid "Authentication failed"
+msgstr "Autentiseringsfel"
+
+#: ../src/plugins/audioscrobbler.py:309
+#, python-format
+msgid "Plugin update available here, please see %s"
+msgstr "Uppdatering av insticksmodul finns tillgänglig, se %s"
+
+#: ../src/plugins/audioscrobbler.py:320
+msgid "Authenticated"
+msgstr "Autentiserad"
+
+#: ../src/plugins/audioscrobbler.py:333
+#, python-format
+msgid "Submit error: %s"
+msgstr "Fel vid insändning: %s"
+
+#: ../src/plugins/audioscrobbler.py:348
+#, python-format
+msgid "Malformed response: %s"
+msgstr "Felformulerat svar: %s"
+
+#: ../src/plugins/audioscrobbler.py:354
+#, python-format
+msgid "Invalid response: %s"
+msgstr "Ogiltigt svar: %s"
+
+#: ../src/plugins/audioscrobbler.py:359
+#, python-format
+msgid "Submit failure: %s"
+msgstr "Fel vid insändning: %s"
+
+#: ../src/plugins/audioscrobbler.py:364
+msgid "BADAUTH failure, hanshake required"
+msgstr "BADAUTH-fel, handskakning krävs"
+
+#: ../src/plugins/audioscrobbler.py:365 ../src/plugins/audioscrobbler.py:380
+msgid "Authentication required"
+msgstr "Autentisering krävs"
+
+#: ../src/plugins/audioscrobbler.py:450
+msgid "Open Last.FM User Page"
+msgstr "Öppna användarsidan på Last.FM"
+
+#: ../src/plugins/audioscrobbler.py:465
+#, python-format
+msgid "Source length %s < 30s, skipping"
+msgstr "Källans längd %s < 30s, hoppar över"
+
+#: ../src/plugins/audioscrobbler.py:486
+#, python-format
+msgid "Source %s is missing artist and/or title: "
+msgstr "Källan %s saknar artist och/eller titel: "
+
+#: ../src/plugins/audioscrobbler.py:790
+msgid "Submits played song information to last.fm"
+msgstr "Skickar in information om spelade låtar till Last.FM"
+
+#: ../src/plugins/gajimstatus.py:87
+#, python-format
+msgid "Updating status for account %s"
+msgstr "Uppdaterar status för kontot %s"
+
+#: ../src/plugins/gajimstatus.py:96
+msgid "Gajim and/or Dbus is not running"
+msgstr "Gajim och/eller Dbus körs inte"
+
+#: ../src/plugins/gajimstatus.py:135
+msgid "paused"
+msgstr "pausad"
+
+#: ../src/plugins/gajimstatus.py:199
+msgid "Gajim must be running in order to determine accounts."
+msgstr "Gajim måste köras för att kunna bestämma konton."
+
+#: ../src/plugins/gajimstatus.py:1017
+msgid ""
+"Uses Gajim (a Jabber/XMPP instant message client) to update your status "
+"message with currently playing song info."
+msgstr ""
+"Använder Gajim (en snabbmeddelandeklient för Jabber/XMPP) för att uppdatera "
+"ditt statusmeddelande med information om spelad låt."
+
+#: ../src/plugins/lyrics.py:48
+msgid "Lyrics Search"
+msgstr ""
+
+#: ../src/plugins/lyrics.py:80
+msgid "Performs a Google search for the lyrics to the currently playing song."
+msgstr ""
+
+#: ../src/preference_window.py:77
+#, fuzzy
+msgid "Library Paths"
+msgstr "Bibliotekssökväg"
+
+#: ../src/preference_window.py:81
+#, fuzzy
+msgid "Exclude Paths"
+msgstr "Exkluderingssökväg"
+
+#: ../src/preference_window.py:123
+msgid "Select Directory"
+msgstr "Välj katalog"
+
+#: ../src/preference_window.py:192
+msgid "Scanning directories ..."
+msgstr ""
+
+#: ../src/preference_window.py:256
+msgid "Plugin"
+msgstr "Insticksmodul"
+
+#: ../src/preference_window.py:262
+msgid "Enabled"
+msgstr "Aktiverad"
+
+#: ../src/preference_window.py:324
+msgid "Plugin activation error"
+msgstr "Fel vid aktivering av insticksmodul"
+
+#: ../src/preference_window.py:327
+msgid "Plugin deactivation error"
+msgstr "Fel vid inaktivering av insticksmodul"
+
+#: ../src/status_bar.py:74
+#, python-format
+msgid "%d messages"
+msgstr "%d meddelanden"
+
+#~ msgid "translator-credits"
+#~ msgstr "Daniel Nylander <po@danielnylander.se>"

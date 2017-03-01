@@ -1,0 +1,214 @@
+#
+#  Copyright (C) 2006  Travis Shirk <travis@pobox.com>
+#
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#
+DIST_NAME=@PACKAGE_TARNAME@-@PACKAGE_VERSION@
+DIST_GZ=${DIST_NAME}.tgz
+DIST_WWW=${DIST_NAME}-www.tar.gz
+PYTHON=@PYTHON@
+EBUILD_VERSION=@EBUILD_VERSION@
+EBUILD=mesk-${EBUILD_VERSION}.ebuild
+
+prefix=@prefix@
+exec_prefix:=@exec_prefix@
+bindir:=$(subst //,/,${DESTDIR}/@bindir@)
+libdir:=$(subst //,/,${DESTDIR}/@libdir@)
+mandir:=$(subst //,/,${DESTDIR}/@mandir@)
+datadir:=$(subst //,/,${DESTDIR}/@datarootdir@)
+docdir:=$(subst //,/,${DESTDIR}/@datarootdir@/doc/${DIST_NAME})
+# Redefine these
+prefix:=$(subst //,/,${DESTDIR}/${prefix})
+exec_prefix:=$(subst //,/,${DESTDIR}/${exec_prefix})
+
+.PHONY: all install uninstall clean distclean maintainer-clean dist changelog \
+        tags TAGS release www push-www 
+
+all: module etc/mesk.desktop
+
+module:
+	${PYTHON} setup.py build
+
+etc/mesk.desktop: etc/mesk.desktop.in
+	intltool-merge --utf8 --desktop-style \
+                       ./po etc/mesk.desktop.in etc/mesk.desktop
+
+# Install does not depend on 'all', since install may be run as root doing
+# build files would be created in the local dir owned as root.
+INSTALL=@INSTALL@
+install:
+	test -d build
+	${PYTHON} setup.py install --prefix=${prefix}
+
+	# Code
+	${INSTALL} -m 755 -d ${bindir}
+	${INSTALL} -m 755 scripts/mesk ${bindir}
+	${INSTALL} -m 755 -d ${libdir}/mesk
+	${INSTALL} -m 644 ./src/*.py ${libdir}/mesk
+	# Data
+	${INSTALL} -m 755 -d ${libdir}/mesk/data/images
+	${INSTALL} -m 644 ./src/data/images/* ${libdir}/mesk/data/images
+	${INSTALL} -m 755 -d ${libdir}/mesk/data/glade
+	${INSTALL} -m 644 ./src/data/glade/*.glade ${libdir}/mesk/data/glade
+	# Plugins
+	${INSTALL} -m 755 -d ${libdir}/mesk/plugins
+	${INSTALL} -m 644 ./src/plugins/*.py ${libdir}/mesk/plugins
+	${INSTALL} -m 644 ./src/plugins/*.glade ${libdir}/mesk/plugins
+
+	# Docs
+	${INSTALL} -m 755 -d ${docdir}
+	${INSTALL} -m 644 README ${docdir}
+	gzip -f -9 ${docdir}/README
+	${INSTALL} -m 644 AUTHORS ${docdir}
+	${INSTALL} -m 644 THANKS ${docdir}
+	${INSTALL} -m 644 COPYING ${docdir}
+	gzip -f -9 ${docdir}/COPYING
+	${INSTALL} -m 644 ChangeLog ${docdir}
+	gzip -f -9 ${docdir}/ChangeLog
+	${INSTALL} -m 755 -d ${mandir}
+	${INSTALL} -m 755 -d ${mandir}/man1
+	${INSTALL} -m 644 doc/mesk.1 ${mandir}/man1
+	gzip -f -9 ${mandir}/man1/mesk.1
+
+  	# Desktop file
+	if test ! -d "${datadir}/applications"; then \
+	  ${INSTALL} -m 755 -d "${datadir}/applications";\
+	fi
+	${INSTALL} -m 644 ./etc/mesk.desktop ${datadir}/applications
+	# Window Icon
+	if test ! -d "${datadir}/pixmaps"; then \
+	  ${INSTALL} -m 755 -d "${datadir}/pixmaps";\
+	fi
+	${INSTALL} -m 644 ./src/data/images/mesk.svg ${datadir}/pixmaps
+	# Menu/panel icon
+	for sz in 16 22 32 48; do \
+	  if test ! -d "${datadir}/icons/hicolor/$${sz}x$${sz}/apps"; then \
+	    ${INSTALL} -m 755 -d "${datadir}/icons/hicolor/$${sz}x$${sz}/apps"; \
+	  fi; \
+          ${INSTALL} -m 644 ./src/data/images/mesk-$${sz}.png \
+	          "${datadir}/icons/hicolor/$${sz}x$${sz}/apps/mesk.png"; \
+	done
+
+	# i18n
+	${MAKE} -C po DESTDIR=${DESTDIR} install
+
+postinstall:
+	if test -x `which update-desktop-database`; then \
+	    update-desktop-database; \
+	fi
+
+## XXX: Use at your own risk
+uninstall:
+	-rm -rf ${bindir}/mesk
+	# FIXME: hardcoded 2.5
+	-rm -rf ${libdir}/python2.5/site-packages/mesk
+	-rm -rf ${libdir}/mesk 
+	-rm -rf ${docdir}
+	-rm ${datadir}/applications/mesk.desktop
+	-rm ${datadir}/pixmaps/mesk.svg
+	-find ${datadir}/locale -name mesk.mo -exec rm {} \;
+
+clean:
+	-rm -rf build
+	find . -name \*.pyc -exec rm '{}' \;
+	find . -name \*.pyo -exec rm '{}' \;
+
+distclean: clean
+	-rm -rf autom4te*.cache ${DIST_NAME} ${DIST_GZ} ${DIST_WWW}
+	-rm setup.py
+	-rm doc/mesk.1.gz
+	-rm -f config.*
+	-rm -rf src/mesk/info.py
+	-rm -rf launch.sh
+	-rm ./svn-commit* ./svnmerge-*
+	-rm ./scripts/mesk
+	-find . -name \*~ -exec rm {} \;
+	-find . -name \*.bak -exec rm {} \;
+	-find . -name \*.gladep -exec rm {} \;
+	-rm Makefile
+	-${MAKE} -C po distclean
+
+maintainer-clean:
+	${MAKE} distclean
+	-rm README
+	-rm -f configure
+	-rm doc/mesk.1
+	-rm ./etc/mesk.desktop
+	-rm aclocal.m4
+
+dist: distclean
+	mkdir ${DIST_NAME}
+	cp ChangeLog AUTHORS COPYING README NEWS THANKS ${DIST_NAME}
+	cp acsite.m4 configure setup.py.in Makefile.in ${DIST_NAME}
+
+	cp -r ./src ${DIST_NAME}
+	cp -r ./scripts ${DIST_NAME}
+	cp -r ./po ${DIST_NAME}
+	mkdir ${DIST_NAME}/etc
+	cp etc/mesk.desktop.in ${DIST_NAME}/etc
+	mkdir ${DIST_NAME}/doc
+	cp doc/mesk.1.in ${DIST_NAME}/doc
+	cp etc/mesk-@PACKAGE_VERSION@.ebuild ${DIST_NAME}/etc
+
+	find ${DIST_NAME} -type d -name .svn -print | xargs rm -rf
+	tar czvf ${DIST_GZ} ${DIST_NAME}
+	rm -rf ${DIST_NAME}
+	./autogen.sh
+
+release: dist www sloccount
+	# Re-bootstap to undo distclean
+	./autogen.sh > /dev/null 2>&1
+
+changelog:
+	svn2cl.sh -i --authors=.changelog_authors
+
+tags TAGS: 
+	@if test -f tags; then \
+	   rm tags; \
+         fi
+	@ctags -R --exclude='tmp/*' --exclude='build/*'
+
+www:
+	-rm -rf ./www
+	mkdir -p www/mesk/releases
+	mkdir www/mesk/releases/gentoo
+	# FIXME
+	#cp README.html ChangeLog COPYING NEWS TODO THANKS www/mesk
+	#cd www/mesk && ln -s README.html index.html
+	cp ${DIST_GZ} www/mesk/releases
+	cp etc/mesk-${EBUILD_VERSION}.ebuild www/mesk/releases/gentoo
+	cd www && tar czvf ${DIST_WWW} mesk
+	rm -rf www
+
+sloccount:
+	sloccount ./src
+	sloccount --cached --details ./src
+
+EBUILD_USE=
+EBUILD_OVERLAY=/usr/local/portage
+test-ebuild:
+	sudo cp ${DIST_GZ} /usr/portage/distfiles
+	sudo cp etc/${EBUILD} ${EBUILD_OVERLAY}/media-sound/mesk
+	sudo cp ${DIST_GZ} /usr/portage/distfiles
+	sudo ebuild ${EBUILD_OVERLAY}/media-sound/mesk/${EBUILD} digest
+	-sudo emerge --unmerge mesk
+	USE="${EBUILD_USE}" sudo emerge -va mesk
+
+.PHONY: doxygen doxygen-clean
+doxygen:
+	doxygen etc/doxygen.conf
+
+doxygen-clean:
+	-rm -rf doc/html

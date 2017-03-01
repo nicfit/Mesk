@@ -1,0 +1,18 @@
+[Desktop Entry]
+Name=Mesk
+_GenericName=Music Player
+# XXX: Update when new features are supported
+_Comment=A GTK+ audio player
+# XXX: Update when new audio formats are supported
+MimeType=audio/x-mp3;audio/x-mpeg;audio/mpeg;audio/x-mpegurl;
+Categories=Application;AudioVideo;
+Icon=mesk.svg
+StartupNotify=true
+StartupWMClass=Mesk
+# Desktop ini version, not the app version
+Version=1.0
+Type=Application
+Terminal=false
+Encoding=UTF-8
+TryExec=mesk
+Exec=mesk

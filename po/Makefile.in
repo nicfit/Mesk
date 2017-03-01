@@ -1,0 +1,72 @@
+#
+#  Copyright (C) 2006-2007  Travis Shirk <travis@pobox.com>
+#
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#
+NAME = mesk
+LANGS = sv
+LANGS_PO:=$(foreach LANG, ${LANGS}, ${LANG}.po)
+LANGS_MO:=$(foreach LANG, ${LANGS}, ${LANG}.mo)
+PYTHON_FILES = $(shell find ../src -name \*.py)
+GLADE_FILES = $(shell find ../src -name \*.glade)
+
+prefix=@prefix@
+datadir:=$(subst //,/,${DESTDIR}/@datarootdir@)
+prefix:=$(subst //,/,${DESTDIR}/${prefix})
+
+all: mesk.pot ${LANGS_PO} catalogs
+
+POTFILES.in:
+	-rm $@
+	echo '[encoding: UTF-8]' >> $@
+	echo etc/mesk.desktop.in >> $@
+	cd .. && find src -name \*.glade | sort >> po/$@
+	cd .. && find src -name \*.py | sort >> po/$@
+
+mesk.pot: POTFILES.in ../etc/mesk.desktop.in ${PYTHON_FILES} ${GLADE_FILES}
+	intltool-update --pot --gettext-package=${NAME}
+
+%.po: mesk.pot
+	intltool-update --dist --gettext-package=${NAME} $*
+
+catalogs: ${LANGS_MO}
+%.mo: %.po
+	msgfmt $< -o $@
+
+check: $(addprefix check-, ${LANGS})
+
+check-%: %.po
+	msgfmt -c $<
+
+clean:
+	rm POTFILES.in
+	-rm *.mo
+maintainer-clean:
+	${MAKE} distclean
+
+# These are the only targets called from the top-level Makefile
+install:
+	# Install language files
+	for l in ${LANGS}; do\
+            dir=${datadir}/locale/$${l}/LC_MESSAGES;\
+            if test ! -d $${dir}; then\
+                install -m 755 -d $${dir};\
+            fi;\
+            install -m 644 $${l}.mo $${dir}/${NAME}.mo;\
+        done
+distclean:
+	-rm Makefile
+
+.PHONY: check check-% clean distclean maintainer-clean

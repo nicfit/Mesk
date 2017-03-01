@@ -1,0 +1,111 @@
+.TH MESK "1" "@MANPAGE_DATE@" "Mesk @PACKAGE_VERSION@" ""
+.SH "NAME"
+.B mesk
+\- Gtk+ audio player
+.SH "SYNOPSIS"
+.B mesk
+.RI [ options ]
+.br
+
+.SH "DESCRIPTION"
+.B mesk
+A Gtk+ GUI audio player written in python.
+
+.SH "OPTIONS"
+\fB\-h\fR, \fB\-\-help\fR
+Display program usage and exit.
+.TP
+\fB\-\-version\fR
+Display program version and exit.
+.TP
+\fB-p \fRNAME, \fB\-\-profile\fR=NAME
+Run with profile NAME.  If the profile does not exist it is created.
+
+.SH "REMOTE CONTROL OPTIONS"
+\fB\-\-stop\fR
+Stop playback.
+.TP
+\fB\-\-play\fR
+Start playback.
+.TP
+\fB\-\-pause\fR
+Pause playback.
+.TP
+\fB\-\-play-pause\fR
+If playing, playback is paused. Otherwise the player is started.
+.TP
+\fB\-\-prev\fR
+Move to previous track.
+.TP
+\fB\-\-next\fR
+Move to next track.
+.TP
+\fB\-\-toggle-mute\fR
+Mute or unmute depending on the current state.
+.TP
+\fB\-\-vol-up\fR=N
+Increase the volume by N% (0.0 <= n <= 1.0)
+.TP
+\fB\-\-vol-down\fR=N
+Decrease the volume by N% (0.0 <= n <= 1.0)
+.TP
+\fB\-\-get-state\fR
+Returns the current state of the audio player (stopped, playing, paused).
+.TP
+\fB\-\-get-current-uri\fR
+Returns the URI of the current audio source.
+.TP
+\fB\-\-get-current-title\fR
+Returns the title of the current audio source.
+.TP
+\fB\-\-get-current-artist\fR
+Returns the artist of the current audio source.
+.TP
+\fB\-\-get-current-album\fR
+Returns the album name of the current audio source.
+.TP
+\fB\-\-get-current-year\fR
+Returns the year of the current audio source.
+.TP
+\fB\-\-get-current-length\fR
+Returns the length (in seconds) of the current audio source.
+.TP
+\fB\-\-list-playlists\fR
+List all playlists.
+.TP
+\fB\-\-get-active-playlist\fR
+List the name of the active PlaylistControl.  This value may be empty if no
+playlists are active (e.g. a CDROM is active).
+.TP
+\fB\-\-set-active-playlist\fR=NAME
+Set the active playlist.
+.TP
+\fB\-\-enqueue\fR=URI
+Enqueue URI to the active playlist.
+.TP
+\fB\-\-toggle\-visible\fR
+If the main window is not hidden it will be minimized to the system tray,
+otherwise the window is shown.
+.TP
+\fB\-\-raise\-window\fR
+Raise the main window (i.e., bring to front).
+
+.SH "ADVANCED OPTIONS"
+.TP
+\fB-l \fRLEVEL, \fB\-\-log-level\fR=LEVEL
+Run with a specific logging level: CRITICAL, ERROR, WARNING, INFO, VERBOSE, or
+DEBUG.  The default log level is INFO.  Level names are case insensitive.
+\fB\-\-debug\fR
+Break in python debugger on unhandled exceptions.
+.TP
+\fB\-\-run-profiler\fR
+Run using the Python profiler.
+.TP
+\fB\-\-gst-help\fR
+Display GStreamer command line options.
+
+.SH SEE ALSO
+http://mesk.nicfit.net/
+
+.SH AUTHOR
+Mesk is written by Travis Shirk <travis@pobox.com>.

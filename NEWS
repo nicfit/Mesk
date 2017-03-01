@@ -1,0 +1,111 @@
+
+== Mesk 0.3.2 - 2007.07.10 (Dead Edge of Town) ==
+  * New features:
+    o New playlist keybindings 'Q' and menuitem for adding tracks to the front
+      of the playlist queue.
+    o New playlist keybinding Alt+q for clearing the queue.
+    o Album covers fetched from amazon are now cached (upper-limit is 8)
+    o Better notification using "busy cursor" during large playlist adds
+    o Gentoo ebuild uses 'mp3' instead of the 'mad' USE flag. 
+  * Bugs fixes:
+    o Relative paths in playlist URIs now work.
+    o Gajim status plugin talks directly with the Gajim DBus service rather
+      than through the shell which fixes the problem encoding '♫'
+    o Playlist name is exported correctly.
+    o Prefer the latest python version installed instead of the minimal version
+    o Fix configure options and ebuild USE flags.
+
+== Mesk 0.3.1 - 2007.05.07 (Stoner Jam) ==
+  Bugs fixes since 0.3.0:
+    * Fixed process renaming bug. Removed since it never really worked and was
+      not portable. 
+  New features since 0.3.0:
+    * Lyrics plugin that will load a Google search in a web browser.
+    * Better filtering and selection of album art search results.
+    * Added Swedish (sv) translation, by Daniel Nylander <po@danielnylander.se>
+
+== Mesk 0.3.0 - 2007.04.20 (Blood On The Wall) ==
+  Changes since 0.2.x
+    * DBus service and interface for remote control (e.g. to bind to multimedia
+      keys)
+    * CD audio support.
+    * System tray icon (requires Gtk+ 2.10)
+    * Playlists can now be exported to any of the supported playlist types.
+    * Support for read-only playlists and annotations (i.e. comments).
+    * More feedback for potentially long operations via status bar.
+    * Improved startup time for large/many playlists.
+    * Refactored plugin API to ease writing plugins and the ability to add
+      menu items to the View menu.
+    * XSPF (Spiff) playlists used as internal playlist format.
+    * PLS playlist support.
+    * Jump to current (Ctrl+j) is now in the View menu and will display the
+      playlist tab if necessary.
+    * Toggle compact UI mode with Alt+c
+    * Many playlist errors which resulted in a dialog are now reported in a
+      message window that can be opened by clicking on the status bar image.
+    * A new log window (View->Logs) for viewing logs when not started from the
+      command line. 
+  Plugin changes since 0.2.x
+    * Download album covers from amazon.com with the albumart plugin.
+    * Gajim status plugin allows customization of the format through the
+      preference dialog.
+    * Last.FM status and stats shown in plugin configuration dialog and home
+      page link added to view menu. 
+
+== Mesk 0.2.1 - 2006.09.23 (Meat Puppets) ==
+ * Window title is now updated with the current track info.
+ * File chooser directory select checkbox state is now remembered.
+ * Playlist search entry expands with window.
+ * Fixed startup failure when an audio format is not found in the python
+   mimetypes database.
+ * Audioscrobber plugin leaks less file handles.
+ * Minor UI tweaks.
+
+== Mesk 0.2.0 - 2006.09.16 (Tragedy) ==
+ * Using Gstreamer 0.10 (0.8 is no longer supported).
+ * Multiple playlists with the ability to cut, copy, and paste between them.
+ * Support for ogg Vorbis audio format.
+ * Remote (http) audio and playlist support including http authentication.
+ * Added playlist context menu for remove, cut, copy, paste and queueing
+   functions.
+ * Volume can now be controlled using mouse wheel, scale slider, or
+   context menu.
+ * Find previous in playlist search.
+ * Album covers can now be loaded from the ID3 tag.
+ * Remote playlists and extended m3u support.
+ * Gajim status plugin prefixes tune status with '♫:' instead of 'np:'
+   (when the user locale supports unicode).
+ * A new user tips window.
+ * Command line argument for controlling logging (-l/--log-level).
+ * Added a manpage (mesk(1)).
+
+== Mesk 0.1.2 - 2006.06.10 ==
+ * Desktop file and window icon sandbox installation fixes
+ * Gajim status plugin now displays the album title
+ * Workaround for Fedora gnome python wrappers (Ticket #137)
+
+== Mesk 0.1.1 - 2006.06.03 ==
+ * Playlist Add button
+ * Playlist context menu supporting add, remove, and queue functions
+ * Show version in About Dialog
+ * Handle drag-and-drop from konqueror (ACTION_MOVE)
+ * Language files install correctly now (ebuild)
+ * CTRL+f will open the playlist search UI
+ * Be explicit about librsvg being a dependency (ebuild)
+ * Bug fix: Clear album cover when playlist is cleared
+
+== Mesk 0.1.0 - 2006.05.29 ==
+ * The basics; play, pause, stop, next, previous (mp3 only at the moment)
+ * Playlist supports shuffle, repeat, and queueing
+ * Playlist supports drag-and-drop for adding files and row reordering
+ * Saved playlist including state (shuffle, queue, current, etc.)
+ * Normal and compact window modes
+ * Album cover display when the cover image file exists in same directory as
+   audio file
+ * Playlist search.  Use / to open and Esc to close search UI
+ * Simple plugin API
+ * Audioscrobbler (last.fm) plugin with queue-file support
+ * Gajim (a Gtk+ Jabber client) status plugin
+ * Preferences window for plugin management
+ * Internationalization support including a Spanish (es) Babelfish translation
+   (i.e., needs work)

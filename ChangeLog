@@ -1,0 +1,3185 @@
+2007-05-26 20:13  'Travis Shirk <travis@pobox.com>'
+
+	* [r739] configure.ac: Version bumps
+
+2007-05-13 20:46  'Travis Shirk <travis@pobox.com>'
+
+	* [r720] Makefile.in, configure.ac, launch.sh.in: Add version to
+	  testing profile (launch.sh)
+
+2007-05-13 20:39  'Travis Shirk <travis@pobox.com>'
+
+	* [r719] acsite.m4, configure.ac, launch.sh, launch.sh.in,
+	  src/mesk/audio/mpeg.py, src/mesk/audio/source.py,
+	  src/mesk/database.py, src/mesk/info.py.in,
+	  src/mesk/plugin/plugin.py: Buncastuff
+
+2007-05-12 21:58  'Travis Shirk <travis@pobox.com>'
+
+	* [r704] src/mesk/playlist/m3u.py, src/mesk/playlist/pls.py,
+	  src/mesk/playlist/xspf.py: If a plylist file fails to exist keep
+	  it in the playlist as a "dead" file.
+
+2007-05-06 23:35  'Travis Shirk <travis@pobox.com>'
+
+	* [r687] ., src/plugins/albumart.py, src/plugins/lyrics.py: Merged
+	  revisions 676-677,679-680 via svnmerge from
+	  svn://puddy.nicfit.lan/mesk/branches/0.3
+	  
+	  ........
+	  r676 | nicfit | 2007-05-06 01:31:58 -0600 (Sun, 06 May 2007) |
+	  2 lines
+	  
+	  Added a simple lyrics plugin.
+	  ........
+	  r680 | nicfit | 2007-05-06 10:45:31 -0600 (Sun, 06 May 2007) |
+	  2 lines
+	  
+	  Removed debug output
+	  ........
+
+2007-05-06 08:28  'Travis Shirk <travis@pobox.com>'
+
+	* [r679] ., src/mesk/log.py: Merged revisions 678 via svnmerge
+	  from
+	  svn://puddy.nicfit.lan/mesk/branches/0.3
+	  
+	  ........
+	  r678 | nicfit | 2007-05-06 02:26:27 -0600 (Sun, 06 May 2007) |
+	  2 lines
+	  
+	  Fixed bug with log level not getting applied to all loggers,
+	  and trimmed down default format.
+	  ........
+
+2007-05-06 07:39  'Travis Shirk <travis@pobox.com>'
+
+	* [r677] ., src/mesk/plugin/interfaces.py, src/mesk/utils.py,
+	  src/plugins/albumart.py, src/plugins/audioscrobbler.py,
+	  src/plugins/gajimstatus.py: Merged revisions 675 via svnmerge
+	  from
+	  svn://puddy.nicfit.lan/mesk/branches/0.3
+	  
+	  ........
+	  r675 | nicfit | 2007-05-06 01:31:40 -0600 (Sun, 06 May 2007) |
+	  2 lines
+	  
+	  Some plugin cleanup and logger fixes
+	  ........
+
+2007-05-05 18:31  'Travis Shirk <travis@pobox.com>'
+
+	* [r674] ., src/mesk/plugin/interfaces.py,
+	  src/mesk/plugin/plugin.py, src/playlist_control.py,
+	  src/plugins/albumart.py, src/plugins/audioscrobbler.py: Merged
+	  revisions 671-673 via svnmerge from
+	  svn://puddy.nicfit.lan/mesk/branches/0.3
+	  
+	  ........
+	  r671 | nicfit | 2007-05-03 23:17:28 -0600 (Thu, 03 May 2007) |
+	  2 lines
+	  
+	  Fuzzy search results using soundex algorithm, fixes #310
+	  ........
+	  r672 | nicfit | 2007-05-05 11:49:04 -0600 (Sat, 05 May 2007) |
+	  2 lines
+	  
+	  Fixed plugin logging, and some cleanup
+	  ........
+	  r673 | nicfit | 2007-05-05 12:27:53 -0600 (Sat, 05 May 2007) |
+	  2 lines
+	  
+	  Pad fixed width columns to at least a certain amount of space
+	  regardless of what the string translates to.
+	  ........
+
+2007-04-30 06:19  'Travis Shirk <travis@pobox.com>'
+
+	* [r664] ., NEWS, src/mesk/i18n.py, src/playlist_control.py:
+	  Branch 0.3.x merges
+
+2007-04-30 05:23  'Travis Shirk <travis@pobox.com>'
+
+	* [r661] src/audio_control.py, src/mesk/gst_player.py,
+	  src/mesk/utils.py: Refactored Gstreamer out of AudioControl into
+	  a seperate GStreamerPlayer class.
+
+2007-04-30 05:22  'Travis Shirk <travis@pobox.com>'
+
+	* [r660] src/main.py, src/mesk/log.py: Fallback on info instead of
+	  exiting when a bad log level is requested.
+
+2007-04-30 03:53  'Travis Shirk <travis@pobox.com>'
+
+	* [r659] ., src/mesk/playlist/xspf.py: Merged revisions 648 via
+	  svnmerge from
+	  svn://puddy.nicfit.lan/mesk/branches/0.3
+	  
+	  ........
+	  r648 | nicfit | 2007-04-22 18:31:17 -0600 (Sun, 22 Apr 2007) |
+	  2 lines
+	  
+	  Fix TB when playlist metadata is None, or needs to be reloaded
+	  ........
+
+2007-04-23 00:36  'Travis Shirk <travis@pobox.com>'
+
+	* [r649] ., po/POTFILES.in, po/mesk.pot, po/sv.mo, po/sv.po,
+	  src/main.py, src/mesk/i18n.py: Merged revisions 646-647 via
+	  svnmerge from
+	  svn://puddy.nicfit.lan/mesk/branches/0.3
+	  
+	  ........
+	  r646 | nicfit | 2007-04-22 17:59:57 -0600 (Sun, 22 Apr 2007) |
+	  2 lines
+	  
+	  po updates
+	  ........
+	  r647 | nicfit | 2007-04-22 18:15:21 -0600 (Sun, 22 Apr 2007) |
+	  2 lines
+	  
+	  Version info additions
+	  ........
+
+2007-04-22 23:38  'Travis Shirk <travis@pobox.com>'
+
+	* [r645] ., THANKS, po/Makefile.in, po/es.mo, po/es.po, po/sv.po,
+	  src/data/glade/about_dialog.glade, src/main.py,
+	  src/mesk/audio/__init__.py, src/mesk/audio/mpeg.py,
+	  src/mesk/audio/oggvorbis.py, src/mesk/i18n.py: Merged revisions
+	  633-635,637-643 via svnmerge from
+	  svn://puddy.nicfit.lan/mesk/branches/0.3
+	  
+	  ........
+	  r633 | nicfit | 2007-04-21 16:48:54 -0600 (Sat, 21 Apr 2007) |
+	  2 lines
+	  
+	  Removed process renaming, as it has a stupid bug and does not
+	  really work too well.
+	  ........
+	  r634 | nicfit | 2007-04-21 17:12:25 -0600 (Sat, 21 Apr 2007) |
+	  2 lines
+	  
+	  Added Swedish translation, by Daniel Nylander
+	  <po@danielnylander.se>
+	  ........
+	  r635 | nicfit | 2007-04-21 17:14:34 -0600 (Sat, 21 Apr 2007) |
+	  2 lines
+	  
+	  Removed inclomplete es translation (by babelfish)
+	  ........
+	  r637 | nicfit | 2007-04-22 15:12:57 -0600 (Sun, 22 Apr 2007) |
+	  2 lines
+	  
+	  The TB is not printed when an audio module is simply not
+	  supported, looks less like an error and more like what it is, a
+	  test that failed.
+	  ........
+	  r642 | nicfit | 2007-04-22 17:09:00 -0600 (Sun, 22 Apr 2007) |
+	  2 lines
+	  
+	  Some fixups while testing Swedish translation
+	  ........
+	  r643 | nicfit | 2007-04-22 17:10:02 -0600 (Sun, 22 Apr 2007) |
+	  2 lines
+	  
+	  Removed debug cruft
+	  ........
+
+2007-04-22 23:19  'Travis Shirk <travis@pobox.com>'
+
+	* [r644] src/audio_control.py,
+	  src/data/glade/preference_window.glade,
+	  src/mesk/audio/__init__.py, src/mesk/database.py,
+	  src/mesk/playlist/__init__.py, src/playlist_control.py: Database
+	  related changes
+
+2007-04-17 06:52  'Travis Shirk <travis@pobox.com>'
+
+	* [r629] src/data/glade/preference_window.glade,
+	  src/mesk/database.py, src/preference_window.py: Beginnings of
+	  sync code
+
+2007-04-17 04:43  'Travis Shirk <travis@pobox.com>'
+
+	* [r628] src/data/glade/preference_window.glade,
+	  src/preference_window.py: Way better library pref dialog
+
+2007-04-17 02:42  'Travis Shirk <travis@pobox.com>'
+
+	* [r627] configure.ac, src/data/glade/preference_window.glade,
+	  src/main.py, src/mesk/__init__.py, src/mesk/database.py,
+	  src/preference_window.py: Music library beginnings
+
+2007-04-17 00:43  'Travis Shirk <travis@pobox.com>'
+
+	* [r626] src/preference_window.py: Don't show plugins tab if there
+	  are none
+
+2007-04-16 00:03  'Travis Shirk <travis@pobox.com>'
+
+	* [r621] .: Blocked revisions 614,617-618 via svnmerge
+	  
+	  ........
+	  r614 | nicfit | 2007-03-27 23:47:18 -0600 (Tue, 27 Mar 2007) |
+	  3 lines
+	  
+	  
+	  svnmerge init
+	  ........
+	  r617 | nicfit | 2007-03-31 10:32:55 -0600 (Sat, 31 Mar 2007) |
+	  2 lines
+	  
+	  Fixed svnmerge history
+	  ........
+	  r618 | nicfit | 2007-04-02 09:53:22 -0600 (Mon, 02 Apr 2007) |
+	  2 lines
+	  
+	  Trunk merges
+	  ........
+
+2007-04-15 23:59  'Travis Shirk <travis@pobox.com>'
+
+	* [r620] src/cdrom_control.py, src/devices.py, src/main_window.py:
+	  Reworked CD device monitoring making better use of HAL. This
+	  also eliminates a polling thread, yay!
+
+2007-04-15 21:18  'Travis Shirk <travis@pobox.com>'
+
+	* [r619] src/devices.py, src/mesk/log.py,
+	  src/mesk/plugin/__init__.py: Ensure all calls to
+	  gobject.idle_add that occur on seperate threads do not return a
+	  value.
+
+2007-03-31 03:49  'Travis Shirk <travis@pobox.com>'
+
+	* [r616] scripts/mesk.in: Actually use atoconf var
+
+2007-03-28 05:48  'Travis Shirk <travis@pobox.com>'
+
+	* [r615] .: svnmerge init for 0.3 branch
+
+2007-03-27 00:44  'Travis Shirk <travis@pobox.com>'
+
+	* [r612] acsite.m4, scripts/mesk.in, src/dbus_service.py,
+	  src/main.py: Fix for #308, and other miscellaneous cleanups
+
+2007-03-25 23:49  'Travis Shirk <travis@pobox.com>'
+
+	* [r611] src/dbus_service.py: Sanitize profile names in the dbus
+	  service ID
+
+2007-03-25 21:49  'Travis Shirk <travis@pobox.com>'
+
+	* [r610] etc/mesk.desktop.in: update
+
+2007-03-25 06:57  'Travis Shirk <travis@pobox.com>'
+
+	* [r607] README.in, configure.ac, etc/mesk-0.3.0.ebuild,
+	  po/POTFILES.in, po/es.mo, po/es.po, po/mesk.pot,
+	  src/about_dialog.py, src/audio_control.py,
+	  src/data/glade/main_window.glade, src/main_window.py,
+	  src/mesk/plugin/__init__.py, src/mesk/plugin/interfaces.py,
+	  src/playlist_control.py, src/preference_window.py: Lotta minore
+	  updates and fix for #302 (j keybinding changed to Ctrl+j)
+
+2007-03-25 05:12  'Travis Shirk <travis@pobox.com>'
+
+	* [r606] doc/mesk.1.in, src/dbus_service.py, src/main.py: Added
+	  dbus interface for raising the main window (--raise-window);
+	  closes #299
+
+2007-03-24 04:17  'Travis Shirk <travis@pobox.com>'
+
+	* [r605] doc/mesk.1.in, src/dbus_service.py, src/main.py,
+	  src/main_window.py: Added dbus/--toggle-visible for
+	  showing/hiding the main app window
+
+2007-03-24 04:01  'Travis Shirk <travis@pobox.com>'
+
+	* [r604] src/data/glade/main_window.glade, src/main_window.py: Key
+	  binding for compact mode toggle - Alt+c (#298)
+
+2007-03-24 03:54  'Travis Shirk <travis@pobox.com>'
+
+	* [r603] src/audio_control.py, src/main_window.py: Fix for #300
+	  and TB fix when gst taglist values are lists
+
+2007-03-24 03:06  'Travis Shirk <travis@pobox.com>'
+
+	* [r602] src/audio_control.py: Fixed volume widget (#301)
+
+2007-03-19 03:47  'Travis Shirk <travis@pobox.com>'
+
+	* [r601] src/main_window.py, src/status_icon.py: debug cruft
+
+2007-03-19 03:27  'Travis Shirk <travis@pobox.com>'
+
+	* [r600] src/audio_control.py, src/data/glade/main_window.glade,
+	  src/main_window.py, src/mesk/window.py: More attempts at fixing
+	  the compact position/resize bug. Looks more and more like a gtk
+	  bug...
+
+2007-03-14 15:18  'Travis Shirk <travis@pobox.com>'
+
+	* [r599] README.in: Added
+
+2007-03-14 05:13  'Travis Shirk <travis@pobox.com>'
+
+	* [r598] etc/mesk-0.3.0.ebuild: downgrade some versions
+
+2007-03-14 04:40  'Travis Shirk <travis@pobox.com>'
+
+	* [r597] Makefile.in:
+
+2007-03-13 02:06  'Travis Shirk <travis@pobox.com>'
+
+	* [r596] src/data/glade/main_window.glade,
+	  src/data/glade/tips_window.glade, src/main.py,
+	  src/main_window.py, src/tips_window.py: Removed hated tips window
+
+2007-03-13 02:00  'Travis Shirk <travis@pobox.com>'
+
+	* [r595] configure.ac, src/album_cover_control.py,
+	  src/data/glade/about_dialog.glade,
+	  src/data/glade/main_window.glade, src/data/glade/playlist.glade,
+	  src/devices.py: Little fixes
+
+2007-03-03 03:57  'Travis Shirk <travis@pobox.com>'
+
+	* [r577] src/plugins/gajimstatus.py: Escape double quotes in
+	  status msg
+
+2007-03-01 02:46  'Travis Shirk <travis@pobox.com>'
+
+	* [r576] configure.ac: Removed cruft
+
+2007-02-28 05:05  'Travis Shirk <travis@pobox.com>'
+
+	* [r575] configure.ac, etc/mesk-0.3.0.ebuild,
+	  src/data/glade/main_window.glade: Worked around ebuild sandbox
+	  violations by not calling gst-inspect (--enable-sandbox)
+
+2007-02-28 03:56  'Travis Shirk <travis@pobox.com>'
+
+	* [r574] src/playlist_control.py, src/preference_window.py: Fixes
+	  #293, #295
+
+2007-02-26 04:40  'Travis Shirk <travis@pobox.com>'
+
+	* [r573] Makefile.in, configure.ac, etc/mesk-0.3.0.ebuild: ebuild
+	  updates (#289)
+
+2007-02-26 03:45  'Travis Shirk <travis@pobox.com>'
+
+	* [r572] po/POTFILES.in, po/es.mo, po/es.po, po/mesk.pot: po update
+
+2007-02-26 02:55  'Travis Shirk <travis@pobox.com>'
+
+	* [r571] configure.ac, src/devices.py, src/main.py,
+	  src/main_window.py, src/mesk/info.py.in: DBus, cdrom, and audio
+	  format configure enabling options. (#287)
+
+2007-02-26 01:01  'Travis Shirk <travis@pobox.com>'
+
+	* [r570] src/cdrom_control.py, src/data/glade/main_window.glade,
+	  src/data/glade/playlist.glade, src/main_window.py,
+	  src/mesk/playlist/__init__.py, src/mesk/playlist/xspf.py,
+	  src/playlist_control.py: Read-only plalists (#261)
+
+2007-02-25 07:17  'Travis Shirk <travis@pobox.com>'
+
+	* [r569] src/data/glade/main_window.glade, src/mesk/log.py,
+	  src/plugins/albumart.py: Ensure all log window output occurs on
+	  the event thread
+
+2007-02-25 06:55  'Travis Shirk <travis@pobox.com>'
+
+	* [r568] src/data/glade/preference_window.glade, src/main.py,
+	  src/mesk/plugin/plugin.py, src/plugins/albumart.py,
+	  src/plugins/audioscrobbler.py, src/plugins/gajimstatus.py,
+	  src/plugins/plugins_gui.glade, src/preference_window.py: Open
+	  plugin configs within the preferences dialog.
+
+2007-02-25 03:50  'Travis Shirk <travis@pobox.com>'
+
+	* [r567] Makefile.in, src/mesk/log.py, src/mesk/playlist/m3u.py,
+	  src/mesk/playlist/pls.py, src/mesk/playlist/xspf.py,
+	  src/playlist_control.py: #291, #292
+
+2007-02-25 01:18  'Travis Shirk <travis@pobox.com>'
+
+	* [r566] configure.ac, etc/mesk-0.3.0.ebuild,
+	  src/audio_control.py, src/data/glade/playlist.glade,
+	  src/data/glade/preference_window.glade, src/main_window.py,
+	  src/mesk/plugin/__init__.py, src/plugins/audioscrobbler.py,
+	  src/plugins/gajimstatus.py, src/plugins/plugins_gui.glade,
+	  src/preference_window.py: Pref and plugin cleanups
+
+2007-02-25 01:13  'Travis Shirk <travis@pobox.com>'
+
+	* [r565] aclocal.m4: removed, auto generated
+
+2007-02-22 04:32  'Travis Shirk <travis@pobox.com>'
+
+	* [r564] acsite.m4, configure.ac: More detection at time of
+	  configure
+
+2007-02-20 04:32  'Travis Shirk <travis@pobox.com>'
+
+	* [r563] src/mesk/info.py.in: Yay! expanded autocnf paths
+
+2007-02-20 04:29  'Travis Shirk <travis@pobox.com>'
+
+	* [r562] src/cdrom_control.py: No need to import dbus
+
+2007-02-20 04:27  'Travis Shirk <travis@pobox.com>'
+
+	* [r561] src/data/glade/preference_window.glade,
+	  src/mesk/gtk_utils.py, src/mesk/plugin/plugin.py,
+	  src/plugins/albumart.py, src/plugins/amazon_album_art.py,
+	  src/plugins/audioscrobbler.py, src/plugins/gajimstatus.py,
+	  src/preference_window.py: Plugin prefs fixups
+
+2007-02-19 22:59  'Travis Shirk <travis@pobox.com>'
+
+	* [r560] configure.ac, src/data/glade/preference_window.glade:
+	  configure fix and prefs window work
+
+2007-02-19 22:21  'Travis Shirk <travis@pobox.com>'
+
+	* [r559] Makefile.in, aclocal.m4, acsite.m4, autogen.sh,
+	  configure.ac, etc/mesk-0.3.0.ebuild, po/Makefile.in,
+	  scripts/install-sh, scripts/mesk.in, src/main.py,
+	  src/main_window.py, src/mesk/audio/__init__.py,
+	  src/mesk/audio/mpeg.py: Configuration checks moved back into
+	  configure, still work to do here.
+
+2007-02-19 10:07  'Travis Shirk <travis@pobox.com>'
+
+	* [r558] src/album_cover_control.py,
+	  src/data/images/stock_repeat.png,
+	  src/data/images/stock_shuffle.png, src/mesk/plugin/__init__.py,
+	  src/mesk/plugin/interfaces.py, src/mesk/utils.py,
+	  src/playlist_control.py, src/plugins/amazon.py,
+	  src/plugins/amazon_album_art.py, src/plugins/audioscrobbler.py,
+	  src/plugins/gajimstatus.py: Album cover search/download is
+	  working, more work needed
+
+2007-02-19 05:53  'Travis Shirk <travis@pobox.com>'
+
+	* [r557] src/album_cover_control.py, src/mesk/plugin/__init__.py,
+	  src/mesk/plugin/interfaces.py, src/plugins/amazon.py,
+	  src/plugins/amazon_album_art.py: Start on amazon albm cover
+	  plugin
+
+2007-02-19 02:13  'Travis Shirk <travis@pobox.com>'
+
+	* [r556] src/audio_control.py, src/data/glade/main_window.glade,
+	  src/main_window.py, src/mesk/plugin/__init__.py,
+	  src/mesk/plugin/interfaces.py, src/mesk/plugin/listeners.py,
+	  src/mesk/utils.py, src/plugins/audioscrobbler.py,
+	  src/plugins/gajimstatus.py: Added a hook so plugins can add menu
+	  items to the View menu (fixes #218)
+
+2007-02-18 23:22  'Travis Shirk <travis@pobox.com>'
+
+	* [r555] src/data/glade/main_window.glade, src/main_window.py,
+	  src/mesk/plugin/__init__.py: Plugin mgr cleanup
+
+2007-02-18 22:16  'Travis Shirk <travis@pobox.com>'
+
+	* [r554] Makefile.in, configure.ac, doc/mesk.1.in, etc/mesk.1.in,
+	  src/main.py: Man page updates and move
+
+2007-02-18 21:33  'Travis Shirk <travis@pobox.com>'
+
+	* [r553] src/main.py: Handle SystemExit
+
+2007-02-18 21:01  'Travis Shirk <travis@pobox.com>'
+
+	* [r552] src/data/glade/tips_window.glade, src/mesk/audio/mpeg.py,
+	  src/mesk/audio/oggvorbis.py, src/mesk/audio/source.py: Better
+	  title when no metadata is in the track.
+
+2007-02-18 20:43  'Travis Shirk <travis@pobox.com>'
+
+	* [r551] src/main.py, src/mesk/audio/mpeg.py,
+	  src/playlist_control.py, src/status_bar.py, src/tips_window.py:
+	  Recognize .MP3 instead of just .mp3, and pango escape fixes.
+
+2007-02-17 03:55  'Travis Shirk <travis@pobox.com>'
+
+	* [r550] src/dialogs.py, src/main.py, src/playlist_control.py:
+	  Error dialogs (fixes #283)
+
+2007-02-14 03:58  'Travis Shirk <travis@pobox.com>'
+
+	* [r549] src/mesk/plugin/__init__.py: doc string
+
+2007-02-14 03:39  'Travis Shirk <travis@pobox.com>'
+
+	* [r548] launch.sh, scripts/mesk.in, src/dbus_service.py,
+	  src/main.py, src/playlist_control.py: Added enqueue dbus
+	  interface (fixes #278)
+
+2007-02-14 02:29  'Travis Shirk <travis@pobox.com>'
+
+	* [r547] src/main_window.py, src/mesk/utils.py,
+	  src/playlist_control.py: get_traceback_str is not needed with
+	  python >= 2.4
+
+2007-02-13 06:39  'Travis Shirk <travis@pobox.com>'
+
+	* [r546] src/main.py, src/main_window.py,
+	  src/plugins/audioscrobbler.py, src/plugins/plugins_gui.glade:
+	  Uadioscrobbler plugin status is now shown in the pref dialog and
+	  added LinkButtons (fixes #240)
+
+2007-02-13 04:36  'Travis Shirk <travis@pobox.com>'
+
+	* [r545] src/dbus_service.py, src/main.py, src/main_window.py,
+	  src/mesk/utils.py: cleanup ot remote control interface.
+
+2007-02-11 05:47  'Travis Shirk <travis@pobox.com>'
+
+	* [r544] src/data/glade/main_window.glade, src/status_bar.py:
+	  Tooltip with number of msgs in status bar icon
+
+2007-02-09 06:26  'Travis Shirk <travis@pobox.com>'
+
+	* [r543] src/playlist_control.py: Output unsupported audio types
+	  via status log window
+
+2007-02-09 05:50  'Travis Shirk <travis@pobox.com>'
+
+	* [r542] src/main_window.py: Reset window title wheen None passed
+	  to _update_current_display (fixes #282)
+
+2007-02-09 05:42  'Travis Shirk <travis@pobox.com>'
+
+	* [r541] src/data/glade/main_window.glade, src/mesk/utils.py,
+	  src/playlist_control.py, src/status_bar.py: Errors, warnings,
+	  persistent msgs, etc.. can be displayed via a window which is
+	  launched using the status bar corner image (fixes #227)
+
+2007-02-04 06:58  'Travis Shirk <travis@pobox.com>'
+
+	* [r540] src/playlist_control.py: Fix #280
+
+2007-02-04 06:06  'Travis Shirk <travis@pobox.com>'
+
+	* [r539] src/dbus_service.py, src/main.py, src/main_window.py:
+	  DBus hacking
+
+2007-02-03 05:52  'Travis Shirk <travis@pobox.com>'
+
+	* [r538] etc/mesk-0.3.0.ebuild, launch.sh, src/dbus_service.py,
+	  src/main.py, src/main_window.py: If remote options are passed on
+	  the command line and Mesk is not started, start up and
+	  handle the options instead of complaining about no instance
+	  running....
+
+2007-01-18 04:50  'Travis Shirk <travis@pobox.com>'
+
+	* [r537] src/main.py: Rearrange
+
+2007-01-18 04:37  'Travis Shirk <travis@pobox.com>'
+
+	* [r536] src/audio_control.py, src/mesk/audio/__init__.py,
+	  src/mesk/playlist/__init__.py, src/mesk/playlist/m3u.py,
+	  src/mesk/playlist/pls.py, src/mesk/playlist/xspf.py,
+	  src/playlist_control.py: Playlists ensure at least a title
+	  exists and radio fix (#228)
+
+2007-01-18 03:09  'Travis Shirk <travis@pobox.com>'
+
+	* [r535] src/dialogs.py, src/mesk/playlist/m3u.py,
+	  src/mesk/playlist/pls.py, src/mesk/playlist/xspf.py,
+	  src/mesk/utils.py, src/playlist_control.py: Playlist export and
+	  support for PLS format playlists - #250, #277
+
+2007-01-16 03:16  'Travis Shirk <travis@pobox.com>'
+
+	* [r534] etc/mesk-0.3.0.ebuild, src/audio_control.py,
+	  src/data/glade/playlist.glade, src/mesk/playlist/__init__.py,
+	  src/mesk/playlist/xspf.py, src/playlist_control.py: Start on
+	  playlist export, and add file dialog fixups
+
+2007-01-14 18:33  'Travis Shirk <travis@pobox.com>'
+
+	* [r533] src/audio_control.py, src/dbus_service.py, src/main.py:
+	  toggle_mute DBus method
+
+2007-01-14 04:57  'Travis Shirk <travis@pobox.com>'
+
+	* [r532] src/audio_control.py, src/main.py, src/main_window.py,
+	  src/mesk/playlist/xspf.py, src/playlist_control.py: Restore last
+	  playlist indices on startup
+
+2007-01-14 04:35  'Travis Shirk <travis@pobox.com>'
+
+	* [r531] src/playlist_control.py: Disallow delete and rename of
+	  default playlist.
+
+2007-01-12 03:40  'Travis Shirk <travis@pobox.com>'
+
+	* [r530] src/main.py, src/main_window.py: Only allow for one Mesk
+	  instance per profile.
+
+2007-01-12 01:59  'Travis Shirk <travis@pobox.com>'
+
+	* [r529] src/control.py, src/dbus_service.py, src/main.py,
+	  src/main_window.py, src/playlist_control.py: Profile based dbus
+	  services and a few more service methods
+
+2006-12-24 08:02  'Travis Shirk <travis@pobox.com>'
+
+	* [r528] src/main_window.py, src/mesk/window.py: Set window icon
+	  in baseclass
+
+2006-12-20 23:52  'Travis Shirk <travis@pobox.com>'
+
+	* [r527] src/config.py, src/data/glade/main_window.glade,
+	  src/dbus_service.py, src/log_window.py, src/main_window.py,
+	  src/mesk/log.py, src/mesk/playlist/m3u.py,
+	  src/playlist_control.py: #232, #263
+
+2006-12-19 02:32  'Travis Shirk <travis@pobox.com>'
+
+	* [r526] src/data/glade/main_window.glade, src/main_window.py,
+	  src/playlist_control.py, src/tips_window.py: Better Jumpt To..
+	  #262
+
+2006-12-18 06:38  'Travis Shirk <travis@pobox.com>'
+
+	* [r525] src/audio_control.py, src/cdrom_control.py,
+	  src/config.py, src/main_window.py: Fixes for #274, #275
+
+2006-12-18 06:05  'Travis Shirk <travis@pobox.com>'
+
+	* [r524] src/cdrom_control.py: handle CDDB encoding differences
+
+2006-12-18 05:59  'Travis Shirk <travis@pobox.com>'
+
+	* [r523] src/cdrom_control.py, src/playlist_control.py: CDDB
+	  lookups
+
+2006-12-18 05:00  'Travis Shirk <travis@pobox.com>'
+
+	* [r522] Makefile.in, etc/mesk-0.3.0.ebuild, src/audio_control.py,
+	  src/cdrom_control.py, src/devices.py, src/mesk/audio/cdaudio.py,
+	  src/mesk/uri.py, src/playlist_control.py: CD audio playback
+
+2006-12-17 04:48  'Travis Shirk <travis@pobox.com>'
+
+	* [r521] src/cdrom_control.py, src/data/glade/main_window.glade,
+	  src/devices.py: CD ejection
+
+2006-12-17 04:12  'Travis Shirk <travis@pobox.com>'
+
+	* [r520] src/cdrom_control.py, src/main_window.py,
+	  src/mesk/__init__.py, src/playlist_control.py: Media detection
+	  in cdroms, open/close CDROMControl, etc.
+
+2006-12-17 01:56  'Travis Shirk <travis@pobox.com>'
+
+	* [r519] src/cdrom_control.py, src/devices.py, src/dialogs.py,
+	  src/main.py, src/main_window.py, src/mesk/__init__.py,
+	  src/mesk/playlist/__init__.py, src/mesk/utils.py,
+	  src/playlist_control.py: More CD audio hacking
+
+2006-12-15 05:02  'Travis Shirk <travis@pobox.com>'
+
+	* [r518] src/playlist_control.py: Fix #267
+
+2006-12-15 03:48  'Travis Shirk <travis@pobox.com>'
+
+	* [r517] etc/mesk-0.3.0.ebuild, src/cdrom_control.py,
+	  src/data/glade/playlist.glade, src/devices.py,
+	  src/main_window.py, src/mesk/audio/__init__.py,
+	  src/mesk/audio/cdaudio.py, src/mesk/playlist/xspf.py,
+	  src/mesk/uri.py: Hacking on CD audio support, etc.
+
+2006-12-03 02:04  'Travis Shirk <travis@pobox.com>'
+
+	* [r516] src/dbus_service.py, src/main.py: get_current_* DBus
+	  bindings
+
+2006-12-03 01:03  'Travis Shirk <travis@pobox.com>'
+
+	* [r515] src/cdrom_control.py, src/control.py,
+	  src/data/glade/main_window.glade, src/devices.py,
+	  src/main_window.py, src/playlist_control.py: Starts on CD player
+
+2006-12-02 18:27  'Travis Shirk <travis@pobox.com>'
+
+	* [r514] src/playlist_control.py: Read-only playlist control and
+	  fix for #251
+	  --This line, and those below, will be i gnored--
+	  
+	  M playlist_control.py
+	  
+	  
+	  
+	  
+
+2006-12-02 07:03  'Travis Shirk <travis@pobox.com>'
+
+	* [r513] src/audio_control.py, src/devices.py, src/main_window.py:
+	  Detecting cdrom devices using HAL
+
+2006-12-02 06:05  'Travis Shirk <travis@pobox.com>'
+
+	* [r512] src/audio_control.py, src/dbus_service.py, src/main.py:
+	  More dbus goodness
+
+2006-12-02 05:07  'Travis Shirk <travis@pobox.com>'
+
+	* [r511] configure.ac, etc/mesk-0.3.0.ebuild,
+	  scripts/mesk-remote.in, src/dbus_service.py, src/main.py,
+	  src/main_window.py: remote control support using dbus
+
+2006-12-01 04:27  'Travis Shirk <travis@pobox.com>'
+
+	* [r510] scripts/mesk-remote.in, src/album_cover_control.py: Added
+
+2006-11-27 03:42  'Travis Shirk <travis@pobox.com>'
+
+	* [r509] src/dbus_service.py, src/main.py,
+	  src/mesk/playlist/m3u.py: Got a start on dbus support.
+
+2006-11-27 01:56  'Travis Shirk <travis@pobox.com>'
+
+	* [r508] src/mesk/config.py, src/mesk/plugin/plugin.py,
+	  src/plugins/audioscrobbler.py, src/plugins/gajimstatus.py,
+	  src/plugins/plugins_gui.glade: The gajimstatus plugin allows the
+	  foramt string to be tweaked in the prefs UI (fixes #221)
+
+2006-11-26 04:52  'Travis Shirk <travis@pobox.com>'
+
+	* [r507] src/album_cover_control.py, src/audio_control.py,
+	  src/main_window.py, src/playlist_control.py: Fix for #257
+
+2006-11-26 04:12  'Travis Shirk <travis@pobox.com>'
+
+	* [r506] src/data/glade/tips_window.glade, src/tips_window.py: Fix
+	  for #254
+
+2006-11-26 03:50  'Travis Shirk <travis@pobox.com>'
+
+	* [r505] src/playlist_control.py: oops
+
+2006-11-26 03:49  'Travis Shirk <travis@pobox.com>'
+
+	* [r504] src/playlist_control.py: Fix for #234
+
+2006-11-26 03:15  'Travis Shirk <travis@pobox.com>'
+
+	* [r503] src/data/glade/playlist.glade, src/main_window.py,
+	  src/mesk/playlist/__init__.py, src/mesk/playlist/xspf.py,
+	  src/playlist_control.py: Added playlist annotations (comments
+	  about the playlist)
+
+2006-11-26 01:18  'Travis Shirk <travis@pobox.com>'
+
+	* [r502] src/mesk/playlist/xspf.py: Shuffle state bug fix
+
+2006-11-26 00:50  'Travis Shirk <travis@pobox.com>'
+
+	* [r501] src/data/glade/preference_window.glade,
+	  src/main_window.py, src/mesk/log.py,
+	  src/mesk/plugin/__init__.py, src/mesk/plugin/plugin.py,
+	  src/plugins/audioscrobbler.py, src/plugins/gajimstatus.py,
+	  src/plugins/plugins_gui.glade, src/preference_window.py:
+	  Refactoring plugins to make them a bit easier to write.
+
+2006-11-25 23:05  'Travis Shirk <travis@pobox.com>'
+
+	* [r500] Makefile.in, doc, etc/doxygen.conf: Messing with doxygen
+
+2006-11-25 22:36  'Travis Shirk <travis@pobox.com>'
+
+	* [r499] po/POTFILES.in, po/es.mo, po/es.po, po/mesk.pot,
+	  src/mesk/audio/__init__.py, src/mesk/audio/mp3.py,
+	  src/mesk/audio/mpeg.py: mp3->mpeg and po updates
+
+2006-11-25 22:26  'Travis Shirk <travis@pobox.com>'
+
+	* [r498] src/main_window.py, src/playlist_control.py,
+	  src/status_bar.py: Status bar goodness and some usage of it.
+
+2006-11-25 19:41  'Travis Shirk <travis@pobox.com>'
+
+	* [r497] src/data/glade/playlist.glade, src/main.py,
+	  src/main_window.py, src/playlist_control.py, src/status_icon.py:
+	  Finished up the system tray icon and starts on more playlist
+	  properties
+
+2006-11-25 03:23  'Travis Shirk <travis@pobox.com>'
+
+	* [r496] src/mesk/audio/__init__.py, src/status_bar.py: More stuff
+
+2006-11-25 02:56  'Travis Shirk <travis@pobox.com>'
+
+	* [r495] launch.sh, po/POTFILES.in, po/es.mo, po/es.po,
+	  po/mesk.pot, setup.py.in, src/about_dialog.py,
+	  src/album_cover_control.py, src/audio_control.py, src/config.py,
+	  src/data/glade/version_migration.glade, src/dialogs.py,
+	  src/main.py, src/main_window.py, src/mesk/__init__.py,
+	  src/mesk/audio/__init__.py, src/mesk/audio/mp3.py,
+	  src/mesk/audio/oggvorbis.py, src/mesk/audio/source.py,
+	  src/mesk/common, src/mesk/config.py, src/mesk/i18n.py,
+	  src/mesk/log.py, src/mesk/playlist/__init__.py,
+	  src/mesk/playlist/m3u.py, src/mesk/playlist/xspf.py,
+	  src/mesk/plugin/__init__.py, src/mesk/plugin/listeners.py,
+	  src/mesk/plugin/plugin.py, src/mesk/utils.py,
+	  src/playlist_control.py, src/plugins/audioscrobbler.py,
+	  src/plugins/gajimstatus.py, src/preference_window.py,
+	  src/status_icon.py, src/tips_window.py: XSPF is good to go, and
+	  a bunch of other cleanup
+
+2006-11-24 04:13  'Travis Shirk <travis@pobox.com>'
+
+	* [r494] src/data/glade/main_window.glade, src/main_window.py,
+	  src/status_bar.py: Messing with splash window and status bar.
+
+2006-11-24 03:54  'Travis Shirk <travis@pobox.com>'
+
+	* [r493] src/status_icon.py: Skeleton for tray icon menu
+
+2006-11-24 03:41  'Travis Shirk <travis@pobox.com>'
+
+	* [r492] src/about_dialog.py, src/main.py, src/status_icon.py:
+	  Status tray icon class
+
+2006-11-24 03:05  'Travis Shirk <travis@pobox.com>'
+
+	* [r491] src/main_window.py: Logging cleanup
+
+2006-11-24 03:01  'Travis Shirk <travis@pobox.com>'
+
+	* [r490] configure.ac, src/about_dialog.py, src/mesk/info.py.in,
+	  src/mesk/plugin/__init__.py: More logging cleanup and fix for
+	  #249
+
+2006-11-24 02:38  'Travis Shirk <travis@pobox.com>'
+
+	* [r489] src/plugins/gajimstatus.py: Handle $ in status msg, fixes
+	  #259
+
+2006-11-24 02:08  'Travis Shirk <travis@pobox.com>'
+
+	* [r488] Makefile.in, src/audio_control.py, src/mesk/__init__.py,
+	  src/mesk/log.py, src/playlist_control.py: Reduced logging,
+	  FIXME, etc.
+
+2006-11-24 01:20  'Travis Shirk <travis@pobox.com>'
+
+	* [r487] src/images: Removed
+
+2006-11-24 00:53  'Travis Shirk <travis@pobox.com>'
+
+	* [r486] src/mesk/log.py: Cleanup
+
+2006-11-24 00:49  'Travis Shirk <travis@pobox.com>'
+
+	* [r485] src/mesk/audio/mp3.py, src/mesk/audio/oggvorbis.py,
+	  src/mesk/playlist/xspf.py, src/playlist_control.py,
+	  src/plugins/gajimstatus.py: Fix playlist size bug #256
+
+2006-11-08 04:08  'Travis Shirk <travis@pobox.com>'
+
+	* [r483] launch.sh, src/data/glade/version_migration.glade,
+	  src/main.py, src/mesk/common/config.py: Upgrade fixes
+
+2006-11-07 05:08  'Travis Shirk <travis@pobox.com>'
+
+	* [r482] src/config.py, src/main.py: Convert queue during
+	  m3u->xspf migration
+
+2006-11-07 04:57  'Travis Shirk <travis@pobox.com>'
+
+	* [r481] src/data/glade/main_window.glade, src/main.py,
+	  src/mesk/window.py: Hide/show main window when tray icon is
+	  clicked. Thanks to Adolfo González Blázquez
+	  <code@infinicode.org> for completing this.
+
+2006-11-07 04:48  'Travis Shirk <travis@pobox.com>'
+
+	* [r480] src/playlist_control.py: typo
+
+2006-11-07 04:45  'Travis Shirk <travis@pobox.com>'
+
+	* [r479] src/main.py, src/main_window.py,
+	  src/mesk/playlist/__init__.py, src/mesk/playlist/xspf.py,
+	  src/playlist_control.py: Moved queue state to xspf
+
+2006-11-07 03:54  'Travis Shirk <travis@pobox.com>'
+
+	* [r478] src/multi_media_keys.py: Removed
+
+2006-11-07 03:53  'Travis Shirk <travis@pobox.com>'
+
+	* [r477] src/main_window.py: Removed multi_media_keys
+
+2006-10-18 03:35  'Travis Shirk <travis@pobox.com>'
+
+	* [r476] src/config.py, src/main.py, src/mesk/__init__.py,
+	  src/mesk/playlist/__init__.py, src/mesk/playlist/xspf.py,
+	  src/playlist_control.py: mo' better metadata in xspf
+
+2006-10-18 02:33  'Travis Shirk <travis@pobox.com>'
+
+	* [r475] configure.ac: mmkeys is purged
+
+2006-10-17 02:14  'Travis Shirk <travis@pobox.com>'
+
+	* [r474] src/config.py, src/data/glade/version_migration.glade,
+	  src/main.py, src/main_window.py, src/mesk/gtk_utils.py,
+	  src/mmkeys, src/playlist_control.py: Removed mmkeys (for the
+	  time being, not sure how I want to do keybindings) and xspf work.
+
+2006-10-15 22:32  'Travis Shirk <travis@pobox.com>'
+
+	* [r473] Makefile.in, setup.py.in, src/about_dialog.py,
+	  src/album_cover_control.py, src/audio_control.py,
+	  src/control.py, src/data/glade,
+	  src/data/glade/about_dialog.glade,
+	  src/data/glade/audio_control.glade,
+	  src/data/glade/main_window.glade, src/data/glade/playlist.glade,
+	  src/data/glade/preference_window.glade,
+	  src/data/glade/tips_window.glade, src/data/images,
+	  src/data/images/audio-volume-high.png,
+	  src/data/images/audio-volume-low.png,
+	  src/data/images/audio-volume-medium.png,
+	  src/data/images/audio-volume-muted.png,
+	  src/data/images/image-missing.svg, src/data/images/mesk-16.png,
+	  src/data/images/mesk-22.png, src/data/images/mesk-32.png,
+	  src/data/images/mesk-48.png, src/data/images/mesk-splash.jpg,
+	  src/data/images/mesk.svg, src/data/images/mesk_felon.png,
+	  src/data/images/stock_repeat.png,
+	  src/data/images/stock_shuffle.png,
+	  src/images/audio-volume-high.png,
+	  src/images/audio-volume-low.png,
+	  src/images/audio-volume-medium.png,
+	  src/images/audio-volume-muted.png, src/images/image-missing.svg,
+	  src/images/mesk-16.png, src/images/mesk-22.png,
+	  src/images/mesk-32.png, src/images/mesk-48.png,
+	  src/images/mesk-splash.jpg, src/images/mesk.svg,
+	  src/images/mesk_felon.png, src/images/stock_repeat.png,
+	  src/images/stock_shuffle.png, src/main.py, src/main_window.py,
+	  src/mesk/gtk_utils.py, src/mesk/playlist/xspf.py,
+	  src/mesk_extras.glade, src/mesk_gui.glade,
+	  src/playlist_control.py, src/preference_window.py,
+	  src/tips_window.py: Some rearrangement. xspf is still not
+	  complete.
+
+2006-10-15 20:56  'Travis Shirk <travis@pobox.com>'
+
+	* [r472] src/mesk/playlist/__init__.py: More formatting
+
+2006-10-15 20:54  'Travis Shirk <travis@pobox.com>'
+
+	* [r471] src/album_cover_control.py, src/audio_control.py,
+	  src/config.py, src/mesk/audio/__init__.py,
+	  src/mesk/common/i18n.py, src/mesk/log.py,
+	  src/playlist_control.py, src/preference_window.py: Formatting
+	  fixes
+
+2006-10-15 20:53  'Travis Shirk <travis@pobox.com>'
+
+	* [r470] src/mesk_gui.glade: about dialog fixes
+
+2006-10-15 20:51  'Travis Shirk <travis@pobox.com>'
+
+	* [r469] src/about_dialog.py, src/main_window.py: #253
+
+2006-10-01 00:06  'Travis Shirk <travis@pobox.com>'
+
+	* [r468] src/main.py:
+
+2006-09-23 04:42  'Travis Shirk <travis@pobox.com>'
+
+	* [r462] Makefile.in, src/audio_control.py,
+	  src/mesk/audio/__init__.py, src/mesk/audio/mp3.py,
+	  src/mesk/audio/oggvorbis.py, src/mesk/audio/source.py,
+	  src/mesk/playlist/__init__.py, src/mesk/playlist/xspf.py,
+	  src/playlist_control.py: Spiffy playlists
+
+2006-09-22 02:12  'Travis Shirk <travis@pobox.com>'
+
+	* [r460] .: cleared revisions from merge
+
+2006-09-22 02:10  'Travis Shirk <travis@pobox.com>'
+
+	* [r459] ., ChangeLog, NEWS, etc/mesk-0.2.1.ebuild: Merged
+	  revisions 458 via svnmerge from
+	  svn://puddy.nicfit.lan/mesk/branches/0.2
+	  
+	  ........
+	  r458 | nicfit | 2006-09-21 20:01:38 -0600 (Thu, 21 Sep 2006) |
+	  2 lines
+	  
+	  Release 0.2.1 updates
+	  ........
+
+2006-09-22 01:30  'Travis Shirk <travis@pobox.com>'
+
+	* [r456] ., src/config.py, src/mesk/__init__.py,
+	  src/playlist_control.py, src/plugins/audioscrobbler.py: Merged
+	  revisions 454 via svnmerge from
+	  svn://puddy.nicfit.lan/mesk/branches/0.2
+	  
+	  ........
+	  r454 | nicfit | 2006-09-21 19:17:33 -0600 (Thu, 21 Sep 2006) |
+	  3 lines
+	  
+	  Save state of file chooser dir select check button (#247)
+	  Close urllib handles (#246)
+	  ........
+
+2006-09-22 01:29  'Travis Shirk <travis@pobox.com>'
+
+	* [r455] src/main.py, src/main_window.py,
+	  src/mesk/playlist/__init__.py, src/mesk/playlist/xspf.py:
+	  Diddling
+
+2006-09-20 01:59  'Travis Shirk <travis@pobox.com>'
+
+	* [r453] ., src/mesk/audio/__init__.py, src/mesk/audio/mp3.py,
+	  src/mesk/audio/oggvorbis.py, src/playlist_control.py: Merged
+	  revisions 451 via svnmerge from
+	  svn://puddy.nicfit.lan/mesk/branches/0.2
+	  
+	  ........
+	  r451 | nicfit | 2006-09-19 19:56:00 -0600 (Tue, 19 Sep 2006) |
+	  2 lines
+	  
+	  A real fix for #237
+	  ........
+
+2006-09-20 01:58  'Travis Shirk <travis@pobox.com>'
+
+	* [r452] src/mesk/playlist/xspf.py, src/playlist_control.py: Spiff
+	  output beginnings
+
+2006-09-20 01:01  'Travis Shirk <travis@pobox.com>'
+
+	* [r448] src/main_window.py: Unescape strings in window title
+	  (#242)
+
+2006-09-20 00:27  'Travis Shirk <travis@pobox.com>'
+
+	* [r447] src/mesk/playlist/__init__.py, src/mesk/playlist/m3u.py,
+	  src/mesk/playlist/xspf.py, src/playlist_control.py: More
+	  playlist abstracting
+
+2006-09-19 03:25  'Travis Shirk <travis@pobox.com>'
+
+	* [r446] src/main_window.py, src/mesk/playlist,
+	  src/mesk/playlist.py, src/mesk/playlist/__init__.py,
+	  src/mesk/playlist/m3u.py, src/mesk/playlist/xspf.py,
+	  src/playlist_control.py: Playlist type extensibility, in
+	  preparation for spiff.
+
+2006-09-19 02:29  'Travis Shirk <travis@pobox.com>'
+
+	* [r445] ., configure.ac, src/main_window.py,
+	  src/mesk/audio/__init__.py, src/mesk_gui.glade: 0.2.1 merges
+
+2006-09-17 01:40  'Travis Shirk <travis@pobox.com>'
+
+	* [r436] ChangeLog, NEWS, po/es.mo, po/es.po, po/mesk.pot,
+	  src/mesk_gui.glade, src/preference_window.py: Release 0.2.0
+	  droppings
+
+2006-09-17 00:45  'Travis Shirk <travis@pobox.com>'
+
+	* [r435] src/control.py, src/images/mesk-splash.jpg,
+	  src/mesk_gui.glade: Back to glade-2, and a little splash
+
+2006-09-14 05:43  'Travis Shirk <travis@pobox.com>'
+
+	* [r432] src/plugins/audioscrobbler.py,
+	  src/plugins/plugins_gui.glade: Prettied up config dialog
+
+2006-09-12 02:58  'Travis Shirk <travis@pobox.com>'
+
+	* [r428] po/es.po: Good enuf, lost interest in maintaining this
+	  through babelfish.
+
+2006-09-10 03:50  'Travis Shirk <travis@pobox.com>'
+
+	* [r426] .: Merge clear
+
+2006-09-10 03:00  'Travis Shirk <travis@pobox.com>'
+
+	* [r425] Makefile.in, etc/mesk-0.2.0.ebuild: Ebuild testing
+
+2006-09-10 02:43  'Travis Shirk <travis@pobox.com>'
+
+	* [r424] ., ChangeLog, NEWS: 0.1.2 release notes merge, and 0.2.0
+	  updates
+
+2006-09-10 01:51  'Travis Shirk <travis@pobox.com>'
+
+	* [r423] etc/mesk.1.in, po/es.mo, po/es.po, po/mesk.pot,
+	  src/main.py, src/mesk/audio/mp3.py, src/mesk/audio/oggvorbis.py,
+	  src/tips_window.py: Added some more tips, plus other release
+	  stuff
+
+2006-09-10 00:32  'Travis Shirk <travis@pobox.com>'
+
+	* [r422] src/main.py, src/mesk_extras.glade: Update config from
+	  0.1.x to 0.2.0
+
+2006-09-09 21:18  'Travis Shirk <travis@pobox.com>'
+
+	* [r420] src/playlist_control.py: #231
+
+2006-09-09 21:12  'Travis Shirk <travis@pobox.com>'
+
+	* [r419] src/audio_control.py, src/playlist_control.py: HTTP auth
+	  error handling a redraw fixes (closes #141)
+
+2006-09-09 02:47  'Travis Shirk <travis@pobox.com>'
+
+	* [r418] src/audio_control.py, src/mesk/audio/__init__.py,
+	  src/mesk_extras.glade: Show URI in http auth dialog, and messing
+	  with urgency hints
+
+2006-09-04 17:47  'Travis Shirk <travis@pobox.com>'
+
+	* [r417] po/POTFILES.in, po/es.mo, po/es.po, po/mesk.pot,
+	  src/dialogs.py, src/main_window.py, src/mesk/__init__.py,
+	  src/playlist_control.py, src/preference_window.py: #199 finished
+	  and po updates
+
+2006-09-04 01:56  'Travis Shirk <travis@pobox.com>'
+
+	* [r416] src/audio_control.py, src/dialogs.py, src/mesk_gui.glade,
+	  src/playlist_control.py: Emit error in
+	  AudioControl._enqueue_source, and a new dialogs module.
+
+2006-09-04 01:44  'Travis Shirk <travis@pobox.com>'
+
+	* [r415] etc/mesk.1.in, src/main.py: Updated with new options help.
+
+2006-09-04 01:22  'Travis Shirk <travis@pobox.com>'
+
+	* [r414] src/audio_control.py: Double click on volume control
+	  opens mixer (#226)
+
+2006-09-01 02:36  'Travis Shirk <travis@pobox.com>'
+
+	* [r413] src/mesk_gui.glade: Menu fixes
+
+2006-09-01 01:43  'Travis Shirk <travis@pobox.com>'
+
+	* [r412] src/main.py, src/main_window.py: #224, $225
+
+2006-08-31 02:19  'Travis Shirk <travis@pobox.com>'
+
+	* [r411] po/es.mo, po/es.po, po/mesk.pot: Updates
+
+2006-08-31 01:53  'Travis Shirk <travis@pobox.com>'
+
+	* [r410] src/main_window.py: Clear state on an empty playlist
+	  edge-case (#223)
+
+2006-08-31 01:47  'Travis Shirk <travis@pobox.com>'
+
+	* [r409] src/audio_control.py, src/main.py, src/main_window.py,
+	  src/mesk/__init__.py: Prevent gst from intercepting --help and
+	  still support --gst-* options. (#195)
+
+2006-08-29 03:11  'Travis Shirk <travis@pobox.com>'
+
+	* [r408] src/playlist_control.py: Fix for #222
+
+2006-08-29 02:53  'Travis Shirk <travis@pobox.com>'
+
+	* [r407] src/playlist_control.py: Save playlist enqueues on a
+	  timer to coalesce multiple save requests (#215)
+
+2006-08-29 01:17  'Travis Shirk <travis@pobox.com>'
+
+	* [r406] src/main_window.py, src/mesk_gui.glade: Missing glade
+	  updates and quit confirmation (#199).
+
+2006-08-29 00:57  'Travis Shirk <travis@pobox.com>'
+
+	* [r405] src/playlist_control.py: Next/Prev search button
+	  sensitiviy depends on whether the text entry contains data (#212)
+
+2006-08-29 00:03  'Travis Shirk <travis@pobox.com>'
+
+	* [r404] src/plugins/gajimstatus.py: Handle missing years (#211)
+
+2006-08-26 21:18  'Travis Shirk <travis@pobox.com>'
+
+	* [r403] src/audio_control.py, src/mesk/playlist.py,
+	  src/mesk_gui.glade, src/playlist_control.py: HTTP auth
+	  credential cacheing and some search UI cleanups
+
+2006-08-25 01:27  'Travis Shirk <travis@pobox.com>'
+
+	* [r402] src/mesk/playlist.py: Make sure not to save http auth
+	  creds in the saved playlist
+
+2006-08-24 03:57  'Travis Shirk <travis@pobox.com>'
+
+	* [r401] src/main_window.py: Always show tabs, else lose ability
+	  to rename. Use tab context menu
+
+2006-08-24 03:47  'Travis Shirk <travis@pobox.com>'
+
+	* [r400] src/playlist_control.py: Escape discovered URIs (#210)
+
+2006-08-24 03:21  'Travis Shirk <travis@pobox.com>'
+
+	* [r399] src/main_window.py: Clear marquee when playlist is
+	  cleared (#201)
+
+2006-08-23 03:33  'Travis Shirk <travis@pobox.com>'
+
+	* [r398] po/Makefile.in, po/es.mo, po/es.po, po/mesk.pot: More po
+	  fixes
+
+2006-08-23 03:23  'Travis Shirk <travis@pobox.com>'
+
+	* [r397] Makefile.in, po/Makefile.in, po/POTFILES.in, po/es.mo,
+	  po/es.po, po/mesk.pot: po fixes (#209)
+
+2006-08-23 03:11  'Travis Shirk <travis@pobox.com>'
+
+	* [r396] src/mesk/audio/__init__.py, src/mesk/audio/mp3.py,
+	  src/mesk/audio/oggvorbis.py, src/mesk/playlist.py,
+	  src/playlist_control.py: Better mimetype checking and data
+	  structures
+
+2006-08-21 03:44  'Travis Shirk <travis@pobox.com>'
+
+	* [r395] src/audio_control.py, src/playlist_control.py: More
+	  triumphant argument passing scheme in _enqueue_source
+
+2006-08-20 23:39  'Travis Shirk <travis@pobox.com>'
+
+	* [r394] src/audio_control.py, src/mesk_extras.glade: HTTP auth
+	  for remote playlist happy path works. Still some issues
+	  cancelling
+
+2006-08-20 22:22  'Travis Shirk <travis@pobox.com>'
+
+	* [r393] launch.sh, po/es.po, po/mesk.pot, src/audio_control.py,
+	  src/mesk/__init__.py, src/mesk/playlist.py,
+	  src/playlist_control.py: Fetch remote playlists (#203)
+
+2006-08-20 00:41  'Travis Shirk <travis@pobox.com>'
+
+	* [r392] src/album_cover_control.py, src/audio_control.py,
+	  src/control.py, src/main.py, src/mesk/__init__.py,
+	  src/mesk/audio/__init__.py, src/multi_media_keys.py,
+	  src/playlist_control.py: Fixed some FIXMEs
+
+2006-08-19 23:32  'Travis Shirk <travis@pobox.com>'
+
+	* [r391] po/POTFILES.in, po/es.po, po/mesk.pot,
+	  src/album_cover_control.py, src/audio_control.py, src/config.py,
+	  src/mesk/__init__.py, src/mesk/audio/__init__.py,
+	  src/mesk/audio/mp3.py, src/mesk/audio/oggvorbis.py,
+	  src/mesk/audio/source.py, src/mesk/common/uri.py,
+	  src/mesk/playlist.py, src/mesk/uri.py, src/mesk/utils.py,
+	  src/playlist_control.py: Use gnomevfs.URI instead of homegrown
+	  implementation (#200) which also
+	  fixes playlists like "Comp #1" (#181)
+
+2006-08-19 02:15  'Travis Shirk <travis@pobox.com>'
+
+	* [r390] po/POTFILES.in, po/es.po, po/mesk.pot,
+	  src/mesk_extras.glade, src/tips_window.py: Tips i18n and a
+	  non-stupid data structure for them, as well as a couple new ones.
+
+2006-08-19 01:49  'Travis Shirk <travis@pobox.com>'
+
+	* [r389] src/mesk_extras.glade, src/tips_window.py: TipsWindow
+	  done, now I just need more tips.
+
+2006-08-19 00:47  'Travis Shirk <travis@pobox.com>'
+
+	* [r388] src/main.py, src/main_window.py,
+	  src/mesk/common/config.py, src/mesk_extras.glade,
+	  src/mesk_gui.glade: More work on tips window
+
+2006-08-18 23:44  'Travis Shirk <travis@pobox.com>'
+
+	* [r387] src/main_window.py: Navigate tabs with Alt+Left and
+	  Alt+Right. Closes #157
+
+2006-08-18 23:31  'Travis Shirk <travis@pobox.com>'
+
+	* [r386] src/main_window.py, src/mesk/window.py,
+	  src/preference_window.py: More use of mesk.window.Window base
+	  class
+
+2006-08-18 23:05  'Travis Shirk <travis@pobox.com>'
+
+	* [r385] src/config.py, src/main_window.py, src/mesk/window.py,
+	  src/mesk_extras.glade, src/mesk_gui.glade,
+	  src/preference_window.py, src/tips_window.py: More of a Tips
+	  window start, and some keybinding issues fixed
+
+2006-08-18 21:05  'Travis Shirk <travis@pobox.com>'
+
+	* [r384] src/about_dialog.py, src/album_cover_control.py,
+	  src/audio_control.py, src/control.py, src/data,
+	  src/gtk_utils.py, src/main.py, src/main_window.py,
+	  src/mesk/__init__.py, src/mesk/gtk_utils.py,
+	  src/mesk_extras.glade, src/playlist_control.py,
+	  src/preference_window.py: Moved gtk_utils into mesk pacakge and
+	  other misc. fixups
+
+2006-08-18 18:10  'Travis Shirk <travis@pobox.com>'
+
+	* [r383] src/mesk/__init__.py: FIXME
+
+2006-08-18 18:09  'Travis Shirk <travis@pobox.com>'
+
+	* [r382] etc/mesk-0.2.0.ebuild, po/es.po, po/mesk.pot,
+	  src/audio_control.py, src/main_window.py, src/mesk_gui.glade,
+	  src/plugins/plugins_gui.glade: Cleanups, etc...
+
+2006-08-18 04:04  'Travis Shirk <travis@pobox.com>'
+
+	* [r381] ChangeLog: ChangeLog update
+
+2006-08-18 04:02  'Travis Shirk <travis@pobox.com>'
+
+	* [r380] etc/mesk.desktop.in, src/main.py: Desktop startup
+	  notification and import cleanups
+
+2006-08-18 02:38  'Travis Shirk <travis@pobox.com>'
+
+	* [r379] src/mesk_gui.glade: Checkbox for audioscrobbler submit
+	  enabling
+
+2006-08-18 02:35  'Travis Shirk <travis@pobox.com>'
+
+	* [r378] src/plugins/audioscrobbler.py: Added config for enabling
+	  track submission. Closes #194
+
+2006-08-17 04:50  'Travis Shirk <travis@pobox.com>'
+
+	* [r377] po/es.po, po/mesk.pot: Updates
+
+2006-08-17 04:48  'Travis Shirk <travis@pobox.com>'
+
+	* [r376] src/playlist_control.py: Update UI faster with large
+	  drops, and turn on row hints.
+
+2006-08-17 04:31  'Travis Shirk <travis@pobox.com>'
+
+	* [r375] src/plugins/gajimstatus.py: Cleaned up status string and
+	  added year.
+
+2006-08-15 02:58  'Travis Shirk <travis@pobox.com>'
+
+	* [r374] src/main.py: Added the ability to run with the python
+	  profiler (--run-profiler)
+
+2006-08-11 06:26  'Travis Shirk <travis@pobox.com>'
+
+	* [r373] src/audio_control.py: #193
+
+2006-07-27 01:20  'Travis Shirk <travis@pobox.com>'
+
+	* [r372] src/mesk/audio/oggvorbis.py: Ogg total time fix
+
+2006-07-22 20:04  'Travis Shirk <travis@pobox.com>'
+
+	* [r371] etc/mesk-0.2.0.ebuild, src/mesk_extras.glade,
+	  src/mesk_gui.glade, src/playlist_control.py: More triumphant
+	  playlist search, and beginnings of Hint Window
+
+2006-07-22 17:56  'Travis Shirk <travis@pobox.com>'
+
+	* [r370] src/mesk/audio/oggvorbis.py, src/playlist_control.py: Fix
+	  oggvorbis TB and #169
+
+2006-07-16 21:31  'Travis Shirk <travis@pobox.com>'
+
+	* [r369] src/plugins/audioscrobbler.py: Show masked password to
+	  prevent accidently erasing by hitting Ok
+
+2006-07-16 21:12  'Travis Shirk <travis@pobox.com>'
+
+	* [r368] configure.ac, po/es.po, po/mesk.pot,
+	  src/mesk/__init__.py: pdates
+
+2006-07-16 21:02  'Travis Shirk <travis@pobox.com>'
+
+	* [r367] src/album_cover_control.py, src/mesk/plugin/__init__.py,
+	  src/mesk/plugin/plugin.py, src/plugins/audioscrobbler.py,
+	  src/plugins/gajimstatus.py: Prepwork for provider plugins
+
+2006-07-16 19:54  'Travis Shirk <travis@pobox.com>'
+
+	* [r366] src/album_cover_control.py: Short circuit searching and
+	  loading album cover images if possible.
+
+2006-07-16 15:14  'Travis Shirk <travis@pobox.com>'
+
+	* [r365] src/audio_control.py, src/mesk/audio/mp3.py,
+	  src/mesk_extras.glade, src/plugins/audioscrobbler.py: When muted
+	  the volume context menus does "Restore Volume"
+
+2006-07-15 22:40  'Travis Shirk <travis@pobox.com>'
+
+	* [r364] src/playlist_control.py: Cut/Copy/Paste is solid
+
+2006-07-15 16:37  'Travis Shirk <travis@pobox.com>'
+
+	* [r363] src/audio_control.py: oops
+
+2006-07-15 16:11  'Travis Shirk <travis@pobox.com>'
+
+	* [r362] src/mesk/audio/source.py, src/playlist_control.py: More
+	  cut/copy/paste hacking
+
+2006-07-15 16:08  'Travis Shirk <travis@pobox.com>'
+
+	* [r361] src/audio_control.py: Make the volume slider window as
+	  wide at the volume button.
+
+2006-07-14 07:05  'Travis Shirk <travis@pobox.com>'
+
+	* [r360] src/playlist_control.py: Keybinds for cut/copy/paste
+
+2006-07-14 06:23  'Travis Shirk <travis@pobox.com>'
+
+	* [r359] src/mesk_gui.glade, src/playlist_control.py: Figured out
+	  cut/copy/paste in playlists. Incomplete.
+
+2006-07-11 05:36  'Travis Shirk <travis@pobox.com>'
+
+	* [r358] configure.ac, src/mesk/__init__.py,
+	  src/mesk/audio/__init__.py, src/mesk/audio/mp3.py,
+	  src/mesk/utils.py: Module/version checking in code.. FU
+	  autoconf! (closes #149)
+
+2006-07-11 03:42  'Travis Shirk <travis@pobox.com>'
+
+	* [r357] po/es.po, po/mesk.pot: po updates
+
+2006-07-11 03:38  'Travis Shirk <travis@pobox.com>'
+
+	* [r356] src/mesk/playlist.py, src/playlist_control.py: Fix for
+	  #169 + a little more goodness
+
+2006-07-11 03:00  'Travis Shirk <travis@pobox.com>'
+
+	* [r355] src/audio_control.py, src/playlist_control.py: Fixes for
+	  #162 and #104
+
+2006-07-11 01:50  'Travis Shirk <travis@pobox.com>'
+
+	* [r354] src/mesk/audio/oggvorbis.py: #174 fix for Ogg files
+
+2006-07-11 01:27  'Travis Shirk <travis@pobox.com>'
+
+	* [r353] src/mesk/audio/mp3.py: Fallback on filename (like what is
+	  done for http) as title when no other can be determined (closes
+	  #174)
+
+2006-07-09 17:37  'Travis Shirk <travis@pobox.com>'
+
+	* [r352] po/POTFILES.in, po/es.po, po/mesk.pot,
+	  src/audio_control.py: Hook for HTTP authentication for remote
+	  playlist entries
+
+2006-07-09 06:01  'Travis Shirk <travis@pobox.com>'
+
+	* [r351] src/playlist_control.py: Fixed TB
+
+2006-07-09 05:49  'Travis Shirk <travis@pobox.com>'
+
+	* [r350] src/audio_control.py, src/mesk/__init__.py,
+	  src/mesk_extras.glade, src/mesk_gui.glade: Added a popup menu
+	  for the volume control (mute, external mixer, presets); closes
+	  #172
+
+2006-07-09 04:59  'Travis Shirk <travis@pobox.com>'
+
+	* [r349] src/mesk_gui.glade, src/playlist_control.py: Playlist row
+	  unselection (closes #171)
+
+2006-07-09 03:39  'Travis Shirk <travis@pobox.com>'
+
+	* [r348] src/main.py, src/mesk/playlist.py: Extended m3u
+	  playlists, this is most helpful for remote files and streams
+	  (closes #138)
+
+2006-07-09 02:36  'Travis Shirk <travis@pobox.com>'
+
+	* [r347] src/playlist_control.py: Double clicking on playlist tab
+	  makes control "active" (closes #170)
+
+2006-07-09 02:28  'Travis Shirk <travis@pobox.com>'
+
+	* [r346] po/es.po, po/mesk.pot, src/control.py,
+	  src/main_window.py, src/playlist_control.py: Show notebook
+	  border when num tabs > 1, and select new controls (closes #168)
+
+2006-07-01 22:38  'Travis Shirk <travis@pobox.com>'
+
+	* [r345] po/es.po, po/mesk.pot, src/audio_control.py: Fixed TB
+	  when playlist config current index is out of sync
+
+2006-07-01 01:05  'Travis Shirk <travis@pobox.com>'
+
+	* [r344] src/playlist_control.py: Fix for #161
+
+2006-06-30 05:14  'Travis Shirk <travis@pobox.com>'
+
+	* [r343] src/playlist_control.py: Removed some debug prints
+
+2006-06-30 05:13  'Travis Shirk <travis@pobox.com>'
+
+	* [r342] src/about_dialog.py, src/config.py,
+	  src/playlist_control.py: Playlist delete, etc. etc.
+
+2006-06-30 04:04  'Travis Shirk <travis@pobox.com>'
+
+	* [r341] src/about_dialog.py: Version string in about dialog
+
+2006-06-30 03:29  'Travis Shirk <travis@pobox.com>'
+
+	* [r340] po/es.po, po/mesk.pot, src/main_window.py: Tab
+	  drag-and-drop reordering (closes #153)
+
+2006-06-29 03:33  'Travis Shirk <travis@pobox.com>'
+
+	* [r339] src/plugins/gajimstatus.py: Local character encoding
+	  fixes and a better replacement method
+
+2006-06-29 03:01  'Travis Shirk <travis@pobox.com>'
+
+	* [r338] src/mesk/audio/mp3.py: TB fix #160
+
+2006-06-29 02:55  'Travis Shirk <travis@pobox.com>'
+
+	* [r337] src/playlist_control.py: F2 for renaming playlists works
+	  (closes #158)
+
+2006-06-28 05:27  'Travis Shirk <travis@pobox.com>'
+
+	* [r335] po/es.po, po/mesk.pot, src/audio_control.py,
+	  src/images/audio-volume-high.png,
+	  src/images/audio-volume-low.png,
+	  src/images/audio-volume-medium.png,
+	  src/images/audio-volume-muted.png, src/main_window.py,
+	  src/mesk_gui.glade, src/playlist_control.py: Added a MUCH better
+	  volume widget. /me is proud
+
+2006-06-26 03:07  'Travis Shirk <travis@pobox.com>'
+
+	* [r334] src/plugins/gajimstatus.py: Work on #146
+
+2006-06-26 01:59  'Travis Shirk <travis@pobox.com>'
+
+	* [r333] src/main.py, src/main_window.py, src/mesk_extras.glade,
+	  src/mesk_gui.glade, src/playlist_control.py,
+	  src/plugins/gajimstatus.py: Misc. fixups
+
+2006-06-25 22:41  'Travis Shirk <travis@pobox.com>'
+
+	* [r332] src/album_cover_control.py, src/control.py,
+	  src/main_window.py, src/mesk/__init__.py, src/mesk_gui.glade:
+	  Multiple playlist fixes and active_playlist state
+
+2006-06-25 21:03  'Travis Shirk <travis@pobox.com>'
+
+	* [r331] po/es.po, po/mesk.pot, src/about_dialog.py,
+	  src/config.py, src/gtk_utils.py, src/main.py,
+	  src/main_window.py, src/mesk/__init__.py, src/mesk_extras.glade,
+	  src/mesk_gui.glade, src/playlist_control.py,
+	  src/preference_window.py: Multiple playlists are looking pretty
+	  solid
+
+2006-06-24 06:42  'Travis Shirk <travis@pobox.com>'
+
+	* [r330] src/config.py, src/control.py, src/main_window.py,
+	  src/mesk_gui.glade, src/playlist_control.py: Playlist tab
+	  context menu with Rename and Close items, plus mucho other
+	  goodness
+
+2006-06-24 04:33  'Travis Shirk <travis@pobox.com>'
+
+	* [r329] src/config.py, src/main_window.py, src/mesk/__init__.py,
+	  src/mesk_gui.glade, src/playlist_control.py: Open playlists
+
+2006-06-24 02:45  'Travis Shirk <travis@pobox.com>'
+
+	* [r328] src/main_window.py, src/mesk/__init__.py: Added the
+	  ability to not show tab close buttons, yay!!!
+
+2006-06-24 02:34  'Travis Shirk <travis@pobox.com>'
+
+	* [r327] src/mesk/audio/__init__.py, src/mesk/playlist.py,
+	  src/playlist_control.py: Better file dialog filters
+
+2006-06-24 01:40  'Travis Shirk <travis@pobox.com>'
+
+	* [r326] src/main_window.py, src/mesk_gui.glade,
+	  src/playlist_control.py: Active/inactive control fixes when tabs
+	  are removed
+
+2006-06-23 03:22  'Travis Shirk <travis@pobox.com>'
+
+	* [r325] Makefile.in, etc/mesk.desktop.in, po/es.po, po/mesk.pot,
+	  src/album_cover_control.py, src/main_window.py,
+	  src/mesk_gui.glade: Use new images and don't allow closing last
+	  control
+
+2006-06-23 03:11  'Travis Shirk <travis@pobox.com>'
+
+	* [r324] src/images/image-missing.svg, src/images/mesk-16.png,
+	  src/images/mesk-22.png, src/images/mesk-32.png,
+	  src/images/mesk-48.png, src/images/mesk.png: Images in several
+	  sizes
+
+2006-06-19 04:29  'Travis Shirk <travis@pobox.com>'
+
+	* [r318] src/audio_control.py, src/control.py, src/main_window.py,
+	  src/mesk/playlist.py, src/mesk_gui.glade,
+	  src/playlist_control.py: Hacking on active/inactive controls,
+	  that is multiple playlists
+
+2006-06-19 01:31  'Travis Shirk <travis@pobox.com>'
+
+	* [r317] src/audio_control.py: Make play/pause button update
+	  sooner, no more momentary blank button (closes #104)
+
+2006-06-19 01:13  'Travis Shirk <travis@pobox.com>'
+
+	* [r316] po/es.po, po/mesk.pot, src/main_window.py,
+	  src/mmkeys/Makefile.in, src/mmkeys/mmkeys.c,
+	  src/multi_media_keys.py: Hacking on multimedia key support
+
+2006-06-18 03:14  'Travis Shirk <travis@pobox.com>'
+
+	* [r315] src/album_cover_control.py, src/mesk/audio/mp3.py,
+	  src/mesk/audio/oggvorbis.py, src/mesk/audio/source.py: Use album
+	  cover from file if one odes not exist in same dir (closes #65)
+
+2006-06-18 01:40  'Travis Shirk <travis@pobox.com>'
+
+	* [r314] src/mesk/audio/oggvorbis.py, src/plugins/gajimstatus.py:
+	  Encoding fix for eigth note character (closes #146)
+
+2006-06-18 01:20  'Travis Shirk <travis@pobox.com>'
+
+	* [r313] ., Makefile.in, po/POTFILES.in, po/es.po, po/mesk.pot,
+	  setup.py.in, src/about_dialog.py, src/audio_control.py,
+	  src/images/mesk_felon.png, src/mesk/__init__.py, src/mesk/audio,
+	  src/mesk/audio/__init__.py, src/mesk/audio/mp3.py,
+	  src/mesk/audio/oggvorbis.py, src/mesk/audio/source.py,
+	  src/mesk/audio_source.py, src/mesk/playlist.py,
+	  src/mesk_gui.glade, src/playlist_control.py,
+	  src/plugins/audioscrobbler.py: Refactor of audio_source module
+	  to mesk.audio.*, Ogg vorbis support, and misc goodness
+
+2006-06-12 00:24  'Travis Shirk <travis@pobox.com>'
+
+	* [r312] src/plugins/gajimstatus.py: Get rid of np: for "now
+	  playing" and use U+266B BEAMED EIGHTH NOTE instead
+
+2006-06-12 00:14  'Travis Shirk <travis@pobox.com>'
+
+	* [r311] src/main_window.py, src/playlist_control.py: Scroll bug
+	  fix (closes #143)
+
+2006-06-11 23:47  'Travis Shirk <travis@pobox.com>'
+
+	* [r310] src/main_window.py, src/multi_media_keys.py: Fixes
+
+2006-06-11 20:53  'Travis Shirk <travis@pobox.com>'
+
+	* [r309] src/multi_media_keys.py: Oops, added
+
+2006-06-11 20:46  'Travis Shirk <travis@pobox.com>'
+
+	* [r308] Makefile.in, configure.ac, launch.sh, po/es.po,
+	  po/mesk.pot, src/main_window.py: MultiMediaKeys start (code from
+	  listen) and po updates
+
+2006-06-11 20:34  'Travis Shirk <travis@pobox.com>'
+
+	* [r307] src/main_window.py, src/mmkeys, src/mmkeys/COPYING,
+	  src/mmkeys/MANIFEST, src/mmkeys/Makefile.in, src/mmkeys/README,
+	  src/mmkeys/mmkeys.c, src/mmkeys/mmkeys.defs,
+	  src/mmkeys/mmkeys.h, src/mmkeys/mmkeys.override,
+	  src/mmkeys/mmkeysmodule.c, src/mmkeys/setup.py: Integrated mmkeys
+
+2006-06-11 19:05  'Travis Shirk <travis@pobox.com>'
+
+	* [r306] src/audio_control.py, src/main_window.py,
+	  src/mesk/__init__.py, src/mesk_gui.glade: Implemented volume
+	  (closes #36)
+
+2006-06-11 17:59  'Travis Shirk <travis@pobox.com>'
+
+	* [r305] src/audio_control.py, src/main_window.py,
+	  src/playlist_control.py: Next/previous bug fixes, marquee fixes
+	  for late arriving tag data (closes #140 and #142)
+
+2006-06-11 05:39  'Travis Shirk <travis@pobox.com>'
+
+	* [r304] Makefile.in, src/album_cover_control.py,
+	  src/audio_control.py, src/images, src/images/mesk.png,
+	  src/images/mesk.svg, src/images/stock_repeat.png,
+	  src/images/stock_shuffle.png, src/main_window.py, src/mesk.png,
+	  src/mesk.svg, src/mesk_gui.glade, src/playlist_control.py,
+	  src/stock_repeat.png, src/stock_shuffle.png: Moved all images
+	  into a separate subdir
+
+2006-06-11 04:43  'Travis Shirk <travis@pobox.com>'
+
+	* [r303] Makefile.in, configure.ac, etc/mesk.1.in, po/es.po,
+	  po/mesk.pot: Man page and po updates
+
+2006-06-11 04:12  'Travis Shirk <travis@pobox.com>'
+
+	* [r301] src/playlist_control.py: Bug fixes
+
+2006-06-11 03:40  'Travis Shirk <travis@pobox.com>'
+
+	* [r300] src/audio_control.py: Don't use the flucuating duration
+	  from gst in track total time label, instead use the source
+	  values (closes #139)
+
+2006-06-11 03:30  'Travis Shirk <travis@pobox.com>'
+
+	* [r299] src/playlist_control.py: Handle drag-and-drop and fixed
+	  typo that will support konqueror
+
+2006-06-11 03:08  'Travis Shirk <travis@pobox.com>'
+
+	* [r298] src/audio_control.py, src/mesk/audio_source.py,
+	  src/mesk/playlist.py, src/mesk/utils.py,
+	  src/playlist_control.py, src/plugins/audioscrobbler.py: Added
+	  the ability to play remote files (http)
+
+2006-06-10 23:34  'Travis Shirk <travis@pobox.com>'
+
+	* [r297] po/es.po, po/mesk.pot, src/main.py, src/mesk/log.py:
+	  Prevented gst from intercepting --help, and added -l/--log-level
+
+2006-06-10 21:42  'Travis Shirk <travis@pobox.com>'
+
+	* [r291] ., Makefile.in, po/es.po, po/mesk.pot, src/main.py:
+	  Merged revisions 284-290 via svnmerge from
+	  svn://puddy.nicfit.lan/mesk/branches/0.1
+	  
+	  ........
+	  r284 | nicfit | 2006-06-07 20:00:06 -0600 (Wed, 07 Jun 2006) |
+	  2 lines
+	  
+	  Broken fedora wrapper patch (fixes #137)
+	  ........
+	  r288 | nicfit | 2006-06-10 15:22:10 -0600 (Sat, 10 Jun 2006) |
+	  2 lines
+	  
+	  Updates
+	  ........
+	  r290 | nicfit | 2006-06-10 15:39:30 -0600 (Sat, 10 Jun 2006) |
+	  2 lines
+	  
+	  po/mo top-level build fix (closes #136)
+	  ........
+
+2006-06-10 21:29  'Travis Shirk <travis@pobox.com>'
+
+	* [r289] src/audio_control.py: Removed unused code
+
+2006-06-10 21:19  'Travis Shirk <travis@pobox.com>'
+
+	* [r287] src/audio_control.py: Formatting
+
+2006-06-10 21:13  'Travis Shirk <travis@pobox.com>'
+
+	* [r286] src/audio_control.py, src/mesk/utils.py: Display ttotal
+	  time in track time label
+
+2006-06-10 20:56  'Travis Shirk <travis@pobox.com>'
+
+	* [r285] etc/mesk-0.2.0.ebuild, src/audio_control.py,
+	  src/mesk/__init__.py, src/mesk/playlist.py, src/mesk_gui.glade:
+	  Gstreamer 0.10 port
+
+2006-06-04 21:28  'Travis Shirk <travis@pobox.com>'
+
+	* [r282] ., Makefile.in, etc/mesk-0.1.2.ebuild, po/es.po,
+	  po/mesk.pot, src/plugins/gajimstatus.py: Merged revisions
+	  236,239-240,242,244-245,247-251,254-255,257-261,272-276,278-281
+	  via svnmerge from
+	  svn://puddy.nicfit.lan/mesk/branches/0.1
+	  
+	  ........
+	  r280 | nicfit | 2006-06-04 14:52:24 -0600 (Sun, 04 Jun 2006) |
+	  2 lines
+	  
+	  Show album in status message along with artist/title
+	  ........
+	  r281 | nicfit | 2006-06-04 15:02:29 -0600 (Sun, 04 Jun 2006) |
+	  2 lines
+	  
+	  New ebuild and stuff
+	  ........
+
+2006-06-04 05:04  'Travis Shirk <travis@pobox.com>'
+
+	* [r279] ., Makefile.in: Merged revisions
+	  236,239-240,242,244-245,247-251,254-255,257-261,272-278 via
+	  svnmerge from
+	  svn://puddy.nicfit.lan/mesk/branches/0.1
+	  
+	  ........
+	  r277 | nicfit | 2006-06-03 19:38:58 -0600 (Sat, 03 Jun 2006) |
+	  2 lines
+	  
+	  Sandbox installation fix
+	  ........
+
+2006-06-04 05:02  'Travis Shirk <travis@pobox.com>'
+
+	* [r278] data: Removed
+
+2006-06-03 21:17  'Travis Shirk <travis@pobox.com>'
+
+	* [r275] po/es.po: Cruft removed
+
+2006-06-03 21:13  'Travis Shirk <travis@pobox.com>'
+
+	* [r274] .: Merge blocks
+
+2006-06-03 21:05  'Travis Shirk <travis@pobox.com>'
+
+	* [r273] ., ChangeLog, Makefile.in, NEWS, po/Makefile.in,
+	  po/es.po, po/mesk.pot, src/audio_control.py, src/main_window.py,
+	  src/playlist_control.py: Merge of 0.1.1
+
+2006-06-03 18:29  'Travis Shirk <travis@pobox.com>'
+
+	* [r261] etc/mesk-0.2.0.ebuild: Still needs a lot of work for
+	  gst-0.10
+
+2006-06-03 17:27  'Travis Shirk <travis@pobox.com>'
+
+	* [r260] po/es.po, po/mesk.pot: Updates
+
+2006-06-03 01:41  'Travis Shirk <travis@pobox.com>'
+
+	* [r259] Makefile.in, po/Makefile.in: Don't update build po for
+	  all target
+
+2006-06-03 01:25  'Travis Shirk <travis@pobox.com>'
+
+	* [r258] src/album_cover_control.py, src/main_window.py,
+	  src/playlist_control.py: #83 (Update album cover and marquee
+	  when playlist cleared)
+
+2006-06-02 03:16  'Travis Shirk <travis@pobox.com>'
+
+	* [r257] ., src/plugins/audioscrobbler.py: Merged fix for #132
+
+2006-06-02 00:29  'Travis Shirk <travis@pobox.com>'
+
+	* [r255] .: Block revisions... gotta remember to use
+	  --bidirectional
+
+2006-06-02 00:26  'Travis Shirk <travis@pobox.com>'
+
+	* [r254] ., etc/mesk-0.1.1.ebuild, src/playlist_control.py: Merged
+	  revisions 252-253 via svnmerge from
+	  svn://puddy.nicfit.lan/mesk/branches/0.1
+	  
+	  ........
+	  r252 | nicfit | 2006-06-01 18:21:22 -0600 (Thu, 01 Jun 2006) |
+	  2 lines
+	  
+	  Handle konqueror Drag&Drop by recognizing ACTION_MOVE, fixes
+	  #131
+	  ........
+	  r253 | nicfit | 2006-06-01 18:23:13 -0600 (Thu, 01 Jun 2006) |
+	  2 lines
+	  
+	  Add gnome-base/librsvg as a dep otherwise SVG images won't work
+	  ........
+
+2006-06-01 03:11  'Travis Shirk <travis@pobox.com>'
+
+	* [r251] src/config.py, src/main_window.py,
+	  src/mesk/common/config.py, src/mesk_gui.glade,
+	  src/playlist_control.py: Remove and queue context menus
+	  implemented; closes #121
+
+2006-06-01 01:28  'Travis Shirk <travis@pobox.com>'
+
+	* [r250] src/mesk_gui.glade, src/playlist_control.py: Implement
+	  playlist context menu Add item
+
+2006-05-30 00:51  'Travis Shirk <travis@pobox.com>'
+
+	* [r249] src/config.py, src/mesk/__init__.py,
+	  src/playlist_control.py: Add... playlist button complete; closes
+	  #127
+
+2006-05-29 21:50  'Travis Shirk <travis@pobox.com>'
+
+	* [r248] src/main_window.py, src/mesk_gui.glade,
+	  src/playlist_control.py: FileChooser work for playlist add
+	  button, including workaround for the fact that by default
+	  gtk.FileChooser does not allow selecting dirs OR files
+
+2006-05-29 19:16  'Travis Shirk <travis@pobox.com>'
+
+	* [r247] src/mesk_gui.glade, src/playlist_control.py: Started on
+	  playlist add button and context menu
+
+2006-05-29 17:59  'Travis Shirk <travis@pobox.com>'
+
+	* [r245] Makefile.in, po/Makefile.in, src/mesk_gui.glade,
+	  src/playlist_control.py: Make ctrl+f open the search UI like /
+	  does. Fixes #72
+
+2006-05-29 15:59  'Travis Shirk <travis@pobox.com>'
+
+	* [r244] .: Blocked revisions 241,243 via svnmerge
+	  
+	  ................
+	  r241 | nicfit | 2006-05-29 09:42:22 -0600 (Mon, 29 May 2006) |
+	  30 lines
+	  
+	  Blocked revisions 236,239-240 via svnmerge
+	  
+	  ................
+	  r236 | nicfit | 2006-05-28 15:49:35 -0600 (Sun, 28 May 2006)
+	  | 3 lines
+	  
+	  Initialized merge tracking via "svnmerge" with revisions
+	  "1-235" from
+	  svn://puddy.nicfit.lan:/mesk/branches/0.1
+	  ................
+	  r239 | nicfit | 2006-05-29 09:38:53 -0600 (Mon, 29 May 2006)
+	  | 8 lines
+	  
+	  Blocked revisions 237 via svnmerge
+	  
+	  ........
+	  r237 | nicfit | 2006-05-29 09:35:12 -0600 (Mon, 29 May
+	  2006) | 2 lines
+	  
+	  Version bump to 0.1.1
+	  ........
+	  ................
+	  r240 | nicfit | 2006-05-29 09:39:36 -0600 (Mon, 29 May 2006)
+	  | 9 lines
+	  
+	  Merged revisions 238 via svnmerge from
+	  svn://puddy.nicfit.lan/mesk/branches/0.1
+	  
+	  ........
+	  r238 | nicfit | 2006-05-29 09:35:51 -0600 (Mon, 29 May
+	  2006) | 2 lines
+	  
+	  Ebuild fixes; fixes #125
+	  ........
+	  ................
+	  ................
+	  r243 | nicfit | 2006-05-29 09:57:38 -0600 (Mon, 29 May 2006) |
+	  10 lines
+	  
+	  Fix for #126
+	  Merged revisions 242 via svnmerge from
+	  svn://puddy.nicfit.lan:/mesk/trunk
+	  
+	  ........
+	  r242 | nicfit | 2006-05-29 09:54:09 -0600 (Mon, 29 May 2006)
+	  | 2 lines
+	  
+	  Added version to about dialog
+	  ........
+	  ................
+
+2006-05-29 15:54  'Travis Shirk <travis@pobox.com>'
+
+	* [r242] src/about_dialog.py, src/mesk_gui.glade: Added version to
+	  about dialog
+
+2006-05-29 15:39  'Travis Shirk <travis@pobox.com>'
+
+	* [r240] ., Makefile.in, etc/mesk-0.1.1.ebuild: Merged revisions
+	  238 via svnmerge from
+	  svn://puddy.nicfit.lan/mesk/branches/0.1
+	  
+	  ........
+	  r238 | nicfit | 2006-05-29 09:35:51 -0600 (Mon, 29 May 2006) |
+	  2 lines
+	  
+	  Ebuild fixes; fixes #125
+	  ........
+
+2006-05-29 15:38  'Travis Shirk <travis@pobox.com>'
+
+	* [r239] .: Blocked revisions 237 via svnmerge
+	  
+	  ........
+	  r237 | nicfit | 2006-05-29 09:35:12 -0600 (Mon, 29 May 2006) |
+	  2 lines
+	  
+	  Version bump to 0.1.1
+	  ........
+
+2006-05-28 21:49  'Travis Shirk <travis@pobox.com>'
+
+	* [r236] .: Initialized merge tracking via "svnmerge" with
+	  revisions "1-235" from
+	  svn://puddy.nicfit.lan:/mesk/branches/0.1
+
+2006-05-28 03:07  'Travis Shirk <travis@pobox.com>'
+
+	* [r232] configure.ac, po/es.po, po/mesk.pot: After release updates
+
+2006-05-28 03:06  'Travis Shirk <travis@pobox.com>'
+
+	* [r231] po/Makefile.in: Install dir fix (exposed with 0.1.0
+	  ebuild)
+
+2006-05-27 23:50  'Travis Shirk <travis@pobox.com>'
+
+	* [r229] NEWS, po/es.po, po/mesk.pot: Release updates
+
+2006-05-27 23:50  'Travis Shirk <travis@pobox.com>'
+
+	* [r228] ChangeLog: Updated
+
+2006-05-27 23:49  'Travis Shirk <travis@pobox.com>'
+
+	* [r227] Makefile.in: Include ebuild in distribution tarball
+
+2006-05-27 23:41  'Travis Shirk <travis@pobox.com>'
+
+	* [r226] Makefile.in: Build README for all, dists will have it
+	  already so it won't be built in this case
+
+2006-05-27 23:38  'Travis Shirk <travis@pobox.com>'
+
+	* [r225] src/playlist_control.py: Save playlist more often to keep
+	  it in sync in case of crash
+
+2006-05-27 23:36  'Travis Shirk <travis@pobox.com>'
+
+	* [r224] src/plugins/gajimstatus.py: Allow tune status when DnD
+
+2006-05-27 02:39  'Travis Shirk <travis@pobox.com>'
+
+	* [r223] THANKS: Added Jim Ray for contributing Mesk web site
+
+2006-05-27 02:37  'Travis Shirk <travis@pobox.com>'
+
+	* [r222] src/main_window.py: Set window icon
+
+2006-05-27 02:31  'Travis Shirk <travis@pobox.com>'
+
+	* [r221] Makefile.in, etc/mesk.desktop.in, po/es.po, po/mesk.pot,
+	  src/album_cover_control.py, src/audio-x-generic.svg,
+	  src/mesk.png, src/mesk.svg: Auto-generate README from wiki and
+	  mesk.desktop fixes including menu icon
+
+2006-05-26 02:18  'Travis Shirk <travis@pobox.com>'
+
+	* [r220] README: Deleted, as I'm going to fetch from the Wiki
+
+2006-05-26 01:48  'Travis Shirk <travis@pobox.com>'
+
+	* [r219] po/es.po, po/mesk.pot: Updates
+
+2006-05-23 01:55  'Travis Shirk <travis@pobox.com>'
+
+	* [r213] Makefile.in, configure.ac: Reset version to 0.1.0
+
+2006-05-21 04:53  'Travis Shirk <travis@pobox.com>'
+
+	* [r212] ChangeLog: Update
+
+2006-05-21 04:53  'Travis Shirk <travis@pobox.com>'
+
+	* [r211] .changelog_authors, ChangeLog, Makefile.in: More
+	  changelog fixes
+
+2006-05-21 04:48  'Travis Shirk <travis@pobox.com>'
+
+	* [r210] po/es.po: es updates for string freeze
+
+2006-05-21 04:22  'Travis Shirk <travis@pobox.com>'
+
+	* [r209] po/mesk.pot: String freeze
+
+2006-05-21 04:06  'Travis Shirk <travis@pobox.com>'
+
+	* [r208] ChangeLog: Created with svn2cl
+
+2006-05-20 03:27  'Travis Shirk <travis@pobox.com>'
+
+	* [r207] src/main_window.py: Restored set_compact_mode which I
+	  accidently blew away
+
+2006-05-20 03:26  'Travis Shirk <travis@pobox.com>'
+
+	* [r206] src/mesk/__init__.py: Changed default window size
+
+2006-05-18 03:02  'Travis Shirk <travis@pobox.com>'
+
+	* [r205] src/plugins/audioscrobbler.py,
+	  src/plugins/gajimstatus.py: URLs point to Wiki pages
+
+2006-05-18 01:35  'Travis Shirk <travis@pobox.com>'
+
+	* [r204] src/gtk_utils.py, src/main_window.py, src/mesk_gui.glade:
+	  Added a help menuitem which directs browser to Wiki
+
+2006-05-17 05:19  'Travis Shirk <travis@pobox.com>'
+
+	* [r203] po/Makefile.in, po/POTFILES.in, po/es.po, po/mesk.pot:
+	  String updates
+
+2006-05-17 05:10  'Travis Shirk <travis@pobox.com>'
+
+	* [r202] src/plugins/audioscrobbler.py: User notifications for
+	  auth errors
+
+2006-05-17 04:12  'Travis Shirk <travis@pobox.com>'
+
+	* [r201] src/mesk/plugin/__init__.py,
+	  src/plugins/audioscrobbler.py, src/plugins/gajimstatus.py,
+	  src/plugins/plugins_gui.glade: gajimstatus plugin configuration
+
+2006-05-15 03:24  'Travis Shirk <travis@pobox.com>'
+
+	* [r200] src/plugins/audioscrobbler.py,
+	  src/plugins/plugins_gui.glade: Audioscrobbler configuration
+	  hacking
+
+2006-05-15 02:39  'Travis Shirk <travis@pobox.com>'
+
+	* [r199] src/mesk/plugin/__init__.py, src/playlist_control.py,
+	  src/preference_window.py: MessageDialog for plugin activation
+	  error
+
+2006-05-15 02:27  'Travis Shirk <travis@pobox.com>'
+
+	* [r198] src/preference_window.py: Removed some unused gconf code
+
+2006-05-15 02:25  'Travis Shirk <travis@pobox.com>'
+
+	* [r197] src/mesk/plugin/__init__.py,
+	  src/plugins/audioscrobbler.py, src/preference_window.py:
+	  Hide/show plugin configure button depending on active and
+	  configurable
+
+2006-05-15 00:59  'Travis Shirk <travis@pobox.com>'
+
+	* [r196] src/audio_control.py, src/main_window.py,
+	  src/mesk/playlist.py, src/mesk/plugin/__init__.py,
+	  src/mesk/plugin/listeners.py, src/playlist_control.py,
+	  src/plugins/audioscrobbler.py, src/plugins/gajimstatus.py: Fixes
+	  for #105 and #118
+
+2006-05-14 21:16  'Travis Shirk <travis@pobox.com>'
+
+	* [r195] src/mesk/common/config.py, src/mesk/plugin/__init__.py,
+	  src/preference_window.py: Plugins can be activated/deactivated
+	  at runtime
+
+2006-05-14 20:54  'Travis Shirk <travis@pobox.com>'
+
+	* [r194] src/config.py: Config.getlist added so playlist_names is
+	  no longer needed
+
+2006-05-14 20:53  'Travis Shirk <travis@pobox.com>'
+
+	* [r193] src/main_window.py, src/mesk/common/config.py,
+	  src/mesk/plugin/__init__.py: Added a getlist method to the
+	  config parser
+
+2006-05-09 03:07  'Travis Shirk <travis@pobox.com>'
+
+	* [r192] src/main.py: Update version in config; fixes #115
+
+2006-05-09 02:56  'Travis Shirk <travis@pobox.com>'
+
+	* [r191] src/playlist_control.py: Prefer gtk.main_iteration over
+	  gtk.main_iteration_do
+
+2006-05-09 02:53  'Travis Shirk <travis@pobox.com>'
+
+	* [r190] src/playlist_control.py: Don't hang UI for drops of a
+	  huge number of files; fixes #73
+
+2006-05-07 23:34  'Travis Shirk <travis@pobox.com>'
+
+	* [r189] Makefile.in: More thorough clean
+
+2006-05-07 21:47  'Travis Shirk <travis@pobox.com>'
+
+	* [r188] src/mesk/common/config.py: Always save config file with
+	  mode 0600
+
+2006-05-07 21:16  'Travis Shirk <travis@pobox.com>'
+
+	* [r187] Makefile.in, src/main.py, src/mesk/common/config.py,
+	  src/mesk/plugin/__init__.py, src/mesk_gui.glade,
+	  src/plugins/audioscrobbler.py, src/plugins/plugins_gui.glade,
+	  src/preference_window.py: Hacking on plugin configurations
+	  launched from Preference window
+
+2006-05-07 02:35  'Travis Shirk <travis@pobox.com>'
+
+	* [r186] src/main.py, src/mesk/plugin/__init__.py: Added dynamic
+	  activation/deactivation of plugins and scaled down the default
+	  plugin XPM
+
+2006-05-07 02:17  'Travis Shirk <travis@pobox.com>'
+
+	* [r185] src/plugins/gajimstatus.py: Smaller XPM
+
+2006-05-07 01:41  'Travis Shirk <travis@pobox.com>'
+
+	* [r184] src/mesk_gui.glade, src/preference_window.py: Plugin info
+	  and image in preference dialog.
+
+2006-05-05 01:41  'Travis Shirk <travis@pobox.com>'
+
+	* [r183] src/mesk_gui.glade: Set decent size for plugins list view
+
+2006-05-05 01:05  'Travis Shirk <travis@pobox.com>'
+
+	* [r182] src/plugins/gajimstatus.py: Added spaces around -
+
+2006-04-30 17:16  'Travis Shirk <travis@pobox.com>'
+
+	* [r181] po/es.po, po/mesk.pot, src/audio_control.py,
+	  src/main_window.py, src/mesk/__init__.py,
+	  src/mesk/plugin/__init__.py, src/mesk_gui.glade,
+	  src/plugins/audioscrobbler.py, src/plugins/gajimstatus.py,
+	  src/preference_window.py: Plugin refactoring
+
+2006-04-21 01:32  'Travis Shirk <travis@pobox.com>'
+
+	* [r180] src/audio_control.py, src/main_window.py,
+	  src/mesk_gui.glade, src/preference_window.py: Preferences hacking
+
+2006-04-20 03:20  'Travis Shirk <travis@pobox.com>'
+
+	* [r179] src/audio_control.py: Removed SRC_STREAM pipeline code
+	  since I'll port to gstreamer 0.10 before implementing streaming,
+	  and added some FIXMEs
+
+2006-04-20 01:09  'Travis Shirk <travis@pobox.com>'
+
+	* [r178] src/mesk/audio_source.py: Display 'Unknown' for metadata
+	  values that are empty
+
+2006-04-20 00:57  'Travis Shirk <travis@pobox.com>'
+
+	* [r177] src/main.py: Added FIXME for gst interception of --help
+
+2006-04-20 00:56  'Travis Shirk <travis@pobox.com>'
+
+	* [r176] src/audio_control.py: Cleanups
+
+2006-04-20 00:54  'Travis Shirk <travis@pobox.com>'
+
+	* [r175] src/plugins/audioscrobbler.py: #113: Don't submit songs
+	  to last.fm < 30s
+
+2006-04-16 01:18  'Travis Shirk <travis@pobox.com>'
+
+	* [r174] src/mesk_gui.glade: Translators
+
+2006-04-16 01:14  'Travis Shirk <travis@pobox.com>'
+
+	* [r173] Makefile.in, po/Makefile.in, po/es.po, po/mesk.pot,
+	  src/mesk/__init__.py: Changed how po files are layed out and
+	  installed
+
+2006-04-15 23:10  'Travis Shirk <travis@pobox.com>'
+
+	* [r172] po/es: Removed
+
+2006-04-15 23:09  'Travis Shirk <travis@pobox.com>'
+
+	* [r171] po/fr: Removed
+
+2006-04-15 23:08  'Travis Shirk <travis@pobox.com>'
+
+	* [r170] po/es.po, po/es/LC_MESSAGES/mesk.po, po/fr/LC_MESSAGES:
+	  Rearranging
+
+2006-04-15 23:07  'Travis Shirk <travis@pobox.com>'
+
+	* [r169] po/fr/LC_MESSAGES/mesk.po: Removed
+
+2006-04-14 01:28  'Travis Shirk <travis@pobox.com>'
+
+	* [r168] po/es/LC_MESSAGES/mesk.po, po/fr/LC_MESSAGES/mesk.po,
+	  po/mesk.pot: Updated Spanish translation (used babelfish so it's
+	  probably gibberish to a native speaker)
+
+2006-04-14 01:16  'Travis Shirk <travis@pobox.com>'
+
+	* [r167] Makefile.in, po/es/LC_MESSAGES/mesk.po,
+	  src/mesk/common/i18n.py: Installation of gettext translation
+	  files and loading fixes for install environments
+
+2006-04-12 01:32  'Travis Shirk <travis@pobox.com>'
+
+	* [r166] configure.ac: Version bump to 0.1.1
+
+2006-04-12 01:05  'Travis Shirk <travis@pobox.com>'
+
+	* [r165] Makefile.in, etc/mesk.desktop.in, po/Makefile.in,
+	  src/mesk/common/i18n.py, src/mesk_gui.glade: Dist fixes
+
+2006-04-11 23:31  'Travis Shirk <travis@pobox.com>'
+
+	* [r164] Makefile.in, po/Makefile.in, po/POTFILES.in,
+	  po/es/LC_MESSAGES/mesk.po, po/fr/LC_MESSAGES/mesk.po,
+	  po/mesk.pot, src/about_dialog.py, src/main.py,
+	  src/main_window.py, src/mesk/common/i18n.py,
+	  src/mesk/plugin/__init__.py, src/mesk_gui.glade,
+	  src/playlist_control.py: i18n
+
+2006-04-11 20:12  'Travis Shirk <travis@pobox.com>'
+
+	* [r163] po/mesk.pot: added
+
+2006-04-10 04:09  'Travis Shirk <travis@pobox.com>'
+
+	* [r162] ., Makefile.in, configure.ac, configure.in,
+	  etc/mesk.desktop.in, po/Makefile.in, po/es, po/es/LC_MESSAGES,
+	  po/es/LC_MESSAGES/mesk.po, po/fr, po/fr/LC_MESSAGES,
+	  po/fr/LC_MESSAGES/mesk.po: i18n and mesk.desktop work
+
+2006-04-07 00:39  'Travis Shirk <travis@pobox.com>'
+
+	* [r161] src/album_cover_control.py: Ensure expanded album cover
+	  is not offscreen, fixes #107
+
+2006-04-04 02:05  'Travis Shirk <travis@pobox.com>'
+
+	* [r160] src/playlist_control.py: Clean up
+
+2006-04-04 01:56  'Travis Shirk <travis@pobox.com>'
+
+	* [r159] src/playlist_control.py: Added a new state to the
+	  playlist model to mark the row as active/inactive (file not
+	  found, etc)
+	  In the latter case strikethrough text is displayed.
+
+2006-04-04 00:54  'Travis Shirk <travis@pobox.com>'
+
+	* [r158] src/plugins/audioscrobbler.py: Mesk gots'd itself a
+	  last.fm id/version
+
+2006-04-03 01:07  'Travis Shirk <travis@pobox.com>'
+
+	* [r157] launch.sh: MESK_TEST_PROFILE env var added
+
+2006-04-03 01:05  'Travis Shirk <travis@pobox.com>'
+
+	* [r156] src/album_cover_control.py: Use None to set to default
+	  cursor instead of explicit LEFT_ARROW
+
+2006-04-03 01:04  'Travis Shirk <travis@pobox.com>'
+
+	* [r155] src/plugins/gajimstatus.py: Shortened the delay to 2.5s
+	  before updating
+
+2006-04-02 05:00  'Travis Shirk <travis@pobox.com>'
+
+	* [r154] src/playlist_control.py: Fix (#102) for tracks with no
+	  track #
+
+2006-04-01 06:17  'Travis Shirk <travis@pobox.com>'
+
+	* [r153] src/album_cover_control.py, src/main.py,
+	  src/main_window.py: set_restart command for gnome and album
+	  cover fix for empty playlist
+
+2006-04-01 06:09  'Travis Shirk <travis@pobox.com>'
+
+	* [r152] src/audio_control.py, src/control.py,
+	  src/playlist_control.py: Preemptive refactoring
+
+2006-04-01 05:54  'Travis Shirk <travis@pobox.com>'
+
+	* [r151] src/plugins/audioscrobbler.py: Cleanup and testing
+
+2006-04-01 05:40  'Travis Shirk <travis@pobox.com>'
+
+	* [r150] src/playlist_control.py: Handle dropping of m3us. Closes
+	  #95
+
+2006-04-01 05:11  'Travis Shirk <travis@pobox.com>'
+
+	* [r149] src/mesk_gui.glade, src/plugins/gajimstatus.py: Less
+	  chatter during common operations
+
+2006-04-01 04:30  'Travis Shirk <travis@pobox.com>'
+
+	* [r148] src/playlist_control.py: #99 fixed
+
+2006-04-01 03:30  'Travis Shirk <travis@pobox.com>'
+
+	* [r147] src/audio_control.py, src/playlist_control.py,
+	  src/plugins/audioscrobbler.py: #92, #98 fixed
+
+2006-04-01 01:48  'Travis Shirk <travis@pobox.com>'
+
+	* [r146] src/playlist_control.py: Fix #96
+
+2006-04-01 01:45  'Travis Shirk <travis@pobox.com>'
+
+	* [r145] src/mesk_gui.glade, src/playlist_control.py: fix #86, #94
+
+2006-03-30 03:46  'Travis Shirk <travis@pobox.com>'
+
+	* [r144] setup.py.in, src/audio_control.py, src/main.py,
+	  src/mesk/listeners.py, src/mesk/plugin, src/mesk/plugin.py,
+	  src/mesk/plugin/__init__.py, src/mesk/plugin/listeners.py,
+	  src/plugins/audioscrobbler.py, src/plugins/gajimstatus.py:
+	  mesk.plugin is now a package instead of a module
+
+2006-03-30 03:18  'Travis Shirk <travis@pobox.com>'
+
+	* [r143] src/plugins/audioscrobbler.py: Fix for #90
+
+2006-03-30 03:16  'Travis Shirk <travis@pobox.com>'
+
+	* [r142] src/main.py, src/mesk/utils.py: Finished up gnome session
+	  support
+
+2006-03-30 02:42  'Travis Shirk <travis@pobox.com>'
+
+	* [r141] etc/mesk-0.1.0.ebuild: Added eyeD3 dep, duh
+
+2006-03-29 05:18  'Travis Shirk <travis@pobox.com>'
+
+	* [r140] src/main_window.py, src/playlist_control.py: Communicate
+	  key press handling downstream
+
+2006-03-29 04:54  'Travis Shirk <travis@pobox.com>'
+
+	* [r139] src/main_window.py, src/plugins/gajimstatus.py: clear
+	  pause, and hide main window on exit without waiting for rest of
+	  shutdown
+
+2006-03-29 04:42  'Travis Shirk <travis@pobox.com>'
+
+	* [r138] src/playlist_control.py, src/plugins/audioscrobbler.py:
+	  #84 and scrobbler fix
+
+2006-03-29 04:20  'Travis Shirk <travis@pobox.com>'
+
+	* [r137] src/plugins/audioscrobbler.py: Fix for #85
+
+2006-03-29 04:13  'Travis Shirk <travis@pobox.com>'
+
+	* [r136] src/about_dialog.py, src/mesk/info.py.in,
+	  src/mesk_gui.glade: Inline license since location can differ
+	  when installed.
+
+2006-03-29 02:05  'Travis Shirk <travis@pobox.com>'
+
+	* [r135] Makefile.in, etc/mesk-0.0.1.ebuild,
+	  etc/mesk-0.1.0.ebuild: Ebuild and Makefile hacking
+
+2006-03-29 01:30  'Travis Shirk <travis@pobox.com>'
+
+	* [r134] src/plugins/gajimstatus.py: stop, pause, shutdown
+
+2006-03-29 00:31  'Travis Shirk <travis@pobox.com>'
+
+	* [r133] src/plugins/audioscrobbler.py,
+	  src/plugins/gajimstatus.py: gajim status plugin
+
+2006-03-28 22:05  'Travis Shirk <travis@pobox.com>'
+
+	* [r132] src/plugins/audioscrobbler.py: Fixes
+
+2006-03-28 22:03  'Travis Shirk <travis@pobox.com>'
+
+	* [r131] src/plugins/audioscrobbler.py: Solid
+
+2006-03-28 03:25  'Travis Shirk <travis@pobox.com>'
+
+	* [r130] src/plugins/audioscrobbler.py,
+	  src/plugins/gajimstatus.py: Pickle fixes
+
+2006-03-28 02:57  'Travis Shirk <travis@pobox.com>'
+
+	* [r129] src/audio_control.py, src/main.py, src/mesk/__init__.py,
+	  src/mesk/plugin.py, src/plugins/audioscrobbler.py:
+	  audioscrobbler work
+
+2006-03-27 05:21  'Travis Shirk <travis@pobox.com>'
+
+	* [r128] src/plugins/audioscrobbler.py: Handshaking, and submit
+	  beginnings
+
+2006-03-27 01:50  'Travis Shirk <travis@pobox.com>'
+
+	* [r127] src/audio_control.py, src/main.py, src/mesk/__init__.py,
+	  src/mesk/listeners.py, src/mesk/log.py, src/mesk/plugin.py,
+	  src/mesk/plugin_events.py, src/plugins/audioscrobbler.py: Plugin
+	  event dispatching, etc
+
+2006-03-26 19:06  'Travis Shirk <travis@pobox.com>'
+
+	* [r126] src/mesk/audio_source.py: Some FIXME
+
+2006-03-25 03:16  'Travis Shirk <travis@pobox.com>'
+
+	* [r125] src/album_cover_control.py: Maximum size for large album
+	  cover display is 600x600 and don't ever show offscreen
+
+2006-03-25 02:38  'Travis Shirk <travis@pobox.com>'
+
+	* [r124] src/mesk/plugin_events.py: Added
+
+2006-03-25 02:32  'Travis Shirk <travis@pobox.com>'
+
+	* [r123] Makefile.in, src/audio_control.py, src/main.py,
+	  src/mesk/__init__.py, src/mesk/plugin.py,
+	  src/plugins/audioscrobbler.py: More plugin work, plugins are
+	  only instantiated if the config requests it
+
+2006-03-24 04:16  'Travis Shirk <travis@pobox.com>'
+
+	* [r122] src/mesk/__init__.py, src/mesk/common/config.py,
+	  src/mesk_gui.glade, src/plugins/audioscrobbler.py: Misc
+	  cleanups, and fleshed out audioscrobbler plugin initialization
+
+2006-03-22 06:29  'Travis Shirk <travis@pobox.com>'
+
+	* [r121] etc/mesk-0.0.1.ebuild, src/main.py, src/mesk/plugin.py,
+	  src/plugins, src/plugins/audioscrobbler.py: Beginnings of
+	  audioscrobbler plugin
+
+2006-03-22 04:03  'Travis Shirk <travis@pobox.com>'
+
+	* [r120] src/main.py, src/mesk/__init__.py, src/mesk/info.py.in,
+	  src/mesk/plugin.py: Plugin loading
+
+2006-03-20 01:11  'Travis Shirk <travis@pobox.com>'
+
+	* [r119] src/mesk_gui.glade: Marquee label cannot get focus
+
+2006-03-20 01:10  'Travis Shirk <travis@pobox.com>'
+
+	* [r118] Makefile.in: Include svg files in dist
+
+2006-03-19 00:49  'Travis Shirk <travis@pobox.com>'
+
+	* [r117] src/playlist_control.py: Force scroll when searching
+
+2006-03-18 20:38  'Travis Shirk <travis@pobox.com>'
+
+	* [r116] src/mesk_gui.glade: Fix for album cover frame; closes #63
+
+2006-03-18 19:54  'Travis Shirk <travis@pobox.com>'
+
+	* [r115] Makefile.in: Include launch.sh in dist
+
+2006-03-18 19:54  'Travis Shirk <travis@pobox.com>'
+
+	* [r114] src/gtk_utils.py, src/main_window.py, src/mesk_gui.glade,
+	  src/playlist_control.py: Finished playlist search, and other
+	  tminor tweaks
+
+2006-03-18 04:11  'Travis Shirk <travis@pobox.com>'
+
+	* [r113] src/audio_control.py: Better algorithm for adjust track
+	  scale, fixes #7
+
+2006-03-18 03:13  'Travis Shirk <travis@pobox.com>'
+
+	* [r112] src/playlist_control.py: Fixed autoscroll; #58
+
+2006-03-18 03:13  'Travis Shirk <travis@pobox.com>'
+
+	* [r111] launch.sh: Use testing profile
+
+2006-03-18 02:51  'Travis Shirk <travis@pobox.com>'
+
+	* [r110] src/album_cover_control.py: Do not display orignal size
+	  if it is smaller than the scaled size; closes #61
+
+2006-03-18 02:46  'Travis Shirk <travis@pobox.com>'
+
+	* [r109] src/audio_control.py, src/mesk/playlist.py: Fix for #60
+
+2006-03-18 02:39  'Travis Shirk <travis@pobox.com>'
+
+	* [r108] src/mesk/__init__.py: Removed stale import
+
+2006-03-16 04:07  'Travis Shirk <travis@pobox.com>'
+
+	* [r107] src/mesk_gui.glade, src/playlist_control.py: Work on
+	  playlist search
+
+2006-03-16 03:03  'Travis Shirk <travis@pobox.com>'
+
+	* [r106] src/album_cover_control.py, src/audio-x-generic.svg,
+	  src/gtk_utils.py, src/mesk/__init__.py, src/mesk_gui.glade: When
+	  hovering over album cover display full size image, thanks Gajim!
+
+2006-03-15 05:52  'Travis Shirk <travis@pobox.com>'
+
+	* [r105] src/album_cover_control.py, src/audio_control.py,
+	  src/main_window.py, src/mesk_gui.glade, src/playlist_control.py:
+	  Album cover display from local files.
+
+2006-03-14 05:56  'Travis Shirk <travis@pobox.com>'
+
+	* [r104] src/mesk_gui.glade: Album cover UI
+
+2006-03-14 05:20  'Travis Shirk <travis@pobox.com>'
+
+	* [r103] NEWS, README, THANKS: Basic starts
+
+2006-03-14 05:00  'Travis Shirk <travis@pobox.com>'
+
+	* [r102] Makefile.in, NEWS, scripts/mesk.in: make dist
+
+2006-03-14 04:18  'Travis Shirk <travis@pobox.com>'
+
+	* [r101] src/mesk/audio_source.py, src/playlist_control.py: Added
+	  year column and prevent time and year from expanding with resizes
+
+2006-03-14 04:06  'Travis Shirk <travis@pobox.com>'
+
+	* [r100] ChangeLog, Makefile.in, launch.sh, scripts/mesk.in,
+	  setup.py.in, src/main.py, src/mesk.py: install/uninstall make
+	  targets
+
+2006-03-14 02:38  'Travis Shirk <travis@pobox.com>'
+
+	* [r99] src/mesk_gui.glade, src/playlist_control.py,
+	  src/stock_repeat.png, src/stock_shuffle.png: Use toggle buttons
+	  instead of checkbuttons for shuffle/repeat
+
+2006-03-13 05:01  'Travis Shirk <travis@pobox.com>'
+
+	* [r98] Makefile.in, THANKS: 'make install' hacking
+
+2006-03-13 04:53  'Travis Shirk <travis@pobox.com>'
+
+	* [r97] src/mesk_gui.glade: Hide some menuitems until they are
+	  redy to be implemented
+
+2006-03-13 04:49  'Travis Shirk <travis@pobox.com>'
+
+	* [r96] Makefile.in, README, acsite.m4, configure.in, scripts,
+	  scripts/mesk.in, setup.py.in: Release and packaging work
+
+2006-03-13 03:59  'Travis Shirk <travis@pobox.com>'
+
+	* [r95] acsite.m4, configure.in, etc, etc/mesk-0.0.1.ebuild:
+	  ebuild beginnings
+
+2006-03-13 02:41  'Travis Shirk <travis@pobox.com>'
+
+	* [r94] src/mesk_gui.glade, src/playlist_control.py: More playlist
+	  search beginnings
+
+2006-03-13 02:07  'Travis Shirk <travis@pobox.com>'
+
+	* [r93] src/playlist_control.py: Ellipsize in TextColumns and
+	  optionally set the colum to expand (default is True)
+
+2006-03-13 01:52  'Travis Shirk <travis@pobox.com>'
+
+	* [r92] src/main_window.py, src/mesk_gui.glade,
+	  src/playlist_control.py: Display current track in marquee label;
+	  closes #15
+
+2006-03-12 23:47  'Travis Shirk <travis@pobox.com>'
+
+	* [r91] src/playlist_control.py: Can't delete data from drag
+	  context when row reordering
+
+2006-03-12 23:31  'Travis Shirk <travis@pobox.com>'
+
+	* [r90] src/config.py, src/main_window.py, src/mesk/common/uri.py,
+	  src/mesk/playlist.py, src/mesk_gui.glade,
+	  src/playlist_control.py: Playlist saving, including state
+	  (shuffle, queue, etc.)
+
+2006-03-12 21:17  'Travis Shirk <travis@pobox.com>'
+
+	* [r89] src/config.py, src/mesk/__init__.py,
+	  src/playlist_control.py: Queue support in playlist config
+
+2006-03-11 20:41  'Travis Shirk <travis@pobox.com>'
+
+	* [r88] src/main_window.py: An attempt at fixing #44, but no such
+	  luck
+
+2006-03-11 19:40  'Travis Shirk <travis@pobox.com>'
+
+	* [r87] src/main_window.py, src/mesk/__init__.py, src/mesk/log.py:
+	  Added VERBOSE log level
+
+2006-03-11 18:27  'Travis Shirk <travis@pobox.com>'
+
+	* [r86] src/playlist_control.py: For now, the playlist is owned
+	  entirely by PlaylistControl
+
+2006-03-11 17:54  'Travis Shirk <travis@pobox.com>'
+
+	* [r85] src/playlist_control.py: Removed some cruft
+
+2006-03-11 01:46  'Travis Shirk <travis@pobox.com>'
+
+	* [r84] src/gtk_utils.py, src/playlist_control.py: Escaping for
+	  pango, aand only addd to _playlist *after* adding to the model
+	  so that if the former fails
+	  we are not left with a stale entry in the playlist.
+
+2006-03-11 00:19  'Travis Shirk <travis@pobox.com>'
+
+	* [r83] src/mesk/audio_source.py, src/playlist_control.py: Added
+	  time column
+
+2006-03-10 08:25  'Travis Shirk <travis@pobox.com>'
+
+	* [r82] src/mesk/audio_source.py, src/playlist_control.py: Added a
+	  small metadatya class for contain source info, and display the
+	  basics (other than file) in the playlist.
+
+2006-03-10 07:19  'Travis Shirk <travis@pobox.com>'
+
+	* [r81] src/audio_control.py, src/mesk/audio_source.py: No longer
+	  save the Mp3AudioFile or eyeD3.Tag along with the source to save
+	  on memory.
+	  How much? With 1402 tracks loaded 25 MB was saved.
+
+2006-03-10 07:03  'Travis Shirk <travis@pobox.com>'
+
+	* [r80] src/mesk/audio_source.py, src/playlist_control.py: Better
+	  handling of unsupported file types (i.e., non mp3s)
+
+2006-03-10 05:43  'Travis Shirk <travis@pobox.com>'
+
+	* [r79] src/playlist_control.py: Auto scroll playlist, closes #3
+	  and #5
+
+2006-03-10 04:49  'Travis Shirk <travis@pobox.com>'
+
+	* [r78] src/gtk_utils.py, src/main_window.py,
+	  src/mesk/audio_source.py, src/mesk/common/uri.py,
+	  src/playlist_control.py: Fixes in Uri, grabbing focus, and pango
+	  escaping.
+
+2006-03-09 04:27  'Travis Shirk <travis@pobox.com>'
+
+	* [r77] src/main_window.py, src/mesk_gui.glade,
+	  src/playlist_control.py: Playlist treeview grabs focused when
+	  the window get's focus or the tabs are switched
+
+2006-03-09 04:12  'Travis Shirk <travis@pobox.com>'
+
+	* [r76] src/main_window.py, src/mesk_gui.glade: Beginnings of
+	  playlist config UI
+
+2006-03-09 03:28  'Travis Shirk <travis@pobox.com>'
+
+	* [r75] src/playlist_control.py: Learned the beauty of
+	  gtk.TreeRowReference, DnD reordering keeps the queue in sync.
+
+2006-03-08 07:08  'Travis Shirk <travis@pobox.com>'
+
+	* [r74] src/mesk/playlist.py: Removed debug statements
+
+2006-03-08 04:14  'Travis Shirk <travis@pobox.com>'
+
+	* [r73] src/playlist_control.py: queue display bug fixes
+
+2006-03-08 04:12  'Travis Shirk <travis@pobox.com>'
+
+	* [r72] src/mesk.py: ipython+pdb goodness when log_level -s DEBUG
+
+2006-03-08 02:26  'Travis Shirk <travis@pobox.com>'
+
+	* [r71] src/mesk_gui.glade: No restart in the prev button tooltip
+
+2006-03-05 02:23  'Travis Shirk <travis@pobox.com>'
+
+	* [r70] src/mesk/playlist.py, src/playlist_control.py: Fix for
+	  playlist stats (#47) and restart on queueing
+
+2006-03-05 01:21  'Travis Shirk <travis@pobox.com>'
+
+	* [r69] src/audio_control.py, src/mesk/playlist.py,
+	  src/playlist_control.py: Playlist refactoring, better shuffle,
+	  queuing disabled for the time being
+
+2006-03-04 23:29  'Travis Shirk <travis@pobox.com>'
+
+	* [r68] src/mesk/playlist.py: Bettwe shuffle and queue tracking
+
+2006-03-04 04:30  'Travis Shirk <travis@pobox.com>'
+
+	* [r67] src/audio_control.py: New signal for gst errors
+
+2006-03-03 01:28  'Travis Shirk <travis@pobox.com>'
+
+	* [r66] src/main_window.py: Can close tabs with tab close button
+	  and CTRL+w
+
+2006-03-01 05:39  'Travis Shirk <travis@pobox.com>'
+
+	* [r65] src/mesk/common/uri.py, src/playlist_control.py: DnD
+	  complete, closes #9
+
+2006-03-01 05:00  'Travis Shirk <travis@pobox.com>'
+
+	* [r64] src/audio_control.py, src/mesk.py, src/mesk/__init__.py,
+	  src/mesk/log.py, src/playlist_control.py: Logging API and
+	  playlist delete fixes.
+
+2006-03-01 03:37  'Travis Shirk <travis@pobox.com>'
+
+	* [r63] src/playlist_control.py: Dropping into empty playlists
+	  works, but bugs are abound
+
+2006-02-28 06:15  'Travis Shirk <travis@pobox.com>'
+
+	* [r62] src/mesk/audio_source.py, src/mesk/common/uri.py,
+	  src/mesk/utils.py, src/playlist_control.py: Progress on
+	  receiving drops from file manager.
+
+2006-02-28 04:37  'Travis Shirk <travis@pobox.com>'
+
+	* [r61] src/audio_control.py, src/main_window.py,
+	  src/mesk/audio_source.py, src/mesk/common/uri.py,
+	  src/mesk/playlist.py, src/playlist_control.py: audio_source.load
+	  and more class Uri usage
+
+2006-02-28 03:46  'Travis Shirk <travis@pobox.com>'
+
+	* [r60] launch.sh, src/audio_control.py, src/mesk/audio_source.py,
+	  src/mesk/common/uri.py, src/mesk/playlist.py, src/mesk/utils.py,
+	  src/playlist_control.py: Uri classes from Duncan McGreggor
+	  http://aspn.activestate.com/ASPN/Cookbook/Python/Recipe/473864
+
+2006-02-28 01:49  'Travis Shirk <travis@pobox.com>'
+
+	* [r59] Makefile.in, configure.in, launch.sh, src/mesk.py,
+	  src/mesk/__init__.py, src/mesk/info.py.in, src/mesk/log.py,
+	  src/mesk/program_info.py.in, src/playlist_control.py:
+	  program_info.py --> info.py
+
+2006-02-26 22:46  'Travis Shirk <travis@pobox.com>'
+
+	* [r58] src/playlist_control.py: Keybinding comments
+
+2006-02-26 22:32  'Travis Shirk <travis@pobox.com>'
+
+	* [r57] src/mesk/playlist.py, src/playlist_control.py: Playlist
+	  queue, closes #4
+
+2006-02-26 21:27  'Travis Shirk <travis@pobox.com>'
+
+	* [r56] Makefile.in, src/mesk_gui.glade, src/playlist_control.py:
+	  Added playlist search UI and keybindings
+
+2006-02-26 06:55  'Travis Shirk <travis@pobox.com>'
+
+	* [r55] src/mesk/playlist.py, src/playlist_control.py: More
+	  queueing infastructure
+
+2006-02-26 06:43  'Travis Shirk <travis@pobox.com>'
+
+	* [r54] src/mesk_gui.glade, src/playlist_control.py: Playlist
+	  queue beginnings
+
+2006-02-26 06:23  'Travis Shirk <travis@pobox.com>'
+
+	* [r53] src/mesk/__init__.py, src/playlist_control.py: First run
+	  bug fixes
+
+2006-02-26 06:08  'Travis Shirk <travis@pobox.com>'
+
+	* [r52] src/audio_control.py: Decided against #23, removed initial
+	  code for it.
+
+2006-02-26 05:57  'Travis Shirk <travis@pobox.com>'
+
+	* [r51] Makefile.in, src/audio_control.py, src/config.py,
+	  src/gtk_utils.py, src/main_window.py, src/mesk/__init__.py,
+	  src/mesk/audio_source.py, src/mesk/common/config.py,
+	  src/mesk/playlist.py, src/mesk/utils.py,
+	  src/playlist_control.py: New playlist config, closes #26
+
+2006-02-26 03:03  'Travis Shirk <travis@pobox.com>'
+
+	* [r50] src/mesk/playlist.py, src/mesk/utils.py: Playlist shuffle,
+	  closes [1]
+
+2006-02-26 01:56  'Travis Shirk <travis@pobox.com>'
+
+	* [r49] configure.in: Require python 2.4
+
+2006-02-26 01:56  'Travis Shirk <travis@pobox.com>'
+
+	* [r48] src/mesk/utils.py, src/playlist_control.py: Make playlist
+	  font size 2 point smaller than the default
+
+2006-02-26 00:43  'Travis Shirk <travis@pobox.com>'
+
+	* [r47] src/playlist_control.py: Added TreeViewColumn subclasses
+	  and some status icon bug fixes
+
+2006-02-25 18:24  'Travis Shirk <travis@pobox.com>'
+
+	* [r46] src/audio_control.py, src/playlist_control.py: Fixes for
+	  #39 and #40
+
+2006-02-25 07:15  'Travis Shirk <travis@pobox.com>'
+
+	* [r45] src/mesk_gui.glade: Removed album cover widget, it'll be a
+	  while before that can get done
+
+2006-02-25 07:10  'Travis Shirk <travis@pobox.com>'
+
+	* [r44] src/mesk/playlist.py, src/playlist_control.py:
+	  Next/previous fixes wrt repeat mode
+
+2006-02-25 07:00  'Travis Shirk <travis@pobox.com>'
+
+	* [r43] src/mesk/playlist.py, src/mesk_gui.glade,
+	  src/playlist_control.py: Got the easier repeat out of the way
+	  before redoing shuffle
+
+2006-02-25 06:29  travis
+
+	* [r42] src/mesk/__init__.py, src/mesk/playlist.py: Reverted the
+	  garbage shuffling algorithm. It sucked
+
+2006-02-25 03:59  travis
+
+	* [r41] src/audio_control.py, src/mesk/playlist.py: Fixes for
+	  previous
+
+2006-02-24 05:48  travis
+
+	* [r40] src/mesk/playlist.py: FIXME note
+
+2006-02-24 05:47  travis
+
+	* [r39] src/audio_control.py, src/mesk/playlist.py,
+	  src/playlist_control.py: Playlist shuffle support
+
+2006-02-24 05:46  travis
+
+	* [r38] src/mesk_gui.glade: Removed cruft
+
+2006-02-24 05:45  travis
+
+	* [r37] src/main_window.py: Fixed compact mode
+
+2006-02-24 04:41  travis
+
+	* [r36] src/playlist_control.py: Redo playlist reordering so
+	  thatdrops from external sources can also work
+
+2006-02-24 01:08  travis
+
+	* [r35] src/audio_control.py: Use --:-- instead of 00:00
+
+2006-02-22 05:49  travis
+
+	* [r34] src/mesk/playlist.py, src/playlist_control.py: Implemented
+	  reorderable DnD playlists, more like xmms everyday!
+
+2006-02-22 03:17  travis
+
+	* [r33] src/main_window.py, src/mesk_gui.glade: Smaller buttons by
+	  using HBox instead of ButtonBox
+
+2006-02-21 04:46  travis
+
+	* [r32] src/audio_control.py, src/main_window.py,
+	  src/mesk_gui.glade, src/playlist_control.py: Implemented
+	  playlist deletes (delete key and menuitem)
+
+2006-02-21 04:20  travis
+
+	* [r31] src/mesk/common/config.py: Multiple playlist fix
+
+2006-02-21 04:08  travis
+
+	* [r30] src/about_dialog.py, src/audio_control.py,
+	  src/mesk_gui.glade, src/playlist_control.py: Play/pause state
+	  fixes. Selection in treeview
+
+2006-02-21 03:10  travis
+
+	* [r29] src/playlist_control.py: Remove cruft
+
+2006-02-21 03:07  travis
+
+	* [r28] Makefile.in, src/audio_control.py,
+	  src/mesk/audio_source.py, src/mesk/log.py, src/mesk/playlist.py,
+	  src/mesk/utils.py, src/playlist_control.py: Playlist stats and
+	  more abstract AudioInfo class
+
+2006-02-20 23:15  travis
+
+	* [r27] src/audio_control.py, src/main_window.py, src/mesk.py,
+	  src/mesk/__init__.py, src/mesk/playlist.py,
+	  src/playlist_control.py: First run fixes
+
+2006-02-20 22:02  travis
+
+	* [r26] src/audio_control.py, src/mesk/playlist.py,
+	  src/playlist_control.py: Many fixes from the last hackfest
+
+2006-02-20 20:00  travis
+
+	* [r25] src/audio_control.py, src/main_window.py, src/mesk.py,
+	  src/mesk/playlist.py, src/mesk_gui.glade,
+	  src/playlist_control.py: Implemented playlist status column,
+	  plus other numerous fixes
+
+2006-02-20 07:03  travis
+
+	* [r24] src/mesk/utils.py: Added
+
+2006-02-20 06:59  travis
+
+	* [r23] src/audio_control.py, src/mesk/playlist.py: Implemented
+	  next/previous
+
+2006-02-20 05:45  travis
+
+	* [r22] src/audio_control.py, src/mesk/__init__.py,
+	  src/mesk_gui.glade: Implemented tracking and seeking
+
+2006-02-20 02:17  travis
+
+	* [r21] src/mesk_gui.glade, src/playlist_control.py: Messed with
+	  treeview
+
+2006-02-20 01:59  travis
+
+	* [r20] src/audio_control.py, src/main_window.py,
+	  src/mesk/__init__.py, src/mesk/audio_source.py,
+	  src/mesk/common/audio_source.py, src/mesk/common/playlist.py,
+	  src/mesk/playlist.py, src/mesk_gui.glade,
+	  src/playlist_control.py: Playlists working, tree model
+	  beginnings, pref window beginnnings
+
+2006-02-19 05:11  travis
+
+	* [r19] src/main_window.py, src/mesk.py, src/mesk/__init__.py,
+	  src/mesk_gui.glade, src/playlist_control.py: Window
+	  sizing/positioning, and playlist_control beginnings
+
+2006-02-19 02:35  travis
+
+	* [r18] src/main_window.py, src/mesk.py, src/mesk/__init__.py,
+	  src/mesk/common/config.py: config fixes
+
+2006-02-19 01:59  travis
+
+	* [r17] src/main_window.py, src/mesk.py, src/mesk/__init__.py,
+	  src/mesk/common/config.py: Loading/Saving config, updating
+	  compact_mode
+
+2006-02-19 01:18  travis
+
+	* [r16] src/about_dialog.py, src/audio_control.py,
+	  src/main_window.py, src/mesk.py, src/mesk/__init__.py,
+	  src/mesk/common/config.py, src/mesk/common/i18n.py,
+	  src/mesk/i18n.py: Initial profile support
+
+2006-02-19 00:20  travis
+
+	* [r15] Makefile.in, configure.in, launch.sh, src/about_dialog.py,
+	  src/audio_control.py, src/common, src/main_window.py,
+	  src/mesk.py, src/mesk/__init__.py, src/mesk/common,
+	  src/mesk/common/__init__.py, src/mesk/common/audio_source.py,
+	  src/mesk/common/config.py, src/mesk/common/playlist.py,
+	  src/mesk/i18n.py, src/mesk/program_info.py.in,
+	  src/mesk_gui.glade:
+
+2006-02-14 02:53  travis
+
+	* [r14] src/audio_control.py, src/common/__init__.py,
+	  src/common/config.py, src/common/i18n.py, src/common/mesk.py,
+	  src/mesk, src/mesk.py, src/mesk/__init__.py: Started on new
+	  config API based on ConfigParser
+
+2006-02-13 00:32  travis
+
+	* [r13] src/common/__init__.py, src/common/playlist.py,
+	  src/common/program_info.py.in: general updates
+
+2006-02-11 19:12  travis
+
+	* [r12] src/audio_control.py, src/common/playlist.py,
+	  src/main_window.py: Open menu itme opens file chooser, and undid
+	  some bad habits
+
+2006-02-11 18:52  travis
+
+	* [r11] src/mesk_gui.glade: Added track time label
+
+2006-02-10 05:14  travis
+
+	* [r10] svn-commit.2.tmp, svn-commit.tmp: Removed cruft
+
+2006-02-10 05:12  travis
+
+	* [r9] src/mesk_gui.glade: Remove size request, for now
+
+2006-02-10 05:10  travis
+
+	* [r8] src/audio_control.py, src/common/audio_source.py,
+	  src/common/playlist.py: Started on playlist and audio file API
+
+2006-02-10 04:28  travis
+
+	* [r7] src/mesk_gui.glade: Added MainWindow role
+
+2006-02-08 06:34  travis
+
+	* [r6] AUTHORS, COPYING, Makefile.in, acsite.m4, autogen.sh,
+	  configure.in, data, data/.keep, launch.sh, po, po/.keep,
+	  setup.py.in, sql, sql/setupdb-sqlite.sql, src,
+	  src/about_dialog.py, src/audio_control.py, src/common,
+	  src/common/__init__.py, src/common/config.py,
+	  src/common/i18n.py, src/common/mesk.py,
+	  src/common/program_info.py.in, src/main_window.py, src/mesk.py,
+	  src/mesk_gui.glade, svn-commit.2.tmp, svn-commit.tmp: Import
+
+2006-02-08 06:32  root
+
+	* [r5] mesk/branches, mesk/tags, .: Initial repository layout
+

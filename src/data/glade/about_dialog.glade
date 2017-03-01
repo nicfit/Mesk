@@ -1,0 +1,46 @@
+<?xml version="1.0" standalone="no"?> <!--*- mode: xml -*-->
+<!DOCTYPE glade-interface SYSTEM "http://glade.gnome.org/glade-2.0.dtd">
+
+<glade-interface>
+
+<widget class="GtkAboutDialog" id="about_dialog">
+  <property name="visible">True</property>
+  <property name="destroy_with_parent">True</property>
+  <property name="name" translatable="yes">Mesk</property>
+  <property name="copyright">Copyright © 2006-2007 Travis Shirk</property>
+  <property name="wrap_license">False</property>
+  <property name="website">http://mesk.nicfit.net/</property>
+  <property name="website_label" translatable="yes">Mesk Web Site</property>
+  <property name="authors">Travis Shirk &lt;travis@pobox.com&gt;</property>
+  <property name="artists">Icons used from Gtk, Gnome, Tango, etc.
+Graffiti by Mesk</property>
+  <property name="translator_credits">Swedish: Daniel Nylander &lt;po@danielnylander.se&gt;</property>
+  <signal name="close" handler="_on_about_dialog_close"/>
+
+  <child internal-child="vbox">
+    <widget class="GtkVBox" id="dialog-vbox1">
+      <property name="visible">True</property>
+      <property name="homogeneous">False</property>
+      <property name="spacing">0</property>
+
+      <child>
+	<placeholder/>
+      </child>
+
+      <child internal-child="action_area">
+	<widget class="GtkHButtonBox" id="dialog-action_area1">
+	  <property name="visible">True</property>
+	  <property name="layout_style">GTK_BUTTONBOX_DEFAULT_STYLE</property>
+	</widget>
+	<packing>
+	  <property name="padding">0</property>
+	  <property name="expand">False</property>
+	  <property name="fill">True</property>
+	  <property name="pack_type">GTK_PACK_END</property>
+	</packing>
+      </child>
+    </widget>
+  </child>
+</widget>
+
+</glade-interface>

@@ -1,0 +1,127 @@
+= README: Mesk @PACKAGE_VERSION@ =
+
+== Downloads ==
+ * Latest release
+   [http://mesk.nicfit.net/releases/mesk-@PACKAGE_VERSION@.tgz mesk-@PACKAGE_VERSION@.tgz]
+ * Previous releases can be found [http://mesk.nicfit.net/releases/ here].
+ * Gentoo ebuilds are available [http://mesk.nicfit.net/releases/gentoo/ here].
+
+== Requirements ==
+Mesk has a substantial number of dependencies, some of which are optional.
+
+The following list is required:
+ * Python >= 2.4
+ * PyGtk >= 2.10 / Gtk+ >= 2.10
+ * librsvg >= 2.14
+ * gstreamer >= 0.10.11 / gst-python >= 0.10 
+ * MP3 audio (optional):
+   * gst-plugins-mad
+   * eyeD3 >= 0.6.11
+ * Ogg Vorbis audio (optional):
+   * gst-plugins-ogg
+   * gst-plugins-pyvorbis
+   * pyvorbis >= 1.4
+ * CD audio (optional):
+   * gst-plugins-cdio
+   * HAL >= 0.5.7
+   * eject >= 2.1.5 (optional)
+   * cddb-py >= 1.4
+ * DBus for remote control and CD detection (optional):
+   * DBus >= 1.0.0
+   * dbus-glib >= 0.72
+   * dbus-python >= 0.71
+ * Gnome (optional):
+   * gnome-python
+
+Note that the version numbers are supported but earlier version MAY work.
+The {{{configure}}} script allows for disabling DBus and CD support entirely;
+see {{{configure --help}}} for details.
+
+== Building and Installation ==
+After downloading, building and installation is summarized as follows:
+{{{
+$ tar xzf mesk-@PACKAGE_VERSION@.tgz
+$ cd mesk-@PACKAGE_VERSION@
+$ ./configure
+$ make
+$ sudo make install
+}}}
+
+The default installation prefix is {{{/usr/local}}}
+but can be overridden with the --prefix=/path {{{configure}}} option.
+Depending on the permissions of your install prefix, you may be required to
+run {{{make install}}} as root, demonstrated above using {{{sudo}}}.
+
+== Running ==
+To run Mesk use the command {{{mesk}}}.
+{{{
+$ mesk
+$ /usr/local/bin/mesk
+$ <prefix>/bin/mesk 
+}}}
+
+== Command Line Options ==
+{{{
+usage: mesk [OPTIONS] [URI ...]
+
+options:
+  --version             show program's version number and exit
+  -h, --help            show this help message and exit
+  -p NAME, --profile=NAME
+                        Start with profile NAME.
+
+  Remote Control Options:
+    The remote control options operate on a running instance of Mesk,
+    starting the app if necessary. If multiples instances of Mesk are
+    running the profile option can be used to determine which instance to
+    pass the command.
+
+    --stop              Stop playback
+    --play              Start playback
+    --pause             Pause playback
+    --play-pause        If playing, playback is paused. Otherwise the player
+                        is started.
+    --prev              Previous track
+    --next              Next track
+    --toggle-mute       Mute/Unmute
+    --vol-up=N          Increase the volume by N% (0.0 <= n <= 1.0)
+    --vol-down=N        Decrease the volume by N%(0.0 <= n <= 1.0)
+    --get-state         Returns the current state of the audio player
+                        (stopped, playing, paused).
+    --get-current-uri   Returns the URI of the current audio source.
+    --get-current-title
+                        Returns the title of the current audio source.
+    --get-current-artist
+                        Returns the artist of the current audio source.
+    --get-current-album
+                        Returns the album name of the current audio source.
+    --get-current-year  Returns the year of the current audio source.
+    --get-current-length
+                        Returns the length (in seconds) of the current audio
+                        source.
+    --list-playlists    List all playlists.
+    --get-active-playlist
+                        List the name of the active PlaylistControl.  This
+                        value may be empty if no playlists are active (e.g. a
+                        CDROM is active).
+    --set-active-playlist=NAME
+                        Set the active playlist.
+    --enqueue=URI       Enqueue URI to the active playlist.
+    --toggle-visible    Show/hide the main window (minimize to system tray)
+    --raise-window      Raise the main window (bring to front).
+
+  Advanced Options:
+    -l LEVEL, --log-level=LEVEL
+                        Select the amount of terminal logging. May be
+                        CRITICAL, ERROR, WARNING, INFO, VERBOSE, or DEBUG
+    --debug             Break in python debugger on unhandled exceptions.
+    --run-profiler      Run using python profiler.
+    --gst-help          Display Gstreamer command line options.
+}}}
+
+== Developer Info ==
+
+The {{{make install}}} step can be skipped if desired, and Mesk can be run by
+running the script {{{launch.sh}}} in the top-level directory.  Note, using
+this method runs using the profile name {{{testing}}} instead of the default
+profile.  See the command line arguments -p/--profile for more details.

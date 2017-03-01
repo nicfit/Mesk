@@ -1,0 +1,1116 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-07-12 19:34-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. XXX: Update when new features are supported
+#: ../etc/mesk.desktop.in.h:2
+msgid "A GTK+ audio player"
+msgstr ""
+
+#: ../etc/mesk.desktop.in.h:3
+msgid "Music Player"
+msgstr ""
+
+#: ../src/data/glade/about_dialog.glade.h:1
+msgid "Mesk"
+msgstr ""
+
+#: ../src/data/glade/about_dialog.glade.h:2
+msgid "Mesk Web Site"
+msgstr ""
+
+#: ../src/data/glade/audio_control.glade.h:1
+msgid "+"
+msgstr ""
+
+#: ../src/data/glade/audio_control.glade.h:2
+msgid "-"
+msgstr ""
+
+#: ../src/data/glade/audio_control.glade.h:4
+#, no-c-format
+msgid "100%"
+msgstr ""
+
+#: ../src/data/glade/audio_control.glade.h:6
+#, no-c-format
+msgid "25%"
+msgstr ""
+
+#: ../src/data/glade/audio_control.glade.h:8
+#, no-c-format
+msgid "50%"
+msgstr ""
+
+#: ../src/data/glade/audio_control.glade.h:10
+#, no-c-format
+msgid "75%"
+msgstr ""
+
+#: ../src/data/glade/audio_control.glade.h:11
+msgid "<big><b>HTTP Authentication Required</b></big>"
+msgstr ""
+
+#: ../src/data/glade/audio_control.glade.h:12
+msgid "Mute"
+msgstr ""
+
+#: ../src/data/glade/audio_control.glade.h:13
+msgid "Open Mixer"
+msgstr ""
+
+#: ../src/data/glade/audio_control.glade.h:14
+#: ../src/plugins/plugins_gui.glade.h:11
+msgid "Password:"
+msgstr ""
+
+#: ../src/data/glade/audio_control.glade.h:15
+#: ../src/plugins/plugins_gui.glade.h:16
+msgid "Username:"
+msgstr ""
+
+#: ../src/data/glade/audio_control.glade.h:16
+msgid "http://example.com/foo.mp3"
+msgstr ""
+
+#: ../src/data/glade/main_window.glade.h:1
+msgid "--:--"
+msgstr ""
+
+#: ../src/data/glade/main_window.glade.h:2
+msgid "<big>Welcome To <b>Mesk</b></big>"
+msgstr ""
+
+#: ../src/data/glade/main_window.glade.h:3
+msgid "Add, or open, a playlist using the File menu."
+msgstr ""
+
+#: ../src/data/glade/main_window.glade.h:4
+msgid "Current Level:"
+msgstr ""
+
+#: ../src/data/glade/main_window.glade.h:5
+msgid "Find:"
+msgstr ""
+
+#: ../src/data/glade/main_window.glade.h:6
+msgid "First"
+msgstr ""
+
+#: ../src/data/glade/main_window.glade.h:7
+msgid "Mesk Log"
+msgstr ""
+
+#: ../src/data/glade/main_window.glade.h:8
+msgid "Messages - Mesk"
+msgstr ""
+
+#: ../src/data/glade/main_window.glade.h:9
+msgid "Online Help"
+msgstr ""
+
+#: ../src/data/glade/main_window.glade.h:10
+msgid "Open _Device"
+msgstr ""
+
+#: ../src/data/glade/main_window.glade.h:11
+msgid "Open _Playlist"
+msgstr ""
+
+#: ../src/data/glade/main_window.glade.h:12 ../src/mesk/config.py:47
+msgid "Playlist"
+msgstr ""
+
+#: ../src/data/glade/main_window.glade.h:13
+msgid "Playlist stats"
+msgstr ""
+
+#: ../src/data/glade/main_window.glade.h:14
+#: ../src/data/glade/preference_window.glade.h:9
+msgid "Plugins"
+msgstr ""
+
+#: ../src/data/glade/main_window.glade.h:15
+msgid "Show the crrently playing song in the playlist"
+msgstr ""
+
+#: ../src/data/glade/main_window.glade.h:16
+msgid "Status #1"
+msgstr ""
+
+#: ../src/data/glade/main_window.glade.h:17
+msgid "The playlist is read-only"
+msgstr ""
+
+#: ../src/data/glade/main_window.glade.h:18
+msgid "_About"
+msgstr ""
+
+#: ../src/data/glade/main_window.glade.h:19
+msgid "_Compact"
+msgstr ""
+
+#: ../src/data/glade/main_window.glade.h:20
+msgid "_Contents"
+msgstr ""
+
+#: ../src/data/glade/main_window.glade.h:21
+msgid "_Edit"
+msgstr ""
+
+#: ../src/data/glade/main_window.glade.h:22
+msgid "_File"
+msgstr ""
+
+#: ../src/data/glade/main_window.glade.h:23
+msgid "_Help"
+msgstr ""
+
+#: ../src/data/glade/main_window.glade.h:24
+msgid "_Jump To Current"
+msgstr ""
+
+#: ../src/data/glade/main_window.glade.h:25
+msgid "_Logs"
+msgstr ""
+
+#: ../src/data/glade/main_window.glade.h:26
+msgid "_New Playlist..."
+msgstr ""
+
+#: ../src/data/glade/main_window.glade.h:27
+msgid "_Next"
+msgstr ""
+
+#: ../src/data/glade/main_window.glade.h:28
+msgid "_Preferences"
+msgstr ""
+
+#: ../src/data/glade/main_window.glade.h:29
+msgid "_Previous"
+msgstr ""
+
+#: ../src/data/glade/main_window.glade.h:30
+msgid "_View"
+msgstr ""
+
+#: ../src/data/glade/main_window.glade.h:31
+msgid "example"
+msgstr ""
+
+#: ../src/data/glade/playlist.glade.h:1
+msgid "<b>Comments:</b>"
+msgstr ""
+
+#: ../src/data/glade/playlist.glade.h:2
+msgid "<b>Name:</b>"
+msgstr ""
+
+#: ../src/data/glade/playlist.glade.h:3
+msgid "Clear Queue"
+msgstr ""
+
+#: ../src/data/glade/playlist.glade.h:4
+msgid "Cu_t"
+msgstr ""
+
+#: ../src/data/glade/playlist.glade.h:5
+msgid "More Properties"
+msgstr ""
+
+#: ../src/data/glade/playlist.glade.h:6
+msgid "Properties..."
+msgstr ""
+
+#: ../src/data/glade/playlist.glade.h:7
+msgid "Queue"
+msgstr ""
+
+#: ../src/data/glade/playlist.glade.h:8
+msgid "Queue (front)"
+msgstr ""
+
+#: ../src/data/glade/playlist.glade.h:9
+msgid "Queue / Unqueue"
+msgstr ""
+
+#: ../src/data/glade/playlist.glade.h:10
+msgid "Read Only"
+msgstr ""
+
+#: ../src/data/glade/playlist.glade.h:11
+msgid "_Add..."
+msgstr ""
+
+#: ../src/data/glade/playlist.glade.h:12
+msgid "_Copy"
+msgstr ""
+
+#: ../src/data/glade/playlist.glade.h:13
+msgid "_Export..."
+msgstr ""
+
+#: ../src/data/glade/playlist.glade.h:14
+msgid "_Paste"
+msgstr ""
+
+#: ../src/data/glade/playlist.glade.h:15
+msgid "_Properties"
+msgstr ""
+
+#: ../src/data/glade/playlist.glade.h:16
+msgid "_Remove"
+msgstr ""
+
+#: ../src/data/glade/preference_window.glade.h:1
+msgid "<b>Author</b>"
+msgstr ""
+
+#: ../src/data/glade/preference_window.glade.h:2
+msgid "<b>Copyright</b>"
+msgstr ""
+
+#: ../src/data/glade/preference_window.glade.h:3
+msgid "<b>Description</b>"
+msgstr ""
+
+#: ../src/data/glade/preference_window.glade.h:4
+msgid "<b>Plugin Name</b>"
+msgstr ""
+
+#: ../src/data/glade/preference_window.glade.h:5
+msgid "<b>Web Site</b>"
+msgstr ""
+
+#: ../src/data/glade/preference_window.glade.h:6
+msgid "<span size=\"xx-large\" weight=\"bold\">Mesk 1.0</span>"
+msgstr ""
+
+#: ../src/data/glade/preference_window.glade.h:7
+msgid "Configure..."
+msgstr ""
+
+#: ../src/data/glade/preference_window.glade.h:8
+msgid "Music Library"
+msgstr ""
+
+#: ../src/data/glade/preference_window.glade.h:10
+msgid "Sync..."
+msgstr ""
+
+#: ../src/plugins/plugins_gui.glade.h:2
+#, no-c-format
+msgid ""
+"<b>%a = artist\t%b = album</b>\n"
+"<b>%t = title\t\t%y = year</b>"
+msgstr ""
+
+#: ../src/plugins/plugins_gui.glade.h:4
+msgid "<b>Gajim Accounts:</b>"
+msgstr ""
+
+#: ../src/plugins/plugins_gui.glade.h:5
+msgid "<b>Status:</b>"
+msgstr ""
+
+#: ../src/plugins/plugins_gui.glade.h:6
+msgid "Enable last.fm profile:"
+msgstr ""
+
+#: ../src/plugins/plugins_gui.glade.h:7
+msgid "Example Account"
+msgstr ""
+
+#: ../src/plugins/plugins_gui.glade.h:8
+msgid "Info:"
+msgstr ""
+
+#: ../src/plugins/plugins_gui.glade.h:9
+msgid "Last submit:"
+msgstr ""
+
+#: ../src/plugins/plugins_gui.glade.h:10
+msgid "Password (again):"
+msgstr ""
+
+#: ../src/plugins/plugins_gui.glade.h:12
+msgid "Restore default status format"
+msgstr ""
+
+#: ../src/plugins/plugins_gui.glade.h:13
+msgid "State:"
+msgstr ""
+
+#: ../src/plugins/plugins_gui.glade.h:14
+msgid "Tracks queued:"
+msgstr ""
+
+#: ../src/plugins/plugins_gui.glade.h:15
+msgid "Tracks submitted:"
+msgstr ""
+
+#: ../src/about_dialog.py:47
+#, python-format
+msgid "Supported audio formats: %s\n"
+msgstr ""
+
+#. remove trailing dot
+#: ../src/about_dialog.py:54
+#, python-format
+msgid "Gtk+ version: %s\n"
+msgstr ""
+
+#: ../src/about_dialog.py:55
+#, python-format
+msgid "PyGtk version: %s\n"
+msgstr ""
+
+#: ../src/about_dialog.py:56
+#, python-format
+msgid "Gstreamer version: %s\n"
+msgstr ""
+
+#: ../src/about_dialog.py:58
+#, python-format
+msgid "Installed in %s\n"
+msgstr ""
+
+#: ../src/about_dialog.py:60
+msgid ""
+"A Gtk+ audio player\n"
+"\n"
+msgstr ""
+
+#. Tooltip strings
+#: ../src/audio_control.py:43
+msgid "Play"
+msgstr ""
+
+#: ../src/audio_control.py:44
+msgid "Pause"
+msgstr ""
+
+#: ../src/audio_control.py:137
+#, python-format
+msgid "Gstreamer version %d.%d.%d audio control initialized"
+msgstr ""
+
+#: ../src/audio_control.py:307
+#, python-format
+msgid "Volume %d%%"
+msgstr ""
+
+#: ../src/audio_control.py:712
+msgid "Mute Volume"
+msgstr ""
+
+#: ../src/audio_control.py:714
+msgid "Restore Volume"
+msgstr ""
+
+#: ../src/cdrom_control.py:46
+msgid "<b>Unsupported CDROM device.</b>"
+msgstr ""
+
+#: ../src/cdrom_control.py:47
+#, python-format
+msgid "CD device %s does not support open, close and/or media changed."
+msgstr ""
+
+#: ../src/cdrom_control.py:62
+msgid "Eject"
+msgstr ""
+
+#. The device may be busy
+#: ../src/cdrom_control.py:83
+msgid "<b>Unable to eject CD</b>"
+msgstr ""
+
+#: ../src/cdrom_control.py:84
+#, python-format
+msgid ""
+"Another application is using the CDROM device (%s).\n"
+"Try again when the device is not busy."
+msgstr ""
+
+#: ../src/cdrom_control.py:91
+#, python-format
+msgid "<b>Insert audio CD into %s</b>"
+msgstr ""
+
+#: ../src/dialogs.py:57
+msgid "Do not ask me again."
+msgstr ""
+
+#: ../src/log_window.py:48
+msgid "Save Log File"
+msgstr ""
+
+#: ../src/main.py:82
+msgid "Mesk is already running"
+msgstr ""
+
+#: ../src/main.py:83
+#, python-format
+msgid ""
+"Another instance of Mesk is using the profile '%s'. Try again with a "
+"different profile name (-p/--profile)"
+msgstr ""
+
+#: ../src/main.py:234
+#, python-format
+msgid "Playlist '%s' is now active\n"
+msgstr ""
+
+#: ../src/main.py:295
+msgid "Start with profile NAME."
+msgstr ""
+
+#. Remote control options
+#: ../src/main.py:298
+msgid "Remote Control Options"
+msgstr ""
+
+#: ../src/main.py:300
+msgid ""
+"The remote control options operate on a running instance of Mesk, starting "
+"the app if necessary. If multiples instances of Mesk are running the profile "
+"option can be used to determine which instance to pass the command."
+msgstr ""
+
+#: ../src/main.py:306
+msgid "Stop playback"
+msgstr ""
+
+#: ../src/main.py:309
+msgid "Start playback"
+msgstr ""
+
+#: ../src/main.py:312
+msgid "Pause playback"
+msgstr ""
+
+#: ../src/main.py:315
+msgid "If playing, playback is paused. Otherwise the player is started."
+msgstr ""
+
+#: ../src/main.py:319
+msgid "Previous track"
+msgstr ""
+
+#: ../src/main.py:322
+msgid "Next track"
+msgstr ""
+
+#: ../src/main.py:325
+msgid "Mute/Unmute"
+msgstr ""
+
+#: ../src/main.py:329
+msgid "Increase the volume by N% (0.0 <= n <= 1.0)"
+msgstr ""
+
+#: ../src/main.py:334
+msgid "Decrease the volume by N%(0.0 <= n <= 1.0)"
+msgstr ""
+
+#: ../src/main.py:338
+msgid ""
+"Returns the current state of the audio player (stopped, playing, paused)."
+msgstr ""
+
+#: ../src/main.py:342
+msgid "Returns the URI of the current audio source."
+msgstr ""
+
+#: ../src/main.py:346
+msgid "Returns the title of the current audio source."
+msgstr ""
+
+#: ../src/main.py:350
+msgid "Returns the artist of the current audio source."
+msgstr ""
+
+#: ../src/main.py:354
+msgid "Returns the album name of the current audio source."
+msgstr ""
+
+#: ../src/main.py:358
+msgid "Returns the year of the current audio source."
+msgstr ""
+
+#: ../src/main.py:362
+msgid "Returns the length (in seconds) of the current audio source."
+msgstr ""
+
+#: ../src/main.py:366
+msgid "List all playlists."
+msgstr ""
+
+#: ../src/main.py:369
+msgid ""
+"List the name of the active PlaylistControl.  This value may be empty if no "
+"playlists are active (e.g. a CDROM is active)."
+msgstr ""
+
+#: ../src/main.py:376
+msgid "Set the active playlist."
+msgstr ""
+
+#: ../src/main.py:380
+msgid "Enqueue URI to the active playlist."
+msgstr ""
+
+#: ../src/main.py:383
+msgid "Show/hide the main window (minimize to system tray)"
+msgstr ""
+
+#: ../src/main.py:387
+msgid "Raise the main window (bring to front)."
+msgstr ""
+
+#. Advanced (developer) options
+#: ../src/main.py:391
+msgid "Advanced Options"
+msgstr ""
+
+#: ../src/main.py:393
+msgid ""
+"Select the amount of terminal logging. May be CRITICAL, ERROR, WARNING, "
+"INFO, VERBOSE, or DEBUG"
+msgstr ""
+
+#: ../src/main.py:399
+msgid "Break in python debugger on unhandled exceptions."
+msgstr ""
+
+#: ../src/main.py:403
+msgid "Run using python profiler."
+msgstr ""
+
+#: ../src/main.py:406
+msgid "Display Gstreamer command line options."
+msgstr ""
+
+#: ../src/main_window.py:134
+#, python-format
+msgid "Loading playlist '%s'..."
+msgstr ""
+
+#: ../src/main_window.py:151
+#, python-format
+msgid "Error loading '%s'"
+msgstr ""
+
+#: ../src/main_window.py:169
+#, python-format
+msgid "'%s' loaded"
+msgstr ""
+
+#: ../src/main_window.py:313
+msgid "Are you sure you want to quit?"
+msgstr ""
+
+#: ../src/mesk/audio/cdaudio.py:40
+#, python-format
+msgid "Track #%d"
+msgstr ""
+
+#: ../src/mesk/audio/__init__.py:43
+#, python-format
+msgid "Unsupported audio format: %s"
+msgstr ""
+
+#: ../src/mesk/config.py:53
+msgid "Application version"
+msgstr ""
+
+#: ../src/mesk/config.py:55
+msgid "The directory containing playlists."
+msgstr ""
+
+#: ../src/mesk/config.py:57
+msgid "The foreground playlist that has audio control."
+msgstr ""
+
+#: ../src/mesk/config.py:59
+msgid "A list of playlists to open on startup."
+msgstr ""
+
+#: ../src/mesk/config.py:61
+msgid "Logging level. May be CRITICAL, ERROR, WARNING, INFO, VERBOSE, or DEBUG"
+msgstr ""
+
+#: ../src/mesk/config.py:64
+msgid "Show confirmation dialog before quitting the application."
+msgstr ""
+
+#: ../src/mesk/config.py:67
+msgid "The directory containing user installed plugins"
+msgstr ""
+
+#: ../src/mesk/config.py:68
+msgid "A list of plugins (separated by ';') to activate on startup."
+msgstr ""
+
+#: ../src/mesk/config.py:73
+msgid "Start in compact view mode"
+msgstr ""
+
+#: ../src/mesk/config.py:75
+msgid ""
+"If True, the main window is hidded instead of closed when the window close "
+"button is clicked."
+msgstr ""
+
+#: ../src/mesk/config.py:78
+msgid "Main window width."
+msgstr ""
+
+#: ../src/mesk/config.py:79
+msgid "Main window height."
+msgstr ""
+
+#: ../src/mesk/config.py:80
+msgid "Main window x origin."
+msgstr ""
+
+#: ../src/mesk/config.py:81
+msgid "Main window y origin."
+msgstr ""
+
+#: ../src/mesk/config.py:83
+msgid "Main window x origin in compact mode."
+msgstr ""
+
+#: ../src/mesk/config.py:85
+msgid "Main window y origin in compact mode."
+msgstr ""
+
+#: ../src/mesk/config.py:87
+msgid "Display a close button on each tab."
+msgstr ""
+
+#: ../src/mesk/config.py:89
+msgid "Show tips window each time Mesk is started."
+msgstr ""
+
+#: ../src/mesk/config.py:92
+msgid "The last tip displayed in the tips window."
+msgstr ""
+
+#: ../src/mesk/config.py:94
+msgid "Automatically open devices (cdroms, etc.)"
+msgstr ""
+
+#: ../src/mesk/config.py:100
+#, python-format
+msgid "GStreamer output sink. May be %s (default), %s, '%s','%s', or '%s'"
+msgstr ""
+
+#: ../src/mesk/config.py:104
+msgid "Number of milliseconds to pause between tracks"
+msgstr ""
+
+#: ../src/mesk/config.py:106
+msgid "Volume level is a value between 0.0 and 1.0"
+msgstr ""
+
+#: ../src/mesk/config.py:108
+msgid ""
+"The volume level mixing program. The PATH environment variable is used to "
+"locate commands that do not contain a path."
+msgstr ""
+
+#: ../src/mesk/config.py:114
+msgid "Playlist (file) location"
+msgstr ""
+
+#: ../src/mesk/config.py:118
+msgid "Database (sqlite) path URI"
+msgstr ""
+
+#: ../src/mesk/config.py:120
+msgid "Tab delimited list of directories included in the library."
+msgstr ""
+
+#: ../src/mesk/config.py:123
+msgid "Tab delimited list of directories to exclude from the library."
+msgstr ""
+
+#: ../src/mesk/plugin/__init__.py:119
+#, python-format
+msgid "Plugin not found: %s"
+msgstr ""
+
+#: ../src/mesk/plugin/__init__.py:149
+#, python-format
+msgid "Activating %s plugin"
+msgstr ""
+
+#: ../src/mesk/plugin/__init__.py:153
+#, python-format
+msgid "Invalid plugin name: %s"
+msgstr ""
+
+#: ../src/mesk/plugin/__init__.py:156
+#, python-format
+msgid "Error activating %s plugin: %s"
+msgstr ""
+
+#: ../src/mesk/plugin/__init__.py:165
+#, python-format
+msgid "Deactivating %s plugin"
+msgstr ""
+
+#: ../src/mesk/plugin/__init__.py:171
+#, python-format
+msgid "Error deactivating %s plugin: %s"
+msgstr ""
+
+#: ../src/mesk/plugin/__init__.py:188
+#, python-format
+msgid "Loading plugin %s"
+msgstr ""
+
+#: ../src/mesk/plugin/__init__.py:195
+#, python-format
+msgid "Plugin '%s' failed to load: %s"
+msgstr ""
+
+#: ../src/mesk/plugin/__init__.py:200
+#, python-format
+msgid "Invalid type for plugin '%s': %s"
+msgstr ""
+
+#: ../src/mesk/utils.py:60
+msgid "KB"
+msgstr ""
+
+#: ../src/mesk/utils.py:61
+msgid "MB"
+msgstr ""
+
+#: ../src/mesk/utils.py:62
+msgid "GB"
+msgstr ""
+
+#: ../src/mesk/utils.py:65
+msgid "Bytes"
+msgstr ""
+
+#. Text columns
+#: ../src/playlist_control.py:183
+msgid "Title"
+msgstr ""
+
+#: ../src/playlist_control.py:184
+msgid "Artist"
+msgstr ""
+
+#: ../src/playlist_control.py:185
+msgid "Album"
+msgstr ""
+
+#: ../src/playlist_control.py:187
+msgid "#"
+msgstr ""
+
+#: ../src/playlist_control.py:189
+msgid "Year"
+msgstr ""
+
+#: ../src/playlist_control.py:191
+msgid "Time"
+msgstr ""
+
+#: ../src/playlist_control.py:561
+#, python-format
+msgid "Are you sure you want to delete playlist '%s'?"
+msgstr ""
+
+#: ../src/playlist_control.py:563
+msgid "All playlist data will be lost."
+msgstr ""
+
+#: ../src/playlist_control.py:749
+msgid "tracks"
+msgstr ""
+
+#: ../src/playlist_control.py:1070
+#, python-format
+msgid "Adding items to '%s'..."
+msgstr ""
+
+#: ../src/playlist_control.py:1135
+msgid "Unsupported audio format"
+msgstr ""
+
+#: ../src/playlist_control.py:1153
+#, python-format
+msgid ""
+"Error dropping source: %s\n"
+"\n"
+"%s"
+msgstr ""
+
+#: ../src/playlist_control.py:1163
+#, python-format
+msgid ""
+"\n"
+"Details: %s\n"
+"%s"
+msgstr ""
+
+#: ../src/playlist_control.py:1185
+#, python-format
+msgid "%d items added to '%s'"
+msgstr ""
+
+#: ../src/playlist_control.py:1234
+msgid "Add Audio"
+msgstr ""
+
+#: ../src/playlist_control.py:1253
+msgid "All"
+msgstr ""
+
+#: ../src/playlist_control.py:1254
+msgid "Audio"
+msgstr ""
+
+#: ../src/playlist_control.py:1255
+msgid "Playlists"
+msgstr ""
+
+#. This madness allows the file dialog to select directories when
+#. the checkbox is toggles and files when not since this is not
+#. possible by default
+#: ../src/playlist_control.py:1260
+msgid "Enable to select directories instead of files."
+msgstr ""
+
+#: ../src/playlist_control.py:1409
+msgid "No match found"
+msgstr ""
+
+#: ../src/playlist_control.py:1410
+#, python-format
+msgid "The string '%s' does not match any playlist entries."
+msgstr ""
+
+#: ../src/playlist_control.py:1452
+msgid "items"
+msgstr ""
+
+#: ../src/playlist_control.py:1454
+msgid "item"
+msgstr ""
+
+#: ../src/playlist_control.py:1471
+msgid "cut"
+msgstr ""
+
+#: ../src/playlist_control.py:1486
+msgid "copied"
+msgstr ""
+
+#: ../src/playlist_control.py:1505
+msgid "pasted"
+msgstr ""
+
+#: ../src/playlist_control.py:1531
+#, python-format
+msgid "Playlist '%s' exported"
+msgstr ""
+
+#: ../src/playlist_control.py:1684
+msgid "Export Playlist"
+msgstr ""
+
+#: ../src/playlist_control.py:1705
+msgid "Export as type:"
+msgstr ""
+
+#: ../src/plugins/albumart.py:536
+msgid "Download missing album art from amazon.com."
+msgstr ""
+
+#. Save pending queue
+#: ../src/plugins/audioscrobbler.py:110
+#, python-format
+msgid "Saving %d queued items"
+msgstr ""
+
+#: ../src/plugins/audioscrobbler.py:197
+msgid "Username and password required"
+msgstr ""
+
+#: ../src/plugins/audioscrobbler.py:206
+msgid "Passwords do not match"
+msgstr ""
+
+#: ../src/plugins/audioscrobbler.py:251
+msgid "No username and/or password"
+msgstr ""
+
+#. minutes
+#: ../src/plugins/audioscrobbler.py:262 ../src/plugins/audioscrobbler.py:334
+msgid "Cannot connect to Last.FM"
+msgstr ""
+
+#: ../src/plugins/audioscrobbler.py:283 ../src/plugins/audioscrobbler.py:317
+#: ../src/plugins/audioscrobbler.py:349 ../src/plugins/audioscrobbler.py:355
+#: ../src/plugins/audioscrobbler.py:360
+msgid "Last.FM error"
+msgstr ""
+
+#: ../src/plugins/audioscrobbler.py:294
+#, python-format
+msgid "Handshake failure '%s', retrying in %d seconds: %s"
+msgstr ""
+
+#: ../src/plugins/audioscrobbler.py:300
+msgid "Invalid username"
+msgstr ""
+
+#: ../src/plugins/audioscrobbler.py:302
+msgid "Authentication failed"
+msgstr ""
+
+#: ../src/plugins/audioscrobbler.py:309
+#, python-format
+msgid "Plugin update available here, please see %s"
+msgstr ""
+
+#: ../src/plugins/audioscrobbler.py:320
+msgid "Authenticated"
+msgstr ""
+
+#: ../src/plugins/audioscrobbler.py:333
+#, python-format
+msgid "Submit error: %s"
+msgstr ""
+
+#: ../src/plugins/audioscrobbler.py:348
+#, python-format
+msgid "Malformed response: %s"
+msgstr ""
+
+#: ../src/plugins/audioscrobbler.py:354
+#, python-format
+msgid "Invalid response: %s"
+msgstr ""
+
+#: ../src/plugins/audioscrobbler.py:359
+#, python-format
+msgid "Submit failure: %s"
+msgstr ""
+
+#: ../src/plugins/audioscrobbler.py:364
+msgid "BADAUTH failure, hanshake required"
+msgstr ""
+
+#: ../src/plugins/audioscrobbler.py:365 ../src/plugins/audioscrobbler.py:380
+msgid "Authentication required"
+msgstr ""
+
+#: ../src/plugins/audioscrobbler.py:450
+msgid "Open Last.FM User Page"
+msgstr ""
+
+#: ../src/plugins/audioscrobbler.py:465
+#, python-format
+msgid "Source length %s < 30s, skipping"
+msgstr ""
+
+#: ../src/plugins/audioscrobbler.py:486
+#, python-format
+msgid "Source %s is missing artist and/or title: "
+msgstr ""
+
+#: ../src/plugins/audioscrobbler.py:790
+msgid "Submits played song information to last.fm"
+msgstr ""
+
+#: ../src/plugins/gajimstatus.py:87
+#, python-format
+msgid "Updating status for account %s"
+msgstr ""
+
+#: ../src/plugins/gajimstatus.py:96
+msgid "Gajim and/or Dbus is not running"
+msgstr ""
+
+#: ../src/plugins/gajimstatus.py:135
+msgid "paused"
+msgstr ""
+
+#: ../src/plugins/gajimstatus.py:199
+msgid "Gajim must be running in order to determine accounts."
+msgstr ""
+
+#: ../src/plugins/gajimstatus.py:1017
+msgid ""
+"Uses Gajim (a Jabber/XMPP instant message client) to update your status "
+"message with currently playing song info."
+msgstr ""
+
+#: ../src/plugins/lyrics.py:48
+msgid "Lyrics Search"
+msgstr ""
+
+#: ../src/plugins/lyrics.py:80
+msgid "Performs a Google search for the lyrics to the currently playing song."
+msgstr ""
+
+#: ../src/preference_window.py:77
+msgid "Library Paths"
+msgstr ""
+
+#: ../src/preference_window.py:81
+msgid "Exclude Paths"
+msgstr ""
+
+#: ../src/preference_window.py:123
+msgid "Select Directory"
+msgstr ""
+
+#: ../src/preference_window.py:192
+msgid "Scanning directories ..."
+msgstr ""
+
+#: ../src/preference_window.py:256
+msgid "Plugin"
+msgstr ""
+
+#: ../src/preference_window.py:262
+msgid "Enabled"
+msgstr ""
+
+#: ../src/preference_window.py:324
+msgid "Plugin activation error"
+msgstr ""
+
+#: ../src/preference_window.py:327
+msgid "Plugin deactivation error"
+msgstr ""
+
+#: ../src/status_bar.py:74
+#, python-format
+msgid "%d messages"
+msgstr ""

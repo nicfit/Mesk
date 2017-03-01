@@ -1,0 +1,23 @@
+from distutils.core import setup
+
+setup(
+  name='@PACKAGE_NAME@',
+  version='@PACKAGE_VERSION@',
+  description='Gtk+ audio player',
+  author='Travis Shirk',
+  author_email='travis@pobox.com',
+  url='http://mesk.nicfit.net/',
+  packages=['mesk',
+            'mesk.plugin',
+            'mesk.audio',
+            'mesk.playlist',
+            'mesk.database',
+           ],
+  package_dir={'mesk': 'src/mesk',
+               'mesk.plugin': 'src/mesk/plugin',
+               'mesk.audio': 'src/mesk/audio',
+               'mesk.playlist': 'src/mesk/playlist',
+               'mesk.database': 'src/mesk/database',
+              }
+)
+

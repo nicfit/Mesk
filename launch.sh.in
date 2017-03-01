@@ -1,0 +1,30 @@
+#!/bin/sh
+
+die()
+{
+    echo "$1"
+    exit 1
+}
+
+ROOT=`dirname $0`
+cd $ROOT > /dev/null
+
+if test -e ./config.sh; then
+    # Source local config settings (e.g., PYTHONPATH)
+    . ./config.sh
+fi
+
+if test ! -e ./src/mesk/info.py; then
+    ./autogen.sh || die
+    make || die
+fi
+
+profile=${MESK_TEST_PROFILE:-testing_@PACKAGE_VERSION@}
+if test "$profile" = "default"; then
+    profile=""
+else
+    profile="--profile=${profile}"
+fi
+
+cd src > /dev/null
+exec python main.py ${profile} "$@"
